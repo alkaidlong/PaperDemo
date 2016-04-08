@@ -1,0 +1,407 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#408080" width="1" height="1" currentTimeline="1" xflVersion="2.1" creatorInfo="Adobe Flash Professional CS5.5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.5 build 325" majorVersion="11" minorVersion="5" buildNumber="325" rulerVisible="true" objectsSnapTo="false" viewAngle3D="1" previewMode="fast" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <media>
+          <DOMBitmapItem name="LuxArmIn1.png" itemID="52367f53-000005d5" sourceExternalFilepath="./LIBRARY/LuxArmIn1.png" sourceLastImported="1379303068" externalFileSize="352" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxArmIn1.png" bitmapDataHRef="M 10 1379303251.dat" frameRight="220" frameBottom="500"/>
+          <DOMBitmapItem name="LuxArmIn2.png" itemID="52367f53-000005da" sourceExternalFilepath="./LIBRARY/LuxArmIn2.png" sourceLastImported="1379303166" externalFileSize="459" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxArmIn2.png" bitmapDataHRef="M 11 1379303251.dat" frameRight="160" frameBottom="440"/>
+          <DOMBitmapItem name="LuxArmOu1.png" itemID="52367f53-000005df" sourceExternalFilepath="./LIBRARY/LuxArmOu1.png" sourceLastImported="1379302851" externalFileSize="393" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxArmOu1.png" bitmapDataHRef="M 12 1379303251.dat" frameRight="200" frameBottom="540"/>
+          <DOMBitmapItem name="LuxArmOu2.png" itemID="52367f53-000005e4" sourceExternalFilepath="./LIBRARY/LuxArmOu2.png" sourceLastImported="1379302879" externalFileSize="345" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxArmOu2.png" bitmapDataHRef="M 13 1379303251.dat" frameRight="180" frameBottom="520"/>
+          <DOMBitmapItem name="LuxBody.png" itemID="52367f53-000005e9" sourceExternalFilepath="./LIBRARY/LuxBody.png" sourceLastImported="1379300447" externalFileSize="2760" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxBody.png" bitmapDataHRef="M 14 1379303251.dat" frameRight="760" frameBottom="960"/>
+          <DOMBitmapItem name="LuxHead.png" itemID="52367f53-000005ee" sourceExternalFilepath="./LIBRARY/LuxHead.png" sourceLastImported="1379300406" externalFileSize="858" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxHead.png" bitmapDataHRef="M 15 1379303251.dat" frameRight="420" frameBottom="380"/>
+          <DOMBitmapItem name="LuxLegIn.png" itemID="52367f53-000005f3" sourceExternalFilepath="./LIBRARY/LuxLegIn.png" sourceLastImported="1379301131" externalFileSize="729" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxLegIn.png" bitmapDataHRef="M 16 1379303251.dat" frameRight="300" frameBottom="980"/>
+          <DOMBitmapItem name="LuxLegOu.png" itemID="52367f53-000005f8" sourceExternalFilepath="./LIBRARY/LuxLegOu.png" sourceLastImported="1379301083" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxLegOu.png" bitmapDataHRef="M 17 1379303251.dat" frameRight="320" frameBottom="1000"/>
+          <DOMBitmapItem name="LuxWeapon.png" itemID="52367f53-000005fd" sourceExternalFilepath="./LIBRARY/LuxWeapon.png" sourceLastImported="1379301035" externalFileSize="654" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="LuxWeapon.png" bitmapDataHRef="M 18 1379303251.dat" frameRight="240" frameBottom="1440"/>
+     </media>
+     <symbols>
+          <Include href="LuxArmIn1.xml" itemIcon="1" loadImmediate="false" itemID="521acd8e-000003e0" lastModified="1379303253"/>
+          <Include href="LuxArmIn2.xml" itemIcon="1" loadImmediate="false" itemID="521acdb3-000003e9" lastModified="1379303253"/>
+          <Include href="LuxArmOu1.xml" itemIcon="1" loadImmediate="false" itemID="521acd15-000003ce" lastModified="1379303253"/>
+          <Include href="LuxArmOu2.xml" itemIcon="1" loadImmediate="false" itemID="521acd41-000003d7" lastModified="1379303253"/>
+          <Include href="LuxBody.xml" itemIcon="1" loadImmediate="false" itemID="521accf5-000003c5" lastModified="1379303253"/>
+          <Include href="LuxHead.xml" itemIcon="1" loadImmediate="false" itemID="521accdb-000003bb" lastModified="1379303253"/>
+          <Include href="LuxLegIn.xml" itemIcon="1" loadImmediate="false" itemID="521ace04-000003f6" lastModified="1379303253"/>
+          <Include href="LuxLegOu.xml" itemIcon="1" loadImmediate="false" itemID="52368590-00000639" lastModified="1379304848"/>
+          <Include href="LuxWeapon.xml" itemIcon="1" loadImmediate="false" itemID="521ace24-000003ff" lastModified="1379303253"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="场景 1" currentFrame="15" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;0&lt;/guideline&gt;&lt;guideline direction="v"&gt;-1&lt;/guideline&gt;&lt;guideline direction="v"&gt;-16&lt;/guideline&gt;&lt;guideline direction="v"&gt;10&lt;/guideline&gt;&lt;/guidelines&gt;'>
+               <layers>
+                    <DOMLayer name="Head" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxHead" centerPoint3DX="-4.7" centerPoint3DY="-88.9">
+                                             <matrix>
+                                                  <Matrix a="0.993148803710938" b="-0.116851806640625" c="0.116851806640625" d="0.993148803710938" tx="-4.8" ty="-89"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.45" y="7.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxHead" centerPoint3DX="-1.7" centerPoint3DY="-84.9">
+                                             <matrix>
+                                                  <Matrix a="0.998443603515625" b="-0.049224853515625" c="0.049224853515625" d="0.998443603515625" tx="-1.75" ty="-85.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.4" y="7.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxHead" centerPoint3DX="-4.7" centerPoint3DY="-88.9">
+                                             <matrix>
+                                                  <Matrix a="0.993148803710938" b="-0.116851806640625" c="0.116851806640625" d="0.993148803710938" tx="-4.8" ty="-89"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.45" y="7.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="ArmOu2" color="#4FFFFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmOu2" centerPoint3DX="-20.15" centerPoint3DY="-47.8">
+                                             <matrix>
+                                                  <Matrix a="0.999771118164063" b="-0.02203369140625" c="0.02203369140625" d="0.999771118164063" tx="-20.15" ty="-47.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.65" y="-11.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmOu2" centerPoint3DX="-24.2" centerPoint3DY="-44.65">
+                                             <matrix>
+                                                  <Matrix a="0.989044189453125" b="0.147232055664063" c="-0.147232055664063" d="0.989044189453125" tx="-24.15" ty="-44.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.65" y="-11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmOu2" centerPoint3DX="-20.15" centerPoint3DY="-47.8">
+                                             <matrix>
+                                                  <Matrix a="0.999771118164063" b="-0.02203369140625" c="0.02203369140625" d="0.999771118164063" tx="-20.15" ty="-47.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.65" y="-11.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="ArmOu1" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxWeapon" centerPoint3DX="-17.05" centerPoint3DY="-38.45">
+                                             <matrix>
+                                                  <Matrix a="0.668975830078125" b="-0.7432861328125" c="0.7432861328125" d="0.668975830078125" tx="-16.65" ty="-38"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxWeapon" centerPoint3DX="-22.6" centerPoint3DY="-35.05">
+                                             <matrix>
+                                                  <Matrix a="0.782562255859375" b="-0.61993408203125" c="0.61993408203125" d="0.782562255859375" tx="-22.3" ty="-34.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxWeapon" centerPoint3DX="-17.05" centerPoint3DY="-38.45">
+                                             <matrix>
+                                                  <Matrix a="0.668975830078125" b="-0.7432861328125" c="0.7432861328125" d="0.668975830078125" tx="-16.65" ty="-38"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Weapon" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmOu1" centerPoint3DX="-16.2" centerPoint3DY="-71.75">
+                                             <matrix>
+                                                  <Matrix a="0.875106811523438" b="0.483917236328125" c="-0.483917236328125" d="0.875106811523438" tx="-16.4" ty="-71.6"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.3" y="-10.05"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmOu1" centerPoint3DX="-16.1" centerPoint3DY="-67.55">
+                                             <matrix>
+                                                  <Matrix a="0.780838012695313" b="0.622467041015625" c="-0.622467041015625" d="0.780838012695313" tx="-16.45" ty="-67.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.3" y="-10.1"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmOu1" centerPoint3DX="-16.2" centerPoint3DY="-71.75">
+                                             <matrix>
+                                                  <Matrix a="0.875106811523438" b="0.483917236328125" c="-0.483917236328125" d="0.875106811523438" tx="-16.4" ty="-71.6"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.3" y="-10.05"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Body" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxBody" centerPoint3DX="-2.3" centerPoint3DY="-62">
+                                             <matrix>
+                                                  <Matrix a="0.998916625976563" b="-0.0465545654296875" c="0.0465545654296875" d="0.998916625976563" tx="-2.25" ty="-61.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.55" y="20.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxBody" centerPoint3DX="-0.6" centerPoint3DY="-56.8">
+                                             <matrix>
+                                                  <Matrix a="0.999832153320313" b="-0.0008697509765625" c="0.0008697509765625" d="0.999832153320313" tx="-0.5" ty="-56.75"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.55" y="20.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxBody" centerPoint3DX="-2.3" centerPoint3DY="-62">
+                                             <matrix>
+                                                  <Matrix a="0.998916625976563" b="-0.0465545654296875" c="0.0465545654296875" d="0.998916625976563" tx="-2.25" ty="-61.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.55" y="20.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="ArmIn2" color="#4F80FF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmIn2" centerPoint3DX="15.25" centerPoint3DY="-51.7">
+                                             <matrix>
+                                                  <Matrix a="0.915130615234375" b="-0.403121948242188" c="0.403121948242188" d="0.915130615234375" tx="15.45" ty="-51.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.5" y="-9.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmIn2" centerPoint3DX="17.8" centerPoint3DY="-47.3">
+                                             <matrix>
+                                                  <Matrix a="0.877517700195313" b="-0.476959228515625" c="0.476959228515625" d="0.877517700195313" tx="18.05" ty="-47.3"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.6" y="-9.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmIn2" centerPoint3DX="15.25" centerPoint3DY="-51.7">
+                                             <matrix>
+                                                  <Matrix a="0.915130615234375" b="-0.403121948242188" c="0.403121948242188" d="0.915130615234375" tx="15.45" ty="-51.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.5" y="-9.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="ArmIn1" color="#808080" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmIn1" centerPoint3DX="8.9" centerPoint3DY="-70.1">
+                                             <matrix>
+                                                  <Matrix a="0.97283935546875" b="-0.231536865234375" c="0.231536865234375" d="0.97283935546875" tx="8.9" ty="-70.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.95" y="-8.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmIn1" centerPoint3DX="9.8" centerPoint3DY="-65.05">
+                                             <matrix>
+                                                  <Matrix a="0.950180053710938" b="-0.309341430664063" c="0.309341430664063" d="0.950180053710938" tx="9.9" ty="-65.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.9" y="-8.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxArmIn1" centerPoint3DX="8.9" centerPoint3DY="-70.1">
+                                             <matrix>
+                                                  <Matrix a="0.97283935546875" b="-0.231536865234375" c="0.231536865234375" d="0.97283935546875" tx="8.9" ty="-70.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.95" y="-8.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="LegOu" color="#FF4F4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.987075805664063" b="0.16021728515625" c="-0.168289184570313" d="1.0367431640625" tx="-10.5" ty="-26.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.25" y="-21.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.961380004882813" b="-0.275177001953125" c="0.289016723632813" d="1.009765625" tx="2.7" ty="-25.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.25" y="-21.6"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.987075805664063" b="0.16021728515625" c="-0.168289184570313" d="1.0367431640625" tx="-10.5" ty="-26.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.25" y="-21.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="LegIn" color="#4FFF4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="7" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxLegIn" centerPoint3DX="6.7" centerPoint3DY="-25.65">
+                                             <matrix>
+                                                  <Matrix a="0.99127197265625" b="-0.131866455078125" c="0.13433837890625" d="1.00975036621094" tx="6.85" ty="-25.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.75" y="-21.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="7" duration="8" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxLegIn" centerPoint3DX="-5.25" centerPoint3DY="-21.5">
+                                             <matrix>
+                                                  <Matrix a="0.909896850585938" b="0.411651611328125" c="-0.378143310546875" d="0.86846923828125" tx="-5.25" ty="-21.55"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.75" y="-21.15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="LuxLegIn" centerPoint3DX="6.7" centerPoint3DY="-25.65">
+                                             <matrix>
+                                                  <Matrix a="0.99127197265625" b="-0.131866455078125" c="0.13433837890625" d="1.00975036621094" tx="6.85" ty="-25.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.75" y="-21.2"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="8524" publishTime="1379306078"/>
+          <PublishItem publishSize="8524" publishTime="1379305402"/>
+          <PublishItem publishSize="7843" publishTime="1379305386"/>
+          <PublishItem publishSize="7848" publishTime="1379305363"/>
+          <PublishItem publishSize="7486" publishTime="1377497850"/>
+          <PublishItem publishSize="7485" publishTime="1377497684"/>
+          <PublishItem publishSize="7479" publishTime="1377497632"/>
+          <PublishItem publishSize="7470" publishTime="1377497604"/>
+          <PublishItem publishSize="7474" publishTime="1377497516"/>
+          <PublishItem publishSize="8300" publishTime="1377497442"/>
+          <PublishItem publishSize="8502" publishTime="1377497425"/>
+          <PublishItem publishSize="8176" publishTime="1377489741"/>
+          <PublishItem publishSize="8132" publishTime="1377489638"/>
+          <PublishItem publishSize="8084" publishTime="1377489301"/>
+     </publishHistory>
+</DOMDocument>

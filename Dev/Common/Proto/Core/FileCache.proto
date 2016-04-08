@@ -1,0 +1,19 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+import "Geometry.proto";
+//文件
+message FileCacheItem
+{
+	required string path=1;	//路径
+	required string md5=2;	//md5码
+	optional RectU TextureRect=3;
+	optional PointU Offset=4;
+	required string OriginalName=5;	//原始名字
+	required uint32 Operation=6;	//操作
+}
+
+//资源文件缓存列表
+message FileCache
+{
+	repeated FileCacheItem items=2;	//文件列表
+}

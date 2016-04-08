@@ -1,0 +1,86 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+message SizeU
+{
+    required uint32 Width=1;
+    required uint32 Height=2;
+}
+
+message SizeF
+{
+    required float Width=1;
+    required float Height=2;
+}
+
+message RangeU
+{
+    required uint32 MinValue=1;
+    required uint32 MaxValue=2;
+}
+
+message RangeF
+{
+    required float MinValue=1;
+    required float MaxValue=2;
+}
+
+message PointU
+{
+    required uint32 X=1;
+    required uint32 Y=2;
+}
+
+message PointF
+{
+    required float X=1;
+    required float Y=2;
+}
+
+message ScaleU
+{
+    required uint32 X=1;
+    required uint32 Y=2;
+}
+
+message ScaleF
+{
+    required float X=1;
+    required float Y=2;
+}
+
+message ColorF
+{
+    required float R=1;
+	required float G=2;
+    required float B=3;
+	required float A=4;
+}
+
+message ColorU
+{
+    required uint32 R=1;
+	required uint32 G=2;
+    required uint32 B=3;
+	required uint32 A=4;
+}
+
+message RectU
+{
+	required PointU Origin=1;
+	required SizeU Size=2;
+}
+
+message RectF
+{
+	required PointF Origin=1;
+	required SizeF Size=2;
+}
+
+message BorderU
+{
+    required uint32 Left=1;
+	required uint32 Right=2;
+    required uint32 Top=3;
+	required uint32 Bottom=4;
+}

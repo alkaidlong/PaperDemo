@@ -1,0 +1,16 @@
+//option optimize_for = LITE_RUNTIME;
+
+import "BaseProperty.proto";
+package ServerProto.Config;
+
+message BufferConfigItem //状态数据
+{
+	required uint32 Id=1;
+	required ServerProto.Logic.BaseProperty Property = 2; //基础数据
+	required ServerProto.Logic.BaseProperty DeltaProperty = 3;//增长数据
+}
+
+message BufferConfig  
+{
+	repeated BufferConfigItem BufferConfigItems=1;
+}

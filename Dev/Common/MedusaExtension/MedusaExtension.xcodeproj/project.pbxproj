@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2028511218E59ECE00082045 /* ExtensionPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028511018E59ECE00082045 /* ExtensionPlatform.h */; };
+		2028511318E59ECE00082045 /* ExtensionPlatformDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028511118E59ECE00082045 /* ExtensionPlatformDefines.h */; };
+		2028512D18E59ED700082045 /* ExtensionLib_android.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028511618E59ED700082045 /* ExtensionLib_android.h */; };
+		2028513118E59ED700082045 /* ExtensionLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028512018E59ED700082045 /* ExtensionLib.h */; };
+		2028513218E59ED700082045 /* ExtensionLib_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028512218E59ED700082045 /* ExtensionLib_ios.h */; };
+		2028513318E59ED700082045 /* TalkingDataGA.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028512418E59ED700082045 /* TalkingDataGA.h */; };
+		2028513618E59ED700082045 /* ExtensionLib_linux.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028512918E59ED700082045 /* ExtensionLib_linux.h */; };
+		2028513718E59ED700082045 /* ExtensionLib_win.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028512C18E59ED700082045 /* ExtensionLib_win.h */; };
+		2028514518E59EE300082045 /* Analytics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2028513918E59EE300082045 /* Analytics.cpp */; };
+		2028514618E59EE300082045 /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028513A18E59EE300082045 /* Analytics.h */; };
+		2028514718E59EE300082045 /* AnalyticsTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028513B18E59EE300082045 /* AnalyticsTypes.h */; };
+		2028514818E59EE300082045 /* IAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028513C18E59EE300082045 /* IAnalyzer.h */; };
+		2028514918E59EE300082045 /* TalkingDataAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2028513E18E59EE300082045 /* TalkingDataAnalyzer.mm */; };
+		2028514A18E59EE300082045 /* UmengAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2028513F18E59EE300082045 /* UmengAnalyzer.mm */; };
+		2028514B18E59EE300082045 /* TalkingDataAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028514018E59EE300082045 /* TalkingDataAnalyzer.h */; };
+		2028514C18E59EE300082045 /* UmengAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2028514118E59EE300082045 /* UmengAnalyzer.h */; };
+		2028515518E5A97400082045 /* libTalkingDataGA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2028515418E5A97400082045 /* libTalkingDataGA.a */; };
+		2028515718E5A9B200082045 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2028515618E5A9B200082045 /* Security.framework */; };
+		2028515918E5A9C300082045 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2028515818E5A9C300082045 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2028515B18E5A9CB00082045 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2028515A18E5A9CB00082045 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2028540718E93AA000082045 /* libMobClickGameLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2028515218E5A95F00082045 /* libMobClickGameLibrary.a */; };
+		20A704D4191790F10056179A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704D3191790F10056179A /* AddressBook.framework */; };
+		20A704D6191790F80056179A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704D5191790F80056179A /* CoreGraphics.framework */; };
+		20A704D81917910C0056179A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704D71917910C0056179A /* QuartzCore.framework */; };
+		20A704DA1917911A0056179A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704D91917911A0056179A /* SystemConfiguration.framework */; };
+		20A704DC1917912D0056179A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704DB1917912D0056179A /* Foundation.framework */; };
+		20A704DE191791380056179A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704DD191791380056179A /* MessageUI.framework */; };
+		20A704E0191791410056179A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A704DF191791410056179A /* AssetsLibrary.framework */; };
+		20A708E51918E7630056179A /* BusinessPlatformFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A708DC1918E7630056179A /* BusinessPlatformFactory.cpp */; };
+		20A708E61918E7630056179A /* BusinessPlatformFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A708DD1918E7630056179A /* BusinessPlatformFactory.h */; };
+		20A708E71918E7630056179A /* BusinessPlatformTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A708DE1918E7630056179A /* BusinessPlatformTypes.h */; };
+		20A708E81918E7630056179A /* IBusinessPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A708DF1918E7630056179A /* IBusinessPlatform.h */; };
+		20A708E91918E7630056179A /* NdBusinessPlatform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 20A708E11918E7630056179A /* NdBusinessPlatform.mm */; };
+		20A708EA1918E7630056179A /* NdBusinessPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A708E21918E7630056179A /* NdBusinessPlatform.h */; };
+		20A708EB1918E7630056179A /* NdBusinessPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A708E41918E7630056179A /* NdBusinessPlatform.cpp */; };
+		20A7090B191A42DE0056179A /* DevBusinessPlatform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A70909191A42DE0056179A /* DevBusinessPlatform.cpp */; };
+		20A7090C191A42DE0056179A /* DevBusinessPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A7090A191A42DE0056179A /* DevBusinessPlatform.h */; };
+		20A70CDF191A45060056179A /* BusinessPlatformLoginEventArg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20A70CDD191A45060056179A /* BusinessPlatformLoginEventArg.cpp */; };
+		20A70CE0191A45060056179A /* BusinessPlatformLoginEventArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A70CDE191A45060056179A /* BusinessPlatformLoginEventArg.h */; };
+		20AEAD4018C8DEF300B4A046 /* MedusaExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AEAD3F18C8DEF300B4A046 /* MedusaExtension.h */; };
+		20AEAD4418C8DEFE00B4A046 /* MedusaExtensionPreCompiled.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20AEAD4118C8DEFE00B4A046 /* MedusaExtensionPreCompiled.cpp */; };
+		20AEAD4518C8DEFE00B4A046 /* MedusaExtensionPreCompiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AEAD4218C8DEFE00B4A046 /* MedusaExtensionPreCompiled.h */; };
+		20AEAD4618C8DEFE00B4A046 /* MedusaExtensionPreDeclares.h in Headers */ = {isa = PBXBuildFile; fileRef = 20AEAD4318C8DEFE00B4A046 /* MedusaExtensionPreDeclares.h */; };
+		20AEBB6F18C8ED2500B4A046 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AEBB6E18C8ED2500B4A046 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		20AEBB7918C97CAE00B4A046 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AEBB7818C97CAE00B4A046 /* CoreFoundation.framework */; };
+		20C63E19196FD6CA002378FC /* BusinessPlatformPayEventArg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63E17196FD6CA002378FC /* BusinessPlatformPayEventArg.cpp */; };
+		20C63E1A196FD6CA002378FC /* BusinessPlatformPayEventArg.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63E18196FD6CA002378FC /* BusinessPlatformPayEventArg.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2028511018E59ECE00082045 /* ExtensionPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionPlatform.h; sourceTree = "<group>"; };
+		2028511118E59ECE00082045 /* ExtensionPlatformDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionPlatformDefines.h; sourceTree = "<group>"; };
+		2028511618E59ED700082045 /* ExtensionLib_android.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionLib_android.h; sourceTree = "<group>"; };
+		2028512018E59ED700082045 /* ExtensionLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionLib.h; sourceTree = "<group>"; };
+		2028512218E59ED700082045 /* ExtensionLib_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionLib_ios.h; sourceTree = "<group>"; };
+		2028512418E59ED700082045 /* TalkingDataGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingDataGA.h; sourceTree = "<group>"; };
+		2028512918E59ED700082045 /* ExtensionLib_linux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionLib_linux.h; sourceTree = "<group>"; };
+		2028512C18E59ED700082045 /* ExtensionLib_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtensionLib_win.h; sourceTree = "<group>"; };
+		2028512F18E59ED700082045 /* libMedusaExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMedusaExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2028513918E59EE300082045 /* Analytics.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Analytics.cpp; sourceTree = "<group>"; };
+		2028513A18E59EE300082045 /* Analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
+		2028513B18E59EE300082045 /* AnalyticsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsTypes.h; sourceTree = "<group>"; };
+		2028513C18E59EE300082045 /* IAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAnalyzer.h; sourceTree = "<group>"; };
+		2028513E18E59EE300082045 /* TalkingDataAnalyzer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TalkingDataAnalyzer.mm; sourceTree = "<group>"; };
+		2028513F18E59EE300082045 /* UmengAnalyzer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UmengAnalyzer.mm; sourceTree = "<group>"; };
+		2028514018E59EE300082045 /* TalkingDataAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkingDataAnalyzer.h; sourceTree = "<group>"; };
+		2028514118E59EE300082045 /* UmengAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmengAnalyzer.h; sourceTree = "<group>"; };
+		2028515018E5A45800082045 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2028515218E5A95F00082045 /* libMobClickGameLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMobClickGameLibrary.a; path = ExtensionLib/Bin/ios/libMobClickGameLibrary.a; sourceTree = "<group>"; };
+		2028515418E5A97400082045 /* libTalkingDataGA.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTalkingDataGA.a; path = ExtensionLib/Bin/ios/libTalkingDataGA.a; sourceTree = "<group>"; };
+		2028515618E5A9B200082045 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2028515818E5A9C300082045 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		2028515A18E5A9CB00082045 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		20A704D3191790F10056179A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		20A704D5191790F80056179A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		20A704D71917910C0056179A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		20A704D91917911A0056179A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		20A704DB1917912D0056179A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		20A704DD191791380056179A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		20A704DF191791410056179A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		20A704E1191791540056179A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		20A708DC1918E7630056179A /* BusinessPlatformFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusinessPlatformFactory.cpp; sourceTree = "<group>"; };
+		20A708DD1918E7630056179A /* BusinessPlatformFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessPlatformFactory.h; sourceTree = "<group>"; };
+		20A708DE1918E7630056179A /* BusinessPlatformTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessPlatformTypes.h; sourceTree = "<group>"; };
+		20A708DF1918E7630056179A /* IBusinessPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBusinessPlatform.h; sourceTree = "<group>"; };
+		20A708E11918E7630056179A /* NdBusinessPlatform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NdBusinessPlatform.mm; sourceTree = "<group>"; };
+		20A708E21918E7630056179A /* NdBusinessPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NdBusinessPlatform.h; sourceTree = "<group>"; };
+		20A708E41918E7630056179A /* NdBusinessPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NdBusinessPlatform.cpp; sourceTree = "<group>"; };
+		20A70909191A42DE0056179A /* DevBusinessPlatform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DevBusinessPlatform.cpp; sourceTree = "<group>"; };
+		20A7090A191A42DE0056179A /* DevBusinessPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevBusinessPlatform.h; sourceTree = "<group>"; };
+		20A70CDD191A45060056179A /* BusinessPlatformLoginEventArg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusinessPlatformLoginEventArg.cpp; sourceTree = "<group>"; };
+		20A70CDE191A45060056179A /* BusinessPlatformLoginEventArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessPlatformLoginEventArg.h; sourceTree = "<group>"; };
+		20AEAD3F18C8DEF300B4A046 /* MedusaExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedusaExtension.h; sourceTree = "<group>"; };
+		20AEAD4118C8DEFE00B4A046 /* MedusaExtensionPreCompiled.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MedusaExtensionPreCompiled.cpp; sourceTree = "<group>"; };
+		20AEAD4218C8DEFE00B4A046 /* MedusaExtensionPreCompiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedusaExtensionPreCompiled.h; sourceTree = "<group>"; };
+		20AEAD4318C8DEFE00B4A046 /* MedusaExtensionPreDeclares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedusaExtensionPreDeclares.h; sourceTree = "<group>"; };
+		20AEBB6E18C8ED2500B4A046 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		20AEBB7818C97CAE00B4A046 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		20C63E17196FD6CA002378FC /* BusinessPlatformPayEventArg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BusinessPlatformPayEventArg.cpp; sourceTree = "<group>"; };
+		20C63E18196FD6CA002378FC /* BusinessPlatformPayEventArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessPlatformPayEventArg.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87CC2E2154FC6C500AAFE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2028515B18E5A9CB00082045 /* AdSupport.framework in Frameworks */,
+				20A704E0191791410056179A /* AssetsLibrary.framework in Frameworks */,
+				20A704DE191791380056179A /* MessageUI.framework in Frameworks */,
+				20A704DC1917912D0056179A /* Foundation.framework in Frameworks */,
+				20A704DA1917911A0056179A /* SystemConfiguration.framework in Frameworks */,
+				20A704D81917910C0056179A /* QuartzCore.framework in Frameworks */,
+				2028515918E5A9C300082045 /* CoreTelephony.framework in Frameworks */,
+				20A704D6191790F80056179A /* CoreGraphics.framework in Frameworks */,
+				20A704D4191790F10056179A /* AddressBook.framework in Frameworks */,
+				2028540718E93AA000082045 /* libMobClickGameLibrary.a in Frameworks */,
+				2028515718E5A9B200082045 /* Security.framework in Frameworks */,
+				2028515518E5A97400082045 /* libTalkingDataGA.a in Frameworks */,
+				20AEBB7918C97CAE00B4A046 /* CoreFoundation.framework in Frameworks */,
+				20AEBB6F18C8ED2500B4A046 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2028510F18E59ECE00082045 /* ExtensionPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				2028511018E59ECE00082045 /* ExtensionPlatform.h */,
+				2028511118E59ECE00082045 /* ExtensionPlatformDefines.h */,
+			);
+			path = ExtensionPlatform;
+			sourceTree = "<group>";
+		};
+		2028511418E59ED700082045 /* ExtensionLib */ = {
+			isa = PBXGroup;
+			children = (
+				2028511518E59ED700082045 /* android */,
+				2028511718E59ED700082045 /* Bin */,
+				2028511F18E59ED700082045 /* Common */,
+				2028512018E59ED700082045 /* ExtensionLib.h */,
+				2028512118E59ED700082045 /* ios */,
+				2028512818E59ED700082045 /* linux */,
+				2028512A18E59ED700082045 /* mac */,
+				2028512B18E59ED700082045 /* win */,
+			);
+			path = ExtensionLib;
+			sourceTree = "<group>";
+		};
+		2028511518E59ED700082045 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				2028511618E59ED700082045 /* ExtensionLib_android.h */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		2028511718E59ED700082045 /* Bin */ = {
+			isa = PBXGroup;
+			children = (
+				2028511818E59ED700082045 /* android */,
+				2028511918E59ED700082045 /* ios */,
+				2028511C18E59ED700082045 /* linux */,
+				2028511D18E59ED700082045 /* mac */,
+				2028511E18E59ED700082045 /* win */,
+			);
+			path = Bin;
+			sourceTree = "<group>";
+		};
+		2028511818E59ED700082045 /* android */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		2028511918E59ED700082045 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		2028511C18E59ED700082045 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+		2028511D18E59ED700082045 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		2028511E18E59ED700082045 /* win */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = win;
+			sourceTree = "<group>";
+		};
+		2028511F18E59ED700082045 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2028512118E59ED700082045 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				2028512218E59ED700082045 /* ExtensionLib_ios.h */,
+				2028512318E59ED700082045 /* TalkingData */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		2028512318E59ED700082045 /* TalkingData */ = {
+			isa = PBXGroup;
+			children = (
+				2028512418E59ED700082045 /* TalkingDataGA.h */,
+			);
+			path = TalkingData;
+			sourceTree = "<group>";
+		};
+		2028512818E59ED700082045 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				2028512918E59ED700082045 /* ExtensionLib_linux.h */,
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+		2028512A18E59ED700082045 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		2028512B18E59ED700082045 /* win */ = {
+			isa = PBXGroup;
+			children = (
+				2028512C18E59ED700082045 /* ExtensionLib_win.h */,
+			);
+			path = win;
+			sourceTree = "<group>";
+		};
+		2028513818E59EE300082045 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				2028513918E59EE300082045 /* Analytics.cpp */,
+				2028513A18E59EE300082045 /* Analytics.h */,
+				2028513B18E59EE300082045 /* AnalyticsTypes.h */,
+				2028513C18E59EE300082045 /* IAnalyzer.h */,
+				2028513D18E59EE300082045 /* ios */,
+				2028514018E59EE300082045 /* TalkingDataAnalyzer.h */,
+				2028514118E59EE300082045 /* UmengAnalyzer.h */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		2028513D18E59EE300082045 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				2028513E18E59EE300082045 /* TalkingDataAnalyzer.mm */,
+				2028513F18E59EE300082045 /* UmengAnalyzer.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		20A708DB1918E7620056179A /* BusinessPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				20A708DC1918E7630056179A /* BusinessPlatformFactory.cpp */,
+				20A708DD1918E7630056179A /* BusinessPlatformFactory.h */,
+				20C63E17196FD6CA002378FC /* BusinessPlatformPayEventArg.cpp */,
+				20C63E18196FD6CA002378FC /* BusinessPlatformPayEventArg.h */,
+				20A70909191A42DE0056179A /* DevBusinessPlatform.cpp */,
+				20A70CDD191A45060056179A /* BusinessPlatformLoginEventArg.cpp */,
+				20A70CDE191A45060056179A /* BusinessPlatformLoginEventArg.h */,
+				20A7090A191A42DE0056179A /* DevBusinessPlatform.h */,
+				20A708DE1918E7630056179A /* BusinessPlatformTypes.h */,
+				20A708DF1918E7630056179A /* IBusinessPlatform.h */,
+				20A708E01918E7630056179A /* ios */,
+				20A708E21918E7630056179A /* NdBusinessPlatform.h */,
+				20A708E31918E7630056179A /* win */,
+			);
+			path = BusinessPlatform;
+			sourceTree = "<group>";
+		};
+		20A708E01918E7630056179A /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				20A708E11918E7630056179A /* NdBusinessPlatform.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		20A708E31918E7630056179A /* win */ = {
+			isa = PBXGroup;
+			children = (
+				20A708E41918E7630056179A /* NdBusinessPlatform.cpp */,
+			);
+			path = win;
+			sourceTree = "<group>";
+		};
+		D87CC2BB154FC66100AAFE11 = {
+			isa = PBXGroup;
+			children = (
+				20A708DB1918E7620056179A /* BusinessPlatform */,
+				2028513818E59EE300082045 /* Analytics */,
+				2028511418E59ED700082045 /* ExtensionLib */,
+				2028510F18E59ECE00082045 /* ExtensionPlatform */,
+				20AEAD4118C8DEFE00B4A046 /* MedusaExtensionPreCompiled.cpp */,
+				20AEAD3F18C8DEF300B4A046 /* MedusaExtension.h */,
+				20AEAD4218C8DEFE00B4A046 /* MedusaExtensionPreCompiled.h */,
+				20AEAD4318C8DEFE00B4A046 /* MedusaExtensionPreDeclares.h */,
+				D87CC2C9154FC66100AAFE11 /* Frameworks */,
+				2028512F18E59ED700082045 /* libMedusaExtension.a */,
+			);
+			sourceTree = "<group>";
+		};
+		D87CC2C9154FC66100AAFE11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20A704E1191791540056179A /* libsqlite3.dylib */,
+				20A704DF191791410056179A /* AssetsLibrary.framework */,
+				20A704DD191791380056179A /* MessageUI.framework */,
+				20A704DB1917912D0056179A /* Foundation.framework */,
+				20A704D91917911A0056179A /* SystemConfiguration.framework */,
+				20A704D71917910C0056179A /* QuartzCore.framework */,
+				20A704D5191790F80056179A /* CoreGraphics.framework */,
+				20A704D3191790F10056179A /* AddressBook.framework */,
+				2028515A18E5A9CB00082045 /* AdSupport.framework */,
+				2028515818E5A9C300082045 /* CoreTelephony.framework */,
+				2028515618E5A9B200082045 /* Security.framework */,
+				2028515418E5A97400082045 /* libTalkingDataGA.a */,
+				2028515218E5A95F00082045 /* libMobClickGameLibrary.a */,
+				2028515018E5A45800082045 /* libz.dylib */,
+				20AEBB7818C97CAE00B4A046 /* CoreFoundation.framework */,
+				20AEBB6E18C8ED2500B4A046 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D87CC2E3154FC6C500AAFE11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2028514818E59EE300082045 /* IAnalyzer.h in Headers */,
+				20A708E71918E7630056179A /* BusinessPlatformTypes.h in Headers */,
+				2028514C18E59EE300082045 /* UmengAnalyzer.h in Headers */,
+				20A7090C191A42DE0056179A /* DevBusinessPlatform.h in Headers */,
+				20A708E81918E7630056179A /* IBusinessPlatform.h in Headers */,
+				2028511318E59ECE00082045 /* ExtensionPlatformDefines.h in Headers */,
+				20A708EA1918E7630056179A /* NdBusinessPlatform.h in Headers */,
+				2028513618E59ED700082045 /* ExtensionLib_linux.h in Headers */,
+				20AEAD4518C8DEFE00B4A046 /* MedusaExtensionPreCompiled.h in Headers */,
+				20AEAD4018C8DEF300B4A046 /* MedusaExtension.h in Headers */,
+				2028514618E59EE300082045 /* Analytics.h in Headers */,
+				20AEAD4618C8DEFE00B4A046 /* MedusaExtensionPreDeclares.h in Headers */,
+				2028513118E59ED700082045 /* ExtensionLib.h in Headers */,
+				2028513718E59ED700082045 /* ExtensionLib_win.h in Headers */,
+				2028514718E59EE300082045 /* AnalyticsTypes.h in Headers */,
+				2028513318E59ED700082045 /* TalkingDataGA.h in Headers */,
+				2028514B18E59EE300082045 /* TalkingDataAnalyzer.h in Headers */,
+				2028512D18E59ED700082045 /* ExtensionLib_android.h in Headers */,
+				20C63E1A196FD6CA002378FC /* BusinessPlatformPayEventArg.h in Headers */,
+				20A708E61918E7630056179A /* BusinessPlatformFactory.h in Headers */,
+				2028513218E59ED700082045 /* ExtensionLib_ios.h in Headers */,
+				2028511218E59ECE00082045 /* ExtensionPlatform.h in Headers */,
+				20A70CE0191A45060056179A /* BusinessPlatformLoginEventArg.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D87CC2E4154FC6C500AAFE11 /* MedusaExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87CC2ED154FC6C500AAFE11 /* Build configuration list for PBXNativeTarget "MedusaExtension" */;
+			buildPhases = (
+				D87CC2E1154FC6C500AAFE11 /* Sources */,
+				D87CC2E2154FC6C500AAFE11 /* Frameworks */,
+				D87CC2E3154FC6C500AAFE11 /* Headers */,
+				185ADB8915A3935900CD7CE0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedusaExtension;
+			productName = SPII;
+			productReference = 2028512F18E59ED700082045 /* libMedusaExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87CC2BD154FC66100AAFE11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Cocoachina;
+			};
+			buildConfigurationList = D87CC2C0154FC66100AAFE11 /* Build configuration list for PBXProject "MedusaExtension" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = D87CC2BB154FC66100AAFE11;
+			productRefGroup = D87CC2BB154FC66100AAFE11;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87CC2E4154FC6C500AAFE11 /* MedusaExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		185ADB8915A3935900CD7CE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87CC2E1154FC6C500AAFE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A7090B191A42DE0056179A /* DevBusinessPlatform.cpp in Sources */,
+				2028514518E59EE300082045 /* Analytics.cpp in Sources */,
+				20A708EB1918E7630056179A /* NdBusinessPlatform.cpp in Sources */,
+				20C63E19196FD6CA002378FC /* BusinessPlatformPayEventArg.cpp in Sources */,
+				20AEAD4418C8DEFE00B4A046 /* MedusaExtensionPreCompiled.cpp in Sources */,
+				20A708E51918E7630056179A /* BusinessPlatformFactory.cpp in Sources */,
+				2028514A18E59EE300082045 /* UmengAnalyzer.mm in Sources */,
+				20A708E91918E7630056179A /* NdBusinessPlatform.mm in Sources */,
+				20A70CDF191A45060056179A /* BusinessPlatformLoginEventArg.cpp in Sources */,
+				2028514918E59EE300082045 /* TalkingDataAnalyzer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D87CC2DC154FC66100AAFE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s armv6 arm64";
+			};
+			name = Debug;
+		};
+		D87CC2DD154FC66100AAFE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s armv6 arm64";
+			};
+			name = Release;
+		};
+		D87CC2EE154FC6C500AAFE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/SPII.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paper/Documents/unfuddle/fjz_fjz/Medusa/MedusaExtension/Lib/Bin/mac/Frameworks,
+					/Users/paper/Documents/unfuddle/fjz_fjz/Medusa/MedusaExtension/Lib/Bin/ios/Frameworks,
+					"$(PROJECT_DIR)/ExtensionLib/ios/Nd",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					TARGET_OS_IPHONE,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Lib/Common\"",
+					"\"$(SRCROOT)/../MedusaCore\"",
+					"\"$(SRCROOT)/../MedusaCore/CoreLib/Common\"",
+					"\"$(SRCROOT)/Lib/Common/freetype\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/../Lib/Bin/ios\\\\\\\"",
+					/Users/paper/Documents/unfuddle/fjz_fjz/Medusa/MedusaExtension/Lib/Bin/ios,
+					/Users/paper/Documents/work/Dev/Dev/Common/MedusaExtension/ExtensionLib/Bin/ios,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = MedusaExtension;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Debug;
+		};
+		D87CC2EF154FC6C500AAFE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CXX0X_EXTENSIONS = NO;
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/SPII.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/paper/Documents/unfuddle/fjz_fjz/Medusa/MedusaExtension/Lib/Bin/mac/Frameworks,
+					/Users/paper/Documents/unfuddle/fjz_fjz/Medusa/MedusaExtension/Lib/Bin/ios/Frameworks,
+					"$(PROJECT_DIR)/ExtensionLib/ios/Nd",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					USE_FILE32API,
+					TARGET_OS_IPHONE,
+					_DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Lib/Common\"",
+					"\"$(SRCROOT)/../MedusaCore\"",
+					"\"$(SRCROOT)/../MedusaCore/CoreLib/Common\"",
+					"\"$(SRCROOT)/Lib/Common/freetype\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/../Lib/Bin/ios\\\\\\\"",
+					/Users/paper/Documents/unfuddle/fjz_fjz/Medusa/MedusaExtension/Lib/Bin/ios,
+					/Users/paper/Documents/work/Dev/Dev/Common/MedusaExtension/ExtensionLib/Bin/ios,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = MedusaExtension;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "armv7 armv7s armv6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87CC2C0154FC66100AAFE11 /* Build configuration list for PBXProject "MedusaExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87CC2DC154FC66100AAFE11 /* Debug */,
+				D87CC2DD154FC66100AAFE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87CC2ED154FC6C500AAFE11 /* Build configuration list for PBXNativeTarget "MedusaExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87CC2EE154FC6C500AAFE11 /* Debug */,
+				D87CC2EF154FC6C500AAFE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D87CC2BD154FC66100AAFE11 /* Project object */;
+}

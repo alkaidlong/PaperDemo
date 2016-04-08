@@ -1,0 +1,30 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+//服务器列表信息
+
+enum ServerUsageType
+	  {
+		LoginServer=1;
+		GameServer=2;
+	  }
+	  
+message ServerUsageItem
+{
+	required ServerUsageType Usage=1;
+	required uint32 ServerId=2;
+}
+	 
+	 
+message ServerListItem
+{
+
+	required uint32 Id=1;
+	repeated ServerUsageItem ServerUsages=2;
+	
+}
+
+message ServerList
+{
+	repeated ServerListItem Items=1;
+}

@@ -1,0 +1,28 @@
+//option optimize_for = LITE_RUNTIME;
+import "ServerPlayer.proto";
+import "LoginToken.proto";
+import "Mail.proto";
+import "SystemNotice.proto";
+import "PlayerNotice.proto";
+package GameProto;
+
+
+//玩家数据
+message ClientPlayer
+{
+	required bool IsEnableMusic=1;
+	required bool IsEnableEffect=2;
+	optional uint32 LastTimeChooseServerId = 3;
+	optional string LastTimeUserName = 4;
+	
+	optional ServerProto.LoginToken LoginToken = 10;//token
+	required ServerProto.Logic.ServerPlayer ServerPlayer=20;	//玩家数据
+	
+	repeated ServerProto.Logic.Mail		PromptMails	= 40;		//提示邮件
+	repeated ServerProto.Logic.Mail		RewardMails	= 41;		//奖励邮件
+	required uint32     UnreadMailCount=42;
+	
+	repeated ServerProto.Logic.SystemNotice		SystemNotices		= 51;		//系统公告
+	optional uint32 SystemNoticeVersion=52;				//系统公告修改版本号
+	optional uint64 PlayerNoticeMaxId = 54; //玩家公告的最大id
+}

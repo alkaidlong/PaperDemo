@@ -1,0 +1,13 @@
+class BattleConfig
+{
+    BattleConfig()
+    {
+
+    }
+
+    ~BattleConfig()
+    {
+
+    }
+
+}

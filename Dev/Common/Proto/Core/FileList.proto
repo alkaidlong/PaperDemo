@@ -1,0 +1,36 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+import "CoreDefines.proto";
+
+//文件列表
+message FileList
+{
+  message FileCoder
+	{
+    enum FileCoderType
+    {
+      LZMAEncoder=1;
+      XOREncoder=2;
+      
+      LZMADecoder=101;
+      XORDecoder=102;
+    }
+  
+    required FileCoderType Type=1;
+    optional uint32 Info=2; 
+	}
+	//文件
+	message FileItem
+	{
+		required uint32 FileId=1;	//file id
+		required int32 DirIndex=2;	//dir id,-1 means root
+		required string Name=3;	//文件名
+		required string MD5=4;	//md5码
+		repeated FileCoder Coders=5; //文件处理流，为了解压方便，逆序存放
+		optional string OriginalName=6; //原始的文件名
+	}
+
+	required Version CurVersion=1;	//版本号
+	repeated string Dirs=2;		//路径，末尾包括'/'或'\'
+	repeated FileItem Files=3;
+}

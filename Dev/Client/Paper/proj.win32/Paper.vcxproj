@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B8BF9E81-35FD-4582-BA1C-B85FA365BABB}</ProjectGuid>
+    <RootNamespace>HelloCppwin32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\cocos2dx\cocos2dx;$(ProjectDir)..\..\cocos2dx\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\cocos2dx\CCplatform\win32;$(ProjectDir)..\..\cocos2dx\CocosDenshion\include;..\;..\..\..\Common\PaperMessage;..\..\..\Common\PaperCore;..\..\..\Common\PaperCore\Proto\Client;..\..\..\Common\PaperCore\Proto\Server\Auth;..\..\..\Common\PaperCore\Proto\Server\Common;..\..\..\Common\PaperCore\Proto\Server\Config;..\..\..\Common\PaperCore\Proto\Server\Logic;..\..\..\Common\MedusaCore\CoreLib;..\..\..\Common\MedusaCore\CoreLib\Common\zip;..\..\..\Common\MedusaCore\CoreLib\Common\angelscript\include;..\..\..\Common\MedusaCore;..\..\..\Common\MedusaCore\CoreLib\Common;..\..\..\Common\MedusaCore\CoreLib\Common\zlib;..\..\..\Common\MedusaCore\Core\Proto\Client;..\..\..\Common\MedusaExtension;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MEDUSA_COCOS2DX;ENABLE_VLD=1;COCOS2D_DEBUG=1;WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%$(IntDir)%(RelativeDir)</ObjectFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;libcocos2d.lib;libCocosDenshion.lib;pthreadVCE2.lib;libiconv.lib;libcurl_imp.lib;MedusaExtension.lib;PaperCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\..\Common\MedusaCore\Lib\pthread\Lib;..\..\..\Common\MedusaCore\Lib\vld;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /Q /Y /I "$(ProjectDir)..\Res" "$(OutDir)Res"
+xcopy  /Q /Y /I "$(ProjectDir)..\FileList.bin" "$(OutDir)"
+xcopy  /Q /Y /I "$(ProjectDir)..\FileSystem.bin" "$(OutDir)"
+xcopy  /Q /Y /I "$(ProjectDir)PrepareDebug.bat" "$(OutDir)"
+
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\cocos2dx;$(ProjectDir)..\..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\..\cocos2dx\platform\third_party\win32\OGLES;..\Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glew32.lib;libcocos2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AppDelegate.cpp" />
+    <ClCompile Include="..\Engine\Animation\AnimationBlock.cpp" />
+    <ClCompile Include="..\Engine\Animation\AnimationBlockPool.cpp" />
+    <ClCompile Include="..\Engine\Animation\AnimationEvent.cpp" />
+    <ClCompile Include="..\Engine\Animation\AnimationManager.cpp" />
+    <ClCompile Include="..\Engine\Animation\AnimationModelManager.cpp" />
+    <ClCompile Include="..\Engine\Animation\AnimationPool.cpp" />
+    <ClCompile Include="..\Engine\Animation\IAnimation.cpp" />
+    <ClCompile Include="..\Engine\Audio\AudioManager.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControl.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlButton.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlColourPicker.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlHuePicker.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlPotentiometer.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlSlider.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlStepper.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlSwitch.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCControlUtils.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCInvocation.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCControlExtension\CCScale9Sprite.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCEditBox\CCEditBox.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplAndroid.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplNone.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplTizen.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplWin.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCEditBox\Win32InputBox.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCScrollView\CCScrollView.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCScrollView\CCSorting.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCScrollView\CCTableView.cpp" />
+    <ClCompile Include="..\Engine\Extension\GUI\CCScrollView\CCTableViewCell.cpp" />
+    <ClCompile Include="..\Engine\Extension\Rocker\HRocker.cpp" />
+    <ClCompile Include="..\Engine\Resource\ResourceManager.cpp" />
+    <ClCompile Include="..\Engine\Resource\TextureLoadEventArg.cpp" />
+    <ClCompile Include="..\Game\Battle\BattleManager.cpp" />
+    <ClCompile Include="..\Game\Battle\Data\BufferProperty.cpp" />
+    <ClCompile Include="..\Game\Battle\Data\RoleProperty.cpp" />
+    <ClCompile Include="..\Game\Battle\Data\SkillProperty.cpp" />
+    <ClCompile Include="..\Game\Battle\Logic\Buffer.cpp" />
+    <ClCompile Include="..\Game\Battle\Logic\Mission.cpp" />
+    <ClCompile Include="..\Game\Battle\Logic\Role.cpp" />
+    <ClCompile Include="..\Game\Battle\Logic\Skill.cpp" />
+    <ClCompile Include="..\Game\Battle\UI\BattlefieldLayer.cpp" />
+    <ClCompile Include="..\Game\Battle\UI\BattleLayer.cpp" />
+    <ClCompile Include="..\Game\Battle\UI\BattlePauseLayer.cpp" />
+    <ClCompile Include="..\Game\Battle\UI\BattleScene.cpp" />
+    <ClCompile Include="..\Game\Battle\UI\BattleSkillButtonLayer.cpp" />
+    <ClCompile Include="..\Game\Battle\UI\BattleMissionProgressLayer.cpp" />
+    <ClCompile Include="..\Game\Calculation.cpp" />
+    <ClCompile Include="..\Game\PaperGame.cpp" />
+    <ClCompile Include="..\Game\PaperScript.cpp" />
+    <ClCompile Include="..\Game\UI\Main\GameBlackAroundLayer.cpp" />
+    <ClCompile Include="..\Game\UI\Main\HeroIconLayer.cpp" />
+    <ClCompile Include="..\Game\UI\Main\MainScene.cpp" />
+    <ClCompile Include="..\Game\UI\Main\SelectHeroLayer.cpp" />
+    <ClCompile Include="..\Game\UI\Main\SelectHeroListIconLayer.cpp" />
+    <ClCompile Include="..\Game\UI\Main\SelectHeroListTabLayer.cpp" />
+    <ClCompile Include="..\PaperVersion.cpp" />
+    <ClCompile Include="..\Scene\Editor\LayerEditor.cpp" />
+    <ClCompile Include="..\Scene\Element\BMPLabelNode.cpp" />
+    <ClCompile Include="..\Scene\Element\ButtonNode.cpp" />
+    <ClCompile Include="..\Scene\Element\FrameNode.cpp" />
+    <ClCompile Include="..\Scene\Element\LabelNode.cpp" />
+    <ClCompile Include="..\Scene\Element\LayerNode.cpp" />
+    <ClCompile Include="..\Scene\Element\EditBoxNode.cpp" />
+    <ClCompile Include="..\Scene\Element\ListBoxDelegate.cpp" />
+    <ClCompile Include="..\Scene\Element\ListBoxNode.cpp" />
+    <ClCompile Include="..\Scene\Element\NormalLayerNode.cpp" />
+    <ClCompile Include="..\Scene\Element\ProgressBarNode.cpp" />
+    <ClCompile Include="..\Scene\Element\SpriteNode.cpp" />
+    <ClCompile Include="..\Scene\Element\TriggerNode.cpp" />
+    <ClCompile Include="..\Scene\Element\TriggerRefNode.cpp" />
+    <ClCompile Include="..\Scene\Event\EventArg\CharInputEventArg.cpp" />
+    <ClCompile Include="..\Scene\Event\EventArg\KeyDownEventArg.cpp" />
+    <ClCompile Include="..\Scene\Event\EventArg\KeyUpEventArg.cpp" />
+    <ClCompile Include="..\Scene\Event\EventArg\ScrollEventArg.cpp" />
+    <ClCompile Include="..\Scene\Event\EventArg\TouchEventArg.cpp" />
+    <ClCompile Include="..\Scene\Event\InputDispatcher.cpp" />
+    <ClCompile Include="..\Scene\Event\InputManager.cpp" />
+    <ClCompile Include="..\Scene\Event\Touch.cpp" />
+    <ClCompile Include="..\Scene\Gesture\DoubleTapGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\DragGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\IGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\LongPressGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\PanGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\PinchGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\RotationGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\SwipeGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\Gesture\TapGestureRecognizer.cpp" />
+    <ClCompile Include="..\Scene\INode.cpp" />
+    <ClCompile Include="..\Scene\IScene.cpp" />
+    <ClCompile Include="..\Scene\SceneManager.cpp" />
+    <ClCompile Include="..\Scene\SystemUI\ActivityLayer.cpp" />
+    <ClCompile Include="..\Scene\SystemUI\AlertLayer.cpp" />
+    <ClCompile Include="..\Scene\SystemUI\android\SystemUI.cpp" />
+    <ClCompile Include="..\Scene\SystemUI\linux\SystemUI.cpp" />
+    <ClCompile Include="..\Scene\SystemUI\ToastLayer.cpp" />
+    <ClCompile Include="..\Scene\SystemUI\win\SystemUI.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AppDelegate.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationBlock.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationBlockPool.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationEvent.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationHeaders.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationManager.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationModelManager.h" />
+    <ClInclude Include="..\Engine\Animation\AnimationPool.h" />
+    <ClInclude Include="..\Engine\Animation\IAnimation.h" />
+    <ClInclude Include="..\Engine\Audio\AudioManager.h" />
+    <ClInclude Include="..\Engine\Extension\cocos-ext.h" />
+    <ClInclude Include="..\Engine\Extension\ExtensionMacros.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControl.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlButton.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlColourPicker.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlExtensions.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlHuePicker.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlPotentiometer.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlSlider.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlStepper.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlSwitch.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCControlUtils.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCInvocation.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCControlExtension\CCScale9Sprite.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBox.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImpl.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplAndroid.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplIOS.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplMac.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplTizen.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplWin.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCEditBox\Win32InputBox.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCScrollView\CCScrollView.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCScrollView\CCSorting.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCScrollView\CCTableView.h" />
+    <ClInclude Include="..\Engine\Extension\GUI\CCScrollView\CCTableViewCell.h" />
+    <ClInclude Include="..\Engine\Extension\Rocker\HRocker.h" />
+    <ClInclude Include="..\Engine\Resource\ResourceManager.h" />
+    <ClInclude Include="..\Engine\Resource\TextureLoadEventArg.h" />
+    <ClInclude Include="..\Game\Battle\BattleCommon.h" />
+    <ClInclude Include="..\Game\Battle\BattleManager.h" />
+    <ClInclude Include="..\Game\Battle\Data\BufferProperty.h" />
+    <ClInclude Include="..\Game\Battle\Data\RoleProperty.h" />
+    <ClInclude Include="..\Game\Battle\Data\SkillProperty.h" />
+    <ClInclude Include="..\Game\Battle\Logic\Buffer.h" />
+    <ClInclude Include="..\Game\Battle\Logic\Mission.h" />
+    <ClInclude Include="..\Game\Battle\Logic\Role.h" />
+    <ClInclude Include="..\Game\Battle\Logic\Skill.h" />
+    <ClInclude Include="..\Game\Battle\UI\BattlefieldLayer.h" />
+    <ClInclude Include="..\Game\Battle\UI\BattleLayer.h" />
+    <ClInclude Include="..\Game\Battle\UI\BattlePauseLayer.h" />
+    <ClInclude Include="..\Game\Battle\UI\BattleScene.h" />
+    <ClInclude Include="..\Game\Battle\UI\BattleSkillButtonLayer.h" />
+    <ClInclude Include="..\Game\Battle\UI\BattleMissionProgressLayer.h" />
+    <ClInclude Include="..\Game\Calculation.h" />
+    <ClInclude Include="..\Game\PaperGame.h" />
+    <ClInclude Include="..\Game\PaperScript.h" />
+    <ClInclude Include="..\Game\UI\Main\GameBlackAroundLayer.h" />
+    <ClInclude Include="..\Game\UI\Main\HeroIconLayer.h" />
+    <ClInclude Include="..\Game\UI\Main\MainScene.h" />
+    <ClInclude Include="..\Game\UI\Main\SelectHeroLayer.h" />
+    <ClInclude Include="..\Game\UI\Main\SelectHeroListIconLayer.h" />
+    <ClInclude Include="..\Game\UI\Main\SelectHeroListTabLayer.h" />
+    <ClInclude Include="..\PaperHeader.h" />
+    <ClInclude Include="..\PaperVersion.h" />
+    <ClInclude Include="..\Scene\Editor\LayerEditor.h" />
+    <ClInclude Include="..\Scene\Editor\LayerFactory.h" />
+    <ClInclude Include="..\Scene\Element\BMPLabelNode.h" />
+    <ClInclude Include="..\Scene\Element\ButtonNode.h" />
+    <ClInclude Include="..\Scene\Element\FrameNode.h" />
+    <ClInclude Include="..\Scene\Element\LabelNode.h" />
+    <ClInclude Include="..\Scene\Element\LayerNode.h" />
+    <ClInclude Include="..\Scene\Element\EditBoxNode.h" />
+    <ClInclude Include="..\Scene\Element\ListBoxDelegate.h" />
+    <ClInclude Include="..\Scene\Element\ListBoxNode.h" />
+    <ClInclude Include="..\Scene\Element\NormalLayerNode.h" />
+    <ClInclude Include="..\Scene\Element\ProgressBarNode.h" />
+    <ClInclude Include="..\Scene\Element\SpriteNode.h" />
+    <ClInclude Include="..\Scene\Element\TriggerNode.h" />
+    <ClInclude Include="..\Scene\Element\TriggerRefNode.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\CharInputEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\BaseGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\DoubleTapGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\DragBeganGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\DragEndGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\DragFailedGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\DragingGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\LongPressBeganGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\LongPressFailedGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\PanBeginGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\PanEndGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\PanGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\PinchGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\SwipeGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\Gesture\TapGestureEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\KeyDownEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\KeyUpEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\ScrollEventArg.h" />
+    <ClInclude Include="..\Scene\Event\EventArg\TouchEventArg.h" />
+    <ClInclude Include="..\Scene\Event\IInputHandler.h" />
+    <ClInclude Include="..\Scene\Event\InputDispatcher.h" />
+    <ClInclude Include="..\Scene\Event\InputManager.h" />
+    <ClInclude Include="..\Scene\Event\Touch.h" />
+    <ClInclude Include="..\Scene\Gesture\DoubleTapGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\DragGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\IGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\LongPressGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\PanGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\PinchGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\RotationGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\SwipeGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\Gesture\TapGestureRecognizer.h" />
+    <ClInclude Include="..\Scene\INode.h" />
+    <ClInclude Include="..\Scene\IScene.h" />
+    <ClInclude Include="..\Scene\SceneManager.h" />
+    <ClInclude Include="..\Scene\SystemUI\ActivityLayer.h" />
+    <ClInclude Include="..\Scene\SystemUI\AlertLayer.h" />
+    <ClInclude Include="..\Scene\SystemUI\ios\Toast+UIView.h" />
+    <ClInclude Include="..\Scene\SystemUI\SystemUI.h" />
+    <ClInclude Include="..\Scene\SystemUI\ToastLayer.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplIOS.mm" />
+    <None Include="..\Engine\Extension\GUI\CCEditBox\CCEditBoxImplMac.mm" />
+    <None Include="..\Scene\SystemUI\ios\SystemUI.mm" />
+    <None Include="..\Scene\SystemUI\ios\Toast+UIView.m" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,17 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+import "CoreDefines.proto";
+
+//更新文件
+message FileUpdateItem
+{
+	required string path=1;	//路径
+	required string md5=2;	//md5码
+}
+
+//资源文件更新列表
+message FileUpdateList
+{
+	required Version version=1;	//版本号
+	repeated FileUpdateItem items=2;	//文件列表
+}

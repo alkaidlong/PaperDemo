@@ -1,0 +1,30 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+//服务器信息
+message ServerConfigItem
+{
+	  enum ServerStatus
+	  {
+		OK=0;
+		Maintain=1;
+		Error=2; 
+	  }
+  
+	  enum ServerType
+	  {
+		TcpServer=0;
+		MockServer=1;
+	  }
+  
+	required uint32 Id=1;
+	required string Address=2;
+	required uint32 Port=3;
+	required ServerStatus Status=4;
+	required ServerType Type=5;
+}
+
+message ServerConfig
+{
+	repeated ServerConfigItem Items=1;
+}

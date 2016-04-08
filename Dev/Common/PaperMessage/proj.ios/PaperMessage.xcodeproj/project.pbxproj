@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		206F92E81876CB300045F1ED /* libPaperCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 206F92E71876CB300045F1ED /* libPaperCore.a */; };
+		20C637D5196FCBD3002378FC /* AuthLoginRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6375C196FCBD2002378FC /* AuthLoginRequest.cpp */; };
+		20C637D6196FCBD3002378FC /* AuthLoginRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6375D196FCBD2002378FC /* AuthLoginRequest.h */; };
+		20C637D7196FCBD3002378FC /* BaseRequestGameMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6375E196FCBD2002378FC /* BaseRequestGameMessage.h */; };
+		20C637D8196FCBD3002378FC /* BaseRequestLoginGameMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6375F196FCBD2002378FC /* BaseRequestLoginGameMessage.h */; };
+		20C637D9196FCBD3002378FC /* ChallengeMissionRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63761196FCBD2002378FC /* ChallengeMissionRequest.cpp */; };
+		20C637DA196FCBD3002378FC /* ChallengeMissionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63762196FCBD2002378FC /* ChallengeMissionRequest.h */; };
+		20C637DB196FCBD3002378FC /* MissionCheckOutRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63763196FCBD2002378FC /* MissionCheckOutRequest.cpp */; };
+		20C637DC196FCBD3002378FC /* MissionCheckOutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63764196FCBD2002378FC /* MissionCheckOutRequest.h */; };
+		20C637DD196FCBD3002378FC /* MissionResetRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63765196FCBD2002378FC /* MissionResetRequest.cpp */; };
+		20C637DE196FCBD3002378FC /* MissionResetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63766196FCBD2002378FC /* MissionResetRequest.h */; };
+		20C637DF196FCBD3002378FC /* MissionSweepRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63767196FCBD2002378FC /* MissionSweepRequest.cpp */; };
+		20C637E0196FCBD3002378FC /* MissionSweepRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63768196FCBD2002378FC /* MissionSweepRequest.h */; };
+		20C637E1196FCBD3002378FC /* PVPCheckAndPlayerDataRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63769196FCBD2002378FC /* PVPCheckAndPlayerDataRequest.cpp */; };
+		20C637E2196FCBD3002378FC /* PVPCheckAndPlayerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6376A196FCBD2002378FC /* PVPCheckAndPlayerDataRequest.h */; };
+		20C637E3196FCBD3002378FC /* BaseCustomGameMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6376C196FCBD2002378FC /* BaseCustomGameMessage.cpp */; };
+		20C637E4196FCBD3002378FC /* BaseCustomGameMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6376D196FCBD2002378FC /* BaseCustomGameMessage.h */; };
+		20C637E5196FCBD3002378FC /* GameMessageFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6376E196FCBD2002378FC /* GameMessageFactory.cpp */; };
+		20C637E6196FCBD3002378FC /* GameMessageFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6376F196FCBD2002378FC /* GameMessageFactory.h */; };
+		20C637E7196FCBD3002378FC /* IMessageCenter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63770196FCBD2002378FC /* IMessageCenter.cpp */; };
+		20C637E8196FCBD3002378FC /* IMessageCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63771196FCBD2002378FC /* IMessageCenter.h */; };
+		20C637E9196FCBD3002378FC /* AccumlateChargeAwardRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63773196FCBD2002378FC /* AccumlateChargeAwardRequest.cpp */; };
+		20C637EA196FCBD3002378FC /* AccumlateChargeAwardRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63774196FCBD2002378FC /* AccumlateChargeAwardRequest.h */; };
+		20C637EB196FCBD3002378FC /* AddBloodyBuffRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63775196FCBD2002378FC /* AddBloodyBuffRequest.cpp */; };
+		20C637EC196FCBD3002378FC /* AddBloodyBuffRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63776196FCBD2002378FC /* AddBloodyBuffRequest.h */; };
+		20C637ED196FCBD3002378FC /* BeginBloodyRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63777196FCBD2002378FC /* BeginBloodyRequest.cpp */; };
+		20C637EE196FCBD3002378FC /* BeginBloodyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63778196FCBD2002378FC /* BeginBloodyRequest.h */; };
+		20C637EF196FCBD3002378FC /* BloodyRankListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63779196FCBD2002378FC /* BloodyRankListRequest.cpp */; };
+		20C637F0196FCBD3002378FC /* BloodyRankListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6377A196FCBD2002378FC /* BloodyRankListRequest.h */; };
+		20C637F1196FCBD3002378FC /* BloodySettlementRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6377B196FCBD2002378FC /* BloodySettlementRequest.cpp */; };
+		20C637F2196FCBD3002378FC /* BloodySettlementRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6377C196FCBD2002378FC /* BloodySettlementRequest.h */; };
+		20C637F3196FCBD3002378FC /* BuyItemRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6377D196FCBD2002378FC /* BuyItemRequest.cpp */; };
+		20C637F4196FCBD3002378FC /* BuyItemRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6377E196FCBD2002378FC /* BuyItemRequest.h */; };
+		20C637F5196FCBD3002378FC /* BuyPowerRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6377F196FCBD2002378FC /* BuyPowerRequest.cpp */; };
+		20C637F6196FCBD3002378FC /* BuyPowerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63780196FCBD2002378FC /* BuyPowerRequest.h */; };
+		20C637F7196FCBD3002378FC /* CardActivityRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63781196FCBD2002378FC /* CardActivityRequest.cpp */; };
+		20C637F8196FCBD3002378FC /* CardActivityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63782196FCBD2002378FC /* CardActivityRequest.h */; };
+		20C637F9196FCBD3002378FC /* ChangeAuraRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63783196FCBD2002378FC /* ChangeAuraRequest.cpp */; };
+		20C637FA196FCBD3002378FC /* ChangeAuraRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63784196FCBD2002378FC /* ChangeAuraRequest.h */; };
+		20C637FB196FCBD3002378FC /* ChangeEquipRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63785196FCBD2002378FC /* ChangeEquipRequest.cpp */; };
+		20C637FC196FCBD3002378FC /* ChangeEquipRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63786196FCBD2002378FC /* ChangeEquipRequest.h */; };
+		20C637FD196FCBD3002378FC /* ChangeForceIndexRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63787196FCBD2002378FC /* ChangeForceIndexRequest.cpp */; };
+		20C637FE196FCBD3002378FC /* ChangeForceIndexRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63788196FCBD2002378FC /* ChangeForceIndexRequest.h */; };
+		20C637FF196FCBD3002378FC /* ChangeRuneRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63789196FCBD2002378FC /* ChangeRuneRequest.cpp */; };
+		20C63800196FCBD3002378FC /* ChangeRuneRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6378A196FCBD2002378FC /* ChangeRuneRequest.h */; };
+		20C63801196FCBD3002378FC /* CreatePlayerRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6378B196FCBD2002378FC /* CreatePlayerRequest.cpp */; };
+		20C63802196FCBD3002378FC /* CreatePlayerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6378C196FCBD2002378FC /* CreatePlayerRequest.h */; };
+		20C63803196FCBD3002378FC /* DrawRuneRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6378D196FCBD2002378FC /* DrawRuneRequest.cpp */; };
+		20C63804196FCBD3002378FC /* DrawRuneRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6378E196FCBD2002378FC /* DrawRuneRequest.h */; };
+		20C63805196FCBD3002378FC /* DumpPlayerDataRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6378F196FCBD2002378FC /* DumpPlayerDataRequest.cpp */; };
+		20C63806196FCBD3002378FC /* DumpPlayerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63790196FCBD2002378FC /* DumpPlayerDataRequest.h */; };
+		20C63807196FCBD3002378FC /* ExchangeAuraRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63791196FCBD2002378FC /* ExchangeAuraRequest.cpp */; };
+		20C63808196FCBD3002378FC /* ExchangeAuraRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63792196FCBD2002378FC /* ExchangeAuraRequest.h */; };
+		20C63809196FCBD3002378FC /* ExchangePVPScoreRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63793196FCBD2002378FC /* ExchangePVPScoreRequest.cpp */; };
+		20C6380A196FCBD3002378FC /* ExchangePVPScoreRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63794196FCBD2002378FC /* ExchangePVPScoreRequest.h */; };
+		20C6380B196FCBD3002378FC /* ExchangeSoulToHeroRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63795196FCBD2002378FC /* ExchangeSoulToHeroRequest.cpp */; };
+		20C6380C196FCBD3002378FC /* ExchangeSoulToHeroRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63796196FCBD2002378FC /* ExchangeSoulToHeroRequest.h */; };
+		20C6380D196FCBD3002378FC /* FragmentRobMatchRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63797196FCBD2002378FC /* FragmentRobMatchRequest.cpp */; };
+		20C6380E196FCBD3002378FC /* FragmentRobMatchRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C63798196FCBD2002378FC /* FragmentRobMatchRequest.h */; };
+		20C6380F196FCBD3002378FC /* GetBloodyChallengeGroupRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C63799196FCBD2002378FC /* GetBloodyChallengeGroupRequest.cpp */; };
+		20C63810196FCBD3002378FC /* GetBloodyChallengeGroupRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6379A196FCBD2002378FC /* GetBloodyChallengeGroupRequest.h */; };
+		20C63811196FCBD3002378FC /* GetCDKPackageRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6379B196FCBD2002378FC /* GetCDKPackageRequest.cpp */; };
+		20C63812196FCBD3002378FC /* GetCDKPackageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6379C196FCBD2002378FC /* GetCDKPackageRequest.h */; };
+		20C63813196FCBD3002378FC /* GetChapterAwardRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6379D196FCBD2002378FC /* GetChapterAwardRequest.cpp */; };
+		20C63814196FCBD3002378FC /* GetChapterAwardRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C6379E196FCBD2002378FC /* GetChapterAwardRequest.h */; };
+		20C63815196FCBD3002378FC /* GetMailGiftRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C6379F196FCBD2002378FC /* GetMailGiftRequest.cpp */; };
+		20C63816196FCBD3002378FC /* GetMailGiftRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637A0196FCBD2002378FC /* GetMailGiftRequest.h */; };
+		20C63817196FCBD3002378FC /* GetPVPAwardRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637A1196FCBD2002378FC /* GetPVPAwardRequest.cpp */; };
+		20C63818196FCBD3002378FC /* GetPVPAwardRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637A2196FCBD2002378FC /* GetPVPAwardRequest.h */; };
+		20C63819196FCBD3002378FC /* GuideFinishRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637A3196FCBD2002378FC /* GuideFinishRequest.cpp */; };
+		20C6381A196FCBD3002378FC /* GuideFinishRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637A4196FCBD2002378FC /* GuideFinishRequest.h */; };
+		20C6381B196FCBD3002378FC /* HeroBreakRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637A5196FCBD2002378FC /* HeroBreakRequest.cpp */; };
+		20C6381C196FCBD3002378FC /* HeroBreakRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637A6196FCBD2002378FC /* HeroBreakRequest.h */; };
+		20C6381D196FCBD3002378FC /* HeroInheritRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637A7196FCBD2002378FC /* HeroInheritRequest.cpp */; };
+		20C6381E196FCBD3002378FC /* HeroInheritRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637A8196FCBD2002378FC /* HeroInheritRequest.h */; };
+		20C6381F196FCBD3002378FC /* HireHeroRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637A9196FCBD2002378FC /* HireHeroRequest.cpp */; };
+		20C63820196FCBD3002378FC /* HireHeroRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637AA196FCBD2002378FC /* HireHeroRequest.h */; };
+		20C63821196FCBD3002378FC /* OrderRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637AB196FCBD2002378FC /* OrderRequest.cpp */; };
+		20C63822196FCBD3002378FC /* OrderRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637AC196FCBD2002378FC /* OrderRequest.h */; };
+		20C63823196FCBD3002378FC /* OrderStatusRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637AD196FCBD2002378FC /* OrderStatusRequest.cpp */; };
+		20C63824196FCBD3002378FC /* OrderStatusRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637AE196FCBD2002378FC /* OrderStatusRequest.h */; };
+		20C63825196FCBD3002378FC /* OtherPlayerDataRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637AF196FCBD2002378FC /* OtherPlayerDataRequest.cpp */; };
+		20C63826196FCBD3002378FC /* OtherPlayerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637B0196FCBD2002378FC /* OtherPlayerDataRequest.h */; };
+		20C63827196FCBD3002378FC /* PVPForcedHerosRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637B1196FCBD2002378FC /* PVPForcedHerosRequest.cpp */; };
+		20C63828196FCBD3002378FC /* PVPForcedHerosRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637B2196FCBD2002378FC /* PVPForcedHerosRequest.h */; };
+		20C63829196FCBD3002378FC /* PVPRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637B3196FCBD2002378FC /* PVPRequest.cpp */; };
+		20C6382A196FCBD3002378FC /* PVPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637B4196FCBD2002378FC /* PVPRequest.h */; };
+		20C6382B196FCBD3002378FC /* RankListRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637B5196FCBD2002378FC /* RankListRequest.cpp */; };
+		20C6382C196FCBD3002378FC /* RankListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637B6196FCBD3002378FC /* RankListRequest.h */; };
+		20C6382D196FCBD3002378FC /* RefreshPlayerDataRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637B7196FCBD3002378FC /* RefreshPlayerDataRequest.cpp */; };
+		20C6382E196FCBD3002378FC /* RefreshPlayerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637B8196FCBD3002378FC /* RefreshPlayerDataRequest.h */; };
+		20C6382F196FCBD3002378FC /* RefreshPVPScoreRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637B9196FCBD3002378FC /* RefreshPVPScoreRequest.cpp */; };
+		20C63830196FCBD3002378FC /* RefreshPVPScoreRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637BA196FCBD3002378FC /* RefreshPVPScoreRequest.h */; };
+		20C63831196FCBD3002378FC /* SellEquipRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637BB196FCBD3002378FC /* SellEquipRequest.cpp */; };
+		20C63832196FCBD3002378FC /* SellEquipRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637BC196FCBD3002378FC /* SellEquipRequest.h */; };
+		20C63833196FCBD3002378FC /* SevenDayGiftRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637BD196FCBD3002378FC /* SevenDayGiftRequest.cpp */; };
+		20C63834196FCBD3002378FC /* SevenDayGiftRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637BE196FCBD3002378FC /* SevenDayGiftRequest.h */; };
+		20C63835196FCBD3002378FC /* SignActivityRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637BF196FCBD3002378FC /* SignActivityRequest.cpp */; };
+		20C63836196FCBD3002378FC /* SignActivityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637C0196FCBD3002378FC /* SignActivityRequest.h */; };
+		20C63837196FCBD3002378FC /* TrainHeroAcceptRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637C1196FCBD3002378FC /* TrainHeroAcceptRequest.cpp */; };
+		20C63838196FCBD3002378FC /* TrainHeroAcceptRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637C2196FCBD3002378FC /* TrainHeroAcceptRequest.h */; };
+		20C63839196FCBD3002378FC /* TrainHeroRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637C3196FCBD3002378FC /* TrainHeroRequest.cpp */; };
+		20C6383A196FCBD3002378FC /* TrainHeroRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637C4196FCBD3002378FC /* TrainHeroRequest.h */; };
+		20C6383B196FCBD3002378FC /* UpgradeActivityRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637C5196FCBD3002378FC /* UpgradeActivityRequest.cpp */; };
+		20C6383C196FCBD3002378FC /* UpgradeActivityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637C6196FCBD3002378FC /* UpgradeActivityRequest.h */; };
+		20C6383D196FCBD3002378FC /* UpgradeEquipRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637C7196FCBD3002378FC /* UpgradeEquipRequest.cpp */; };
+		20C6383E196FCBD3002378FC /* UpgradeEquipRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637C8196FCBD3002378FC /* UpgradeEquipRequest.h */; };
+		20C6383F196FCBD3002378FC /* UpgradePetRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637C9196FCBD3002378FC /* UpgradePetRequest.cpp */; };
+		20C63840196FCBD3002378FC /* UpgradePetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637CA196FCBD3002378FC /* UpgradePetRequest.h */; };
+		20C63841196FCBD3002378FC /* UpgradeRuneRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637CB196FCBD3002378FC /* UpgradeRuneRequest.cpp */; };
+		20C63842196FCBD3002378FC /* UpgradeRuneRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637CC196FCBD3002378FC /* UpgradeRuneRequest.h */; };
+		20C63843196FCBD3002378FC /* UpgradeSkillRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637CD196FCBD3002378FC /* UpgradeSkillRequest.cpp */; };
+		20C63844196FCBD3002378FC /* UpgradeSkillRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637CE196FCBD3002378FC /* UpgradeSkillRequest.h */; };
+		20C63845196FCBD3002378FC /* UseItemRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637CF196FCBD3002378FC /* UseItemRequest.cpp */; };
+		20C63846196FCBD3002378FC /* UseItemRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637D0196FCBD3002378FC /* UseItemRequest.h */; };
+		20C63847196FCBD3002378FC /* WineActivityRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637D1196FCBD3002378FC /* WineActivityRequest.cpp */; };
+		20C63848196FCBD3002378FC /* WineActivityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637D2196FCBD3002378FC /* WineActivityRequest.h */; };
+		20C63849196FCBD3002378FC /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20C637D3196FCBD3002378FC /* Player.cpp */; };
+		20C6384A196FCBD3002378FC /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = 20C637D4196FCBD3002378FC /* Player.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		206F92E51876CB2B0045F1ED /* libMedusaCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMedusaCore.a; path = "../../../Client/proj.ios/DerivedData/Paper/Build/Products/Debug-iphoneos/libMedusaCore.a"; sourceTree = "<group>"; };
+		206F92E71876CB300045F1ED /* libPaperCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPaperCore.a; path = "../../../Client/proj.ios/DerivedData/Paper/Build/Products/Debug-iphoneos/libPaperCore.a"; sourceTree = "<group>"; };
+		20C6375C196FCBD2002378FC /* AuthLoginRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AuthLoginRequest.cpp; sourceTree = "<group>"; };
+		20C6375D196FCBD2002378FC /* AuthLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthLoginRequest.h; sourceTree = "<group>"; };
+		20C6375E196FCBD2002378FC /* BaseRequestGameMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestGameMessage.h; sourceTree = "<group>"; };
+		20C6375F196FCBD2002378FC /* BaseRequestLoginGameMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequestLoginGameMessage.h; sourceTree = "<group>"; };
+		20C63761196FCBD2002378FC /* ChallengeMissionRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChallengeMissionRequest.cpp; sourceTree = "<group>"; };
+		20C63762196FCBD2002378FC /* ChallengeMissionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeMissionRequest.h; sourceTree = "<group>"; };
+		20C63763196FCBD2002378FC /* MissionCheckOutRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MissionCheckOutRequest.cpp; sourceTree = "<group>"; };
+		20C63764196FCBD2002378FC /* MissionCheckOutRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionCheckOutRequest.h; sourceTree = "<group>"; };
+		20C63765196FCBD2002378FC /* MissionResetRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MissionResetRequest.cpp; sourceTree = "<group>"; };
+		20C63766196FCBD2002378FC /* MissionResetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionResetRequest.h; sourceTree = "<group>"; };
+		20C63767196FCBD2002378FC /* MissionSweepRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MissionSweepRequest.cpp; sourceTree = "<group>"; };
+		20C63768196FCBD2002378FC /* MissionSweepRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionSweepRequest.h; sourceTree = "<group>"; };
+		20C63769196FCBD2002378FC /* PVPCheckAndPlayerDataRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVPCheckAndPlayerDataRequest.cpp; sourceTree = "<group>"; };
+		20C6376A196FCBD2002378FC /* PVPCheckAndPlayerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPCheckAndPlayerDataRequest.h; sourceTree = "<group>"; };
+		20C6376C196FCBD2002378FC /* BaseCustomGameMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseCustomGameMessage.cpp; sourceTree = "<group>"; };
+		20C6376D196FCBD2002378FC /* BaseCustomGameMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCustomGameMessage.h; sourceTree = "<group>"; };
+		20C6376E196FCBD2002378FC /* GameMessageFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameMessageFactory.cpp; sourceTree = "<group>"; };
+		20C6376F196FCBD2002378FC /* GameMessageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMessageFactory.h; sourceTree = "<group>"; };
+		20C63770196FCBD2002378FC /* IMessageCenter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IMessageCenter.cpp; sourceTree = "<group>"; };
+		20C63771196FCBD2002378FC /* IMessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMessageCenter.h; sourceTree = "<group>"; };
+		20C63773196FCBD2002378FC /* AccumlateChargeAwardRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AccumlateChargeAwardRequest.cpp; sourceTree = "<group>"; };
+		20C63774196FCBD2002378FC /* AccumlateChargeAwardRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccumlateChargeAwardRequest.h; sourceTree = "<group>"; };
+		20C63775196FCBD2002378FC /* AddBloodyBuffRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AddBloodyBuffRequest.cpp; sourceTree = "<group>"; };
+		20C63776196FCBD2002378FC /* AddBloodyBuffRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBloodyBuffRequest.h; sourceTree = "<group>"; };
+		20C63777196FCBD2002378FC /* BeginBloodyRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BeginBloodyRequest.cpp; sourceTree = "<group>"; };
+		20C63778196FCBD2002378FC /* BeginBloodyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeginBloodyRequest.h; sourceTree = "<group>"; };
+		20C63779196FCBD2002378FC /* BloodyRankListRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloodyRankListRequest.cpp; sourceTree = "<group>"; };
+		20C6377A196FCBD2002378FC /* BloodyRankListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodyRankListRequest.h; sourceTree = "<group>"; };
+		20C6377B196FCBD2002378FC /* BloodySettlementRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BloodySettlementRequest.cpp; sourceTree = "<group>"; };
+		20C6377C196FCBD2002378FC /* BloodySettlementRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BloodySettlementRequest.h; sourceTree = "<group>"; };
+		20C6377D196FCBD2002378FC /* BuyItemRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuyItemRequest.cpp; sourceTree = "<group>"; };
+		20C6377E196FCBD2002378FC /* BuyItemRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyItemRequest.h; sourceTree = "<group>"; };
+		20C6377F196FCBD2002378FC /* BuyPowerRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuyPowerRequest.cpp; sourceTree = "<group>"; };
+		20C63780196FCBD2002378FC /* BuyPowerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyPowerRequest.h; sourceTree = "<group>"; };
+		20C63781196FCBD2002378FC /* CardActivityRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CardActivityRequest.cpp; sourceTree = "<group>"; };
+		20C63782196FCBD2002378FC /* CardActivityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardActivityRequest.h; sourceTree = "<group>"; };
+		20C63783196FCBD2002378FC /* ChangeAuraRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChangeAuraRequest.cpp; sourceTree = "<group>"; };
+		20C63784196FCBD2002378FC /* ChangeAuraRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAuraRequest.h; sourceTree = "<group>"; };
+		20C63785196FCBD2002378FC /* ChangeEquipRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChangeEquipRequest.cpp; sourceTree = "<group>"; };
+		20C63786196FCBD2002378FC /* ChangeEquipRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeEquipRequest.h; sourceTree = "<group>"; };
+		20C63787196FCBD2002378FC /* ChangeForceIndexRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChangeForceIndexRequest.cpp; sourceTree = "<group>"; };
+		20C63788196FCBD2002378FC /* ChangeForceIndexRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeForceIndexRequest.h; sourceTree = "<group>"; };
+		20C63789196FCBD2002378FC /* ChangeRuneRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ChangeRuneRequest.cpp; sourceTree = "<group>"; };
+		20C6378A196FCBD2002378FC /* ChangeRuneRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeRuneRequest.h; sourceTree = "<group>"; };
+		20C6378B196FCBD2002378FC /* CreatePlayerRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CreatePlayerRequest.cpp; sourceTree = "<group>"; };
+		20C6378C196FCBD2002378FC /* CreatePlayerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatePlayerRequest.h; sourceTree = "<group>"; };
+		20C6378D196FCBD2002378FC /* DrawRuneRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DrawRuneRequest.cpp; sourceTree = "<group>"; };
+		20C6378E196FCBD2002378FC /* DrawRuneRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRuneRequest.h; sourceTree = "<group>"; };
+		20C6378F196FCBD2002378FC /* DumpPlayerDataRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DumpPlayerDataRequest.cpp; sourceTree = "<group>"; };
+		20C63790196FCBD2002378FC /* DumpPlayerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DumpPlayerDataRequest.h; sourceTree = "<group>"; };
+		20C63791196FCBD2002378FC /* ExchangeAuraRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExchangeAuraRequest.cpp; sourceTree = "<group>"; };
+		20C63792196FCBD2002378FC /* ExchangeAuraRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeAuraRequest.h; sourceTree = "<group>"; };
+		20C63793196FCBD2002378FC /* ExchangePVPScoreRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExchangePVPScoreRequest.cpp; sourceTree = "<group>"; };
+		20C63794196FCBD2002378FC /* ExchangePVPScoreRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangePVPScoreRequest.h; sourceTree = "<group>"; };
+		20C63795196FCBD2002378FC /* ExchangeSoulToHeroRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExchangeSoulToHeroRequest.cpp; sourceTree = "<group>"; };
+		20C63796196FCBD2002378FC /* ExchangeSoulToHeroRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeSoulToHeroRequest.h; sourceTree = "<group>"; };
+		20C63797196FCBD2002378FC /* FragmentRobMatchRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FragmentRobMatchRequest.cpp; sourceTree = "<group>"; };
+		20C63798196FCBD2002378FC /* FragmentRobMatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FragmentRobMatchRequest.h; sourceTree = "<group>"; };
+		20C63799196FCBD2002378FC /* GetBloodyChallengeGroupRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetBloodyChallengeGroupRequest.cpp; sourceTree = "<group>"; };
+		20C6379A196FCBD2002378FC /* GetBloodyChallengeGroupRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetBloodyChallengeGroupRequest.h; sourceTree = "<group>"; };
+		20C6379B196FCBD2002378FC /* GetCDKPackageRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetCDKPackageRequest.cpp; sourceTree = "<group>"; };
+		20C6379C196FCBD2002378FC /* GetCDKPackageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCDKPackageRequest.h; sourceTree = "<group>"; };
+		20C6379D196FCBD2002378FC /* GetChapterAwardRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetChapterAwardRequest.cpp; sourceTree = "<group>"; };
+		20C6379E196FCBD2002378FC /* GetChapterAwardRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetChapterAwardRequest.h; sourceTree = "<group>"; };
+		20C6379F196FCBD2002378FC /* GetMailGiftRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetMailGiftRequest.cpp; sourceTree = "<group>"; };
+		20C637A0196FCBD2002378FC /* GetMailGiftRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMailGiftRequest.h; sourceTree = "<group>"; };
+		20C637A1196FCBD2002378FC /* GetPVPAwardRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GetPVPAwardRequest.cpp; sourceTree = "<group>"; };
+		20C637A2196FCBD2002378FC /* GetPVPAwardRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetPVPAwardRequest.h; sourceTree = "<group>"; };
+		20C637A3196FCBD2002378FC /* GuideFinishRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuideFinishRequest.cpp; sourceTree = "<group>"; };
+		20C637A4196FCBD2002378FC /* GuideFinishRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideFinishRequest.h; sourceTree = "<group>"; };
+		20C637A5196FCBD2002378FC /* HeroBreakRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroBreakRequest.cpp; sourceTree = "<group>"; };
+		20C637A6196FCBD2002378FC /* HeroBreakRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroBreakRequest.h; sourceTree = "<group>"; };
+		20C637A7196FCBD2002378FC /* HeroInheritRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeroInheritRequest.cpp; sourceTree = "<group>"; };
+		20C637A8196FCBD2002378FC /* HeroInheritRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroInheritRequest.h; sourceTree = "<group>"; };
+		20C637A9196FCBD2002378FC /* HireHeroRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HireHeroRequest.cpp; sourceTree = "<group>"; };
+		20C637AA196FCBD2002378FC /* HireHeroRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HireHeroRequest.h; sourceTree = "<group>"; };
+		20C637AB196FCBD2002378FC /* OrderRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrderRequest.cpp; sourceTree = "<group>"; };
+		20C637AC196FCBD2002378FC /* OrderRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderRequest.h; sourceTree = "<group>"; };
+		20C637AD196FCBD2002378FC /* OrderStatusRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OrderStatusRequest.cpp; sourceTree = "<group>"; };
+		20C637AE196FCBD2002378FC /* OrderStatusRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderStatusRequest.h; sourceTree = "<group>"; };
+		20C637AF196FCBD2002378FC /* OtherPlayerDataRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OtherPlayerDataRequest.cpp; sourceTree = "<group>"; };
+		20C637B0196FCBD2002378FC /* OtherPlayerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherPlayerDataRequest.h; sourceTree = "<group>"; };
+		20C637B1196FCBD2002378FC /* PVPForcedHerosRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVPForcedHerosRequest.cpp; sourceTree = "<group>"; };
+		20C637B2196FCBD2002378FC /* PVPForcedHerosRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPForcedHerosRequest.h; sourceTree = "<group>"; };
+		20C637B3196FCBD2002378FC /* PVPRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PVPRequest.cpp; sourceTree = "<group>"; };
+		20C637B4196FCBD2002378FC /* PVPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVPRequest.h; sourceTree = "<group>"; };
+		20C637B5196FCBD2002378FC /* RankListRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RankListRequest.cpp; sourceTree = "<group>"; };
+		20C637B6196FCBD3002378FC /* RankListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankListRequest.h; sourceTree = "<group>"; };
+		20C637B7196FCBD3002378FC /* RefreshPlayerDataRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RefreshPlayerDataRequest.cpp; sourceTree = "<group>"; };
+		20C637B8196FCBD3002378FC /* RefreshPlayerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshPlayerDataRequest.h; sourceTree = "<group>"; };
+		20C637B9196FCBD3002378FC /* RefreshPVPScoreRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RefreshPVPScoreRequest.cpp; sourceTree = "<group>"; };
+		20C637BA196FCBD3002378FC /* RefreshPVPScoreRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshPVPScoreRequest.h; sourceTree = "<group>"; };
+		20C637BB196FCBD3002378FC /* SellEquipRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SellEquipRequest.cpp; sourceTree = "<group>"; };
+		20C637BC196FCBD3002378FC /* SellEquipRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellEquipRequest.h; sourceTree = "<group>"; };
+		20C637BD196FCBD3002378FC /* SevenDayGiftRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SevenDayGiftRequest.cpp; sourceTree = "<group>"; };
+		20C637BE196FCBD3002378FC /* SevenDayGiftRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SevenDayGiftRequest.h; sourceTree = "<group>"; };
+		20C637BF196FCBD3002378FC /* SignActivityRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SignActivityRequest.cpp; sourceTree = "<group>"; };
+		20C637C0196FCBD3002378FC /* SignActivityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignActivityRequest.h; sourceTree = "<group>"; };
+		20C637C1196FCBD3002378FC /* TrainHeroAcceptRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainHeroAcceptRequest.cpp; sourceTree = "<group>"; };
+		20C637C2196FCBD3002378FC /* TrainHeroAcceptRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainHeroAcceptRequest.h; sourceTree = "<group>"; };
+		20C637C3196FCBD3002378FC /* TrainHeroRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainHeroRequest.cpp; sourceTree = "<group>"; };
+		20C637C4196FCBD3002378FC /* TrainHeroRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainHeroRequest.h; sourceTree = "<group>"; };
+		20C637C5196FCBD3002378FC /* UpgradeActivityRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpgradeActivityRequest.cpp; sourceTree = "<group>"; };
+		20C637C6196FCBD3002378FC /* UpgradeActivityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeActivityRequest.h; sourceTree = "<group>"; };
+		20C637C7196FCBD3002378FC /* UpgradeEquipRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpgradeEquipRequest.cpp; sourceTree = "<group>"; };
+		20C637C8196FCBD3002378FC /* UpgradeEquipRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeEquipRequest.h; sourceTree = "<group>"; };
+		20C637C9196FCBD3002378FC /* UpgradePetRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpgradePetRequest.cpp; sourceTree = "<group>"; };
+		20C637CA196FCBD3002378FC /* UpgradePetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradePetRequest.h; sourceTree = "<group>"; };
+		20C637CB196FCBD3002378FC /* UpgradeRuneRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpgradeRuneRequest.cpp; sourceTree = "<group>"; };
+		20C637CC196FCBD3002378FC /* UpgradeRuneRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeRuneRequest.h; sourceTree = "<group>"; };
+		20C637CD196FCBD3002378FC /* UpgradeSkillRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UpgradeSkillRequest.cpp; sourceTree = "<group>"; };
+		20C637CE196FCBD3002378FC /* UpgradeSkillRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeSkillRequest.h; sourceTree = "<group>"; };
+		20C637CF196FCBD3002378FC /* UseItemRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UseItemRequest.cpp; sourceTree = "<group>"; };
+		20C637D0196FCBD3002378FC /* UseItemRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseItemRequest.h; sourceTree = "<group>"; };
+		20C637D1196FCBD3002378FC /* WineActivityRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WineActivityRequest.cpp; sourceTree = "<group>"; };
+		20C637D2196FCBD3002378FC /* WineActivityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineActivityRequest.h; sourceTree = "<group>"; };
+		20C637D3196FCBD3002378FC /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		20C637D4196FCBD3002378FC /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		D87CC2E5154FC6C500AAFE11 /* libPaperMessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPaperMessage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D87CC2E2154FC6C500AAFE11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206F92E81876CB300045F1ED /* libPaperCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20C6375A196FCBD2002378FC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				20C6375B196FCBD2002378FC /* Auth */,
+				20C6375E196FCBD2002378FC /* BaseRequestGameMessage.h */,
+				20C6375F196FCBD2002378FC /* BaseRequestLoginGameMessage.h */,
+				20C63760196FCBD2002378FC /* Battle */,
+				20C6376B196FCBD2002378FC /* Custom */,
+				20C6376E196FCBD2002378FC /* GameMessageFactory.cpp */,
+				20C6376F196FCBD2002378FC /* GameMessageFactory.h */,
+				20C63770196FCBD2002378FC /* IMessageCenter.cpp */,
+				20C63771196FCBD2002378FC /* IMessageCenter.h */,
+				20C63772196FCBD2002378FC /* Logic */,
+				20C637D3196FCBD3002378FC /* Player.cpp */,
+				20C637D4196FCBD3002378FC /* Player.h */,
+			);
+			name = Message;
+			path = ../Message;
+			sourceTree = "<group>";
+		};
+		20C6375B196FCBD2002378FC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				20C6375C196FCBD2002378FC /* AuthLoginRequest.cpp */,
+				20C6375D196FCBD2002378FC /* AuthLoginRequest.h */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		20C63760196FCBD2002378FC /* Battle */ = {
+			isa = PBXGroup;
+			children = (
+				20C63761196FCBD2002378FC /* ChallengeMissionRequest.cpp */,
+				20C63762196FCBD2002378FC /* ChallengeMissionRequest.h */,
+				20C63763196FCBD2002378FC /* MissionCheckOutRequest.cpp */,
+				20C63764196FCBD2002378FC /* MissionCheckOutRequest.h */,
+				20C63765196FCBD2002378FC /* MissionResetRequest.cpp */,
+				20C63766196FCBD2002378FC /* MissionResetRequest.h */,
+				20C63767196FCBD2002378FC /* MissionSweepRequest.cpp */,
+				20C63768196FCBD2002378FC /* MissionSweepRequest.h */,
+				20C63769196FCBD2002378FC /* PVPCheckAndPlayerDataRequest.cpp */,
+				20C6376A196FCBD2002378FC /* PVPCheckAndPlayerDataRequest.h */,
+			);
+			path = Battle;
+			sourceTree = "<group>";
+		};
+		20C6376B196FCBD2002378FC /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				20C6376C196FCBD2002378FC /* BaseCustomGameMessage.cpp */,
+				20C6376D196FCBD2002378FC /* BaseCustomGameMessage.h */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		20C63772196FCBD2002378FC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				20C63773196FCBD2002378FC /* AccumlateChargeAwardRequest.cpp */,
+				20C63774196FCBD2002378FC /* AccumlateChargeAwardRequest.h */,
+				20C63775196FCBD2002378FC /* AddBloodyBuffRequest.cpp */,
+				20C63776196FCBD2002378FC /* AddBloodyBuffRequest.h */,
+				20C63777196FCBD2002378FC /* BeginBloodyRequest.cpp */,
+				20C63778196FCBD2002378FC /* BeginBloodyRequest.h */,
+				20C63779196FCBD2002378FC /* BloodyRankListRequest.cpp */,
+				20C6377A196FCBD2002378FC /* BloodyRankListRequest.h */,
+				20C6377B196FCBD2002378FC /* BloodySettlementRequest.cpp */,
+				20C6377C196FCBD2002378FC /* BloodySettlementRequest.h */,
+				20C6377D196FCBD2002378FC /* BuyItemRequest.cpp */,
+				20C6377E196FCBD2002378FC /* BuyItemRequest.h */,
+				20C6377F196FCBD2002378FC /* BuyPowerRequest.cpp */,
+				20C63780196FCBD2002378FC /* BuyPowerRequest.h */,
+				20C63781196FCBD2002378FC /* CardActivityRequest.cpp */,
+				20C63782196FCBD2002378FC /* CardActivityRequest.h */,
+				20C63783196FCBD2002378FC /* ChangeAuraRequest.cpp */,
+				20C63784196FCBD2002378FC /* ChangeAuraRequest.h */,
+				20C63785196FCBD2002378FC /* ChangeEquipRequest.cpp */,
+				20C63786196FCBD2002378FC /* ChangeEquipRequest.h */,
+				20C63787196FCBD2002378FC /* ChangeForceIndexRequest.cpp */,
+				20C63788196FCBD2002378FC /* ChangeForceIndexRequest.h */,
+				20C63789196FCBD2002378FC /* ChangeRuneRequest.cpp */,
+				20C6378A196FCBD2002378FC /* ChangeRuneRequest.h */,
+				20C6378B196FCBD2002378FC /* CreatePlayerRequest.cpp */,
+				20C6378C196FCBD2002378FC /* CreatePlayerRequest.h */,
+				20C6378D196FCBD2002378FC /* DrawRuneRequest.cpp */,
+				20C6378E196FCBD2002378FC /* DrawRuneRequest.h */,
+				20C6378F196FCBD2002378FC /* DumpPlayerDataRequest.cpp */,
+				20C63790196FCBD2002378FC /* DumpPlayerDataRequest.h */,
+				20C63791196FCBD2002378FC /* ExchangeAuraRequest.cpp */,
+				20C63792196FCBD2002378FC /* ExchangeAuraRequest.h */,
+				20C63793196FCBD2002378FC /* ExchangePVPScoreRequest.cpp */,
+				20C63794196FCBD2002378FC /* ExchangePVPScoreRequest.h */,
+				20C63795196FCBD2002378FC /* ExchangeSoulToHeroRequest.cpp */,
+				20C63796196FCBD2002378FC /* ExchangeSoulToHeroRequest.h */,
+				20C63797196FCBD2002378FC /* FragmentRobMatchRequest.cpp */,
+				20C63798196FCBD2002378FC /* FragmentRobMatchRequest.h */,
+				20C63799196FCBD2002378FC /* GetBloodyChallengeGroupRequest.cpp */,
+				20C6379A196FCBD2002378FC /* GetBloodyChallengeGroupRequest.h */,
+				20C6379B196FCBD2002378FC /* GetCDKPackageRequest.cpp */,
+				20C6379C196FCBD2002378FC /* GetCDKPackageRequest.h */,
+				20C6379D196FCBD2002378FC /* GetChapterAwardRequest.cpp */,
+				20C6379E196FCBD2002378FC /* GetChapterAwardRequest.h */,
+				20C6379F196FCBD2002378FC /* GetMailGiftRequest.cpp */,
+				20C637A0196FCBD2002378FC /* GetMailGiftRequest.h */,
+				20C637A1196FCBD2002378FC /* GetPVPAwardRequest.cpp */,
+				20C637A2196FCBD2002378FC /* GetPVPAwardRequest.h */,
+				20C637A3196FCBD2002378FC /* GuideFinishRequest.cpp */,
+				20C637A4196FCBD2002378FC /* GuideFinishRequest.h */,
+				20C637A5196FCBD2002378FC /* HeroBreakRequest.cpp */,
+				20C637A6196FCBD2002378FC /* HeroBreakRequest.h */,
+				20C637A7196FCBD2002378FC /* HeroInheritRequest.cpp */,
+				20C637A8196FCBD2002378FC /* HeroInheritRequest.h */,
+				20C637A9196FCBD2002378FC /* HireHeroRequest.cpp */,
+				20C637AA196FCBD2002378FC /* HireHeroRequest.h */,
+				20C637AB196FCBD2002378FC /* OrderRequest.cpp */,
+				20C637AC196FCBD2002378FC /* OrderRequest.h */,
+				20C637AD196FCBD2002378FC /* OrderStatusRequest.cpp */,
+				20C637AE196FCBD2002378FC /* OrderStatusRequest.h */,
+				20C637AF196FCBD2002378FC /* OtherPlayerDataRequest.cpp */,
+				20C637B0196FCBD2002378FC /* OtherPlayerDataRequest.h */,
+				20C637B1196FCBD2002378FC /* PVPForcedHerosRequest.cpp */,
+				20C637B2196FCBD2002378FC /* PVPForcedHerosRequest.h */,
+				20C637B3196FCBD2002378FC /* PVPRequest.cpp */,
+				20C637B4196FCBD2002378FC /* PVPRequest.h */,
+				20C637B5196FCBD2002378FC /* RankListRequest.cpp */,
+				20C637B6196FCBD3002378FC /* RankListRequest.h */,
+				20C637B7196FCBD3002378FC /* RefreshPlayerDataRequest.cpp */,
+				20C637B8196FCBD3002378FC /* RefreshPlayerDataRequest.h */,
+				20C637B9196FCBD3002378FC /* RefreshPVPScoreRequest.cpp */,
+				20C637BA196FCBD3002378FC /* RefreshPVPScoreRequest.h */,
+				20C637BB196FCBD3002378FC /* SellEquipRequest.cpp */,
+				20C637BC196FCBD3002378FC /* SellEquipRequest.h */,
+				20C637BD196FCBD3002378FC /* SevenDayGiftRequest.cpp */,
+				20C637BE196FCBD3002378FC /* SevenDayGiftRequest.h */,
+				20C637BF196FCBD3002378FC /* SignActivityRequest.cpp */,
+				20C637C0196FCBD3002378FC /* SignActivityRequest.h */,
+				20C637C1196FCBD3002378FC /* TrainHeroAcceptRequest.cpp */,
+				20C637C2196FCBD3002378FC /* TrainHeroAcceptRequest.h */,
+				20C637C3196FCBD3002378FC /* TrainHeroRequest.cpp */,
+				20C637C4196FCBD3002378FC /* TrainHeroRequest.h */,
+				20C637C5196FCBD3002378FC /* UpgradeActivityRequest.cpp */,
+				20C637C6196FCBD3002378FC /* UpgradeActivityRequest.h */,
+				20C637C7196FCBD3002378FC /* UpgradeEquipRequest.cpp */,
+				20C637C8196FCBD3002378FC /* UpgradeEquipRequest.h */,
+				20C637C9196FCBD3002378FC /* UpgradePetRequest.cpp */,
+				20C637CA196FCBD3002378FC /* UpgradePetRequest.h */,
+				20C637CB196FCBD3002378FC /* UpgradeRuneRequest.cpp */,
+				20C637CC196FCBD3002378FC /* UpgradeRuneRequest.h */,
+				20C637CD196FCBD3002378FC /* UpgradeSkillRequest.cpp */,
+				20C637CE196FCBD3002378FC /* UpgradeSkillRequest.h */,
+				20C637CF196FCBD3002378FC /* UseItemRequest.cpp */,
+				20C637D0196FCBD3002378FC /* UseItemRequest.h */,
+				20C637D1196FCBD3002378FC /* WineActivityRequest.cpp */,
+				20C637D2196FCBD3002378FC /* WineActivityRequest.h */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		D87CC2BB154FC66100AAFE11 = {
+			isa = PBXGroup;
+			children = (
+				20C6375A196FCBD2002378FC /* Message */,
+				206F92E71876CB300045F1ED /* libPaperCore.a */,
+				206F92E51876CB2B0045F1ED /* libMedusaCore.a */,
+				D87CC2C9154FC66100AAFE11 /* Frameworks */,
+				D87CC2C7154FC66100AAFE11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D87CC2C7154FC66100AAFE11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87CC2E5154FC6C500AAFE11 /* libPaperMessage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D87CC2C9154FC66100AAFE11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D87CC2E3154FC6C500AAFE11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C6383E196FCBD3002378FC /* UpgradeEquipRequest.h in Headers */,
+				20C63816196FCBD3002378FC /* GetMailGiftRequest.h in Headers */,
+				20C637EA196FCBD3002378FC /* AccumlateChargeAwardRequest.h in Headers */,
+				20C63826196FCBD3002378FC /* OtherPlayerDataRequest.h in Headers */,
+				20C637EC196FCBD3002378FC /* AddBloodyBuffRequest.h in Headers */,
+				20C63848196FCBD3002378FC /* WineActivityRequest.h in Headers */,
+				20C6383C196FCBD3002378FC /* UpgradeActivityRequest.h in Headers */,
+				20C637D6196FCBD3002378FC /* AuthLoginRequest.h in Headers */,
+				20C63846196FCBD3002378FC /* UseItemRequest.h in Headers */,
+				20C6382E196FCBD3002378FC /* RefreshPlayerDataRequest.h in Headers */,
+				20C63814196FCBD3002378FC /* GetChapterAwardRequest.h in Headers */,
+				20C6381C196FCBD3002378FC /* HeroBreakRequest.h in Headers */,
+				20C637FE196FCBD3002378FC /* ChangeForceIndexRequest.h in Headers */,
+				20C637E8196FCBD3002378FC /* IMessageCenter.h in Headers */,
+				20C637E4196FCBD3002378FC /* BaseCustomGameMessage.h in Headers */,
+				20C6380E196FCBD3002378FC /* FragmentRobMatchRequest.h in Headers */,
+				20C63840196FCBD3002378FC /* UpgradePetRequest.h in Headers */,
+				20C637F6196FCBD3002378FC /* BuyPowerRequest.h in Headers */,
+				20C63824196FCBD3002378FC /* OrderStatusRequest.h in Headers */,
+				20C6381A196FCBD3002378FC /* GuideFinishRequest.h in Headers */,
+				20C637DE196FCBD3002378FC /* MissionResetRequest.h in Headers */,
+				20C63844196FCBD3002378FC /* UpgradeSkillRequest.h in Headers */,
+				20C6380C196FCBD3002378FC /* ExchangeSoulToHeroRequest.h in Headers */,
+				20C63800196FCBD3002378FC /* ChangeRuneRequest.h in Headers */,
+				20C63842196FCBD3002378FC /* UpgradeRuneRequest.h in Headers */,
+				20C637F2196FCBD3002378FC /* BloodySettlementRequest.h in Headers */,
+				20C637E0196FCBD3002378FC /* MissionSweepRequest.h in Headers */,
+				20C63822196FCBD3002378FC /* OrderRequest.h in Headers */,
+				20C637F8196FCBD3002378FC /* CardActivityRequest.h in Headers */,
+				20C6382A196FCBD3002378FC /* PVPRequest.h in Headers */,
+				20C63834196FCBD3002378FC /* SevenDayGiftRequest.h in Headers */,
+				20C637EE196FCBD3002378FC /* BeginBloodyRequest.h in Headers */,
+				20C63830196FCBD3002378FC /* RefreshPVPScoreRequest.h in Headers */,
+				20C63818196FCBD3002378FC /* GetPVPAwardRequest.h in Headers */,
+				20C63806196FCBD3002378FC /* DumpPlayerDataRequest.h in Headers */,
+				20C63802196FCBD3002378FC /* CreatePlayerRequest.h in Headers */,
+				20C6383A196FCBD3002378FC /* TrainHeroRequest.h in Headers */,
+				20C637E2196FCBD3002378FC /* PVPCheckAndPlayerDataRequest.h in Headers */,
+				20C637F4196FCBD3002378FC /* BuyItemRequest.h in Headers */,
+				20C6384A196FCBD3002378FC /* Player.h in Headers */,
+				20C63828196FCBD3002378FC /* PVPForcedHerosRequest.h in Headers */,
+				20C63812196FCBD3002378FC /* GetCDKPackageRequest.h in Headers */,
+				20C63820196FCBD3002378FC /* HireHeroRequest.h in Headers */,
+				20C637FA196FCBD3002378FC /* ChangeAuraRequest.h in Headers */,
+				20C6382C196FCBD3002378FC /* RankListRequest.h in Headers */,
+				20C637DA196FCBD3002378FC /* ChallengeMissionRequest.h in Headers */,
+				20C637D8196FCBD3002378FC /* BaseRequestLoginGameMessage.h in Headers */,
+				20C63838196FCBD3002378FC /* TrainHeroAcceptRequest.h in Headers */,
+				20C63832196FCBD3002378FC /* SellEquipRequest.h in Headers */,
+				20C637D7196FCBD3002378FC /* BaseRequestGameMessage.h in Headers */,
+				20C63808196FCBD3002378FC /* ExchangeAuraRequest.h in Headers */,
+				20C63804196FCBD3002378FC /* DrawRuneRequest.h in Headers */,
+				20C637DC196FCBD3002378FC /* MissionCheckOutRequest.h in Headers */,
+				20C6381E196FCBD3002378FC /* HeroInheritRequest.h in Headers */,
+				20C637E6196FCBD3002378FC /* GameMessageFactory.h in Headers */,
+				20C6380A196FCBD3002378FC /* ExchangePVPScoreRequest.h in Headers */,
+				20C637F0196FCBD3002378FC /* BloodyRankListRequest.h in Headers */,
+				20C637FC196FCBD3002378FC /* ChangeEquipRequest.h in Headers */,
+				20C63836196FCBD3002378FC /* SignActivityRequest.h in Headers */,
+				20C63810196FCBD3002378FC /* GetBloodyChallengeGroupRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D87CC2E4154FC6C500AAFE11 /* PaperMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87CC2ED154FC6C500AAFE11 /* Build configuration list for PBXNativeTarget "PaperMessage" */;
+			buildPhases = (
+				D87CC2E1154FC6C500AAFE11 /* Sources */,
+				D87CC2E2154FC6C500AAFE11 /* Frameworks */,
+				D87CC2E3154FC6C500AAFE11 /* Headers */,
+				185ADB8915A3935900CD7CE0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperMessage;
+			productName = SPII;
+			productReference = D87CC2E5154FC6C500AAFE11 /* libPaperMessage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D87CC2BD154FC66100AAFE11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Cocoachina;
+			};
+			buildConfigurationList = D87CC2C0154FC66100AAFE11 /* Build configuration list for PBXProject "PaperMessage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = D87CC2BB154FC66100AAFE11;
+			productRefGroup = D87CC2C7154FC66100AAFE11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87CC2E4154FC6C500AAFE11 /* PaperMessage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		185ADB8915A3935900CD7CE0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D87CC2E1154FC6C500AAFE11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20C6382B196FCBD3002378FC /* RankListRequest.cpp in Sources */,
+				20C63805196FCBD3002378FC /* DumpPlayerDataRequest.cpp in Sources */,
+				20C6381D196FCBD3002378FC /* HeroInheritRequest.cpp in Sources */,
+				20C6380D196FCBD3002378FC /* FragmentRobMatchRequest.cpp in Sources */,
+				20C6383B196FCBD3002378FC /* UpgradeActivityRequest.cpp in Sources */,
+				20C6382D196FCBD3002378FC /* RefreshPlayerDataRequest.cpp in Sources */,
+				20C63811196FCBD3002378FC /* GetCDKPackageRequest.cpp in Sources */,
+				20C63829196FCBD3002378FC /* PVPRequest.cpp in Sources */,
+				20C63819196FCBD3002378FC /* GuideFinishRequest.cpp in Sources */,
+				20C637D9196FCBD3002378FC /* ChallengeMissionRequest.cpp in Sources */,
+				20C63809196FCBD3002378FC /* ExchangePVPScoreRequest.cpp in Sources */,
+				20C63817196FCBD3002378FC /* GetPVPAwardRequest.cpp in Sources */,
+				20C637F3196FCBD3002378FC /* BuyItemRequest.cpp in Sources */,
+				20C6383D196FCBD3002378FC /* UpgradeEquipRequest.cpp in Sources */,
+				20C637FB196FCBD3002378FC /* ChangeEquipRequest.cpp in Sources */,
+				20C6382F196FCBD3002378FC /* RefreshPVPScoreRequest.cpp in Sources */,
+				20C63821196FCBD3002378FC /* OrderRequest.cpp in Sources */,
+				20C6380F196FCBD3002378FC /* GetBloodyChallengeGroupRequest.cpp in Sources */,
+				20C63841196FCBD3002378FC /* UpgradeRuneRequest.cpp in Sources */,
+				20C637DF196FCBD3002378FC /* MissionSweepRequest.cpp in Sources */,
+				20C6383F196FCBD3002378FC /* UpgradePetRequest.cpp in Sources */,
+				20C63833196FCBD3002378FC /* SevenDayGiftRequest.cpp in Sources */,
+				20C63807196FCBD3002378FC /* ExchangeAuraRequest.cpp in Sources */,
+				20C63801196FCBD3002378FC /* CreatePlayerRequest.cpp in Sources */,
+				20C6380B196FCBD3002378FC /* ExchangeSoulToHeroRequest.cpp in Sources */,
+				20C637ED196FCBD3002378FC /* BeginBloodyRequest.cpp in Sources */,
+				20C637F1196FCBD3002378FC /* BloodySettlementRequest.cpp in Sources */,
+				20C637FD196FCBD3002378FC /* ChangeForceIndexRequest.cpp in Sources */,
+				20C637E1196FCBD3002378FC /* PVPCheckAndPlayerDataRequest.cpp in Sources */,
+				20C63843196FCBD3002378FC /* UpgradeSkillRequest.cpp in Sources */,
+				20C63831196FCBD3002378FC /* SellEquipRequest.cpp in Sources */,
+				20C637F7196FCBD3002378FC /* CardActivityRequest.cpp in Sources */,
+				20C637EB196FCBD3002378FC /* AddBloodyBuffRequest.cpp in Sources */,
+				20C637F9196FCBD3002378FC /* ChangeAuraRequest.cpp in Sources */,
+				20C637EF196FCBD3002378FC /* BloodyRankListRequest.cpp in Sources */,
+				20C63803196FCBD3002378FC /* DrawRuneRequest.cpp in Sources */,
+				20C637E3196FCBD3002378FC /* BaseCustomGameMessage.cpp in Sources */,
+				20C63839196FCBD3002378FC /* TrainHeroRequest.cpp in Sources */,
+				20C637E7196FCBD3002378FC /* IMessageCenter.cpp in Sources */,
+				20C637F5196FCBD3002378FC /* BuyPowerRequest.cpp in Sources */,
+				20C6381B196FCBD3002378FC /* HeroBreakRequest.cpp in Sources */,
+				20C63837196FCBD3002378FC /* TrainHeroAcceptRequest.cpp in Sources */,
+				20C63827196FCBD3002378FC /* PVPForcedHerosRequest.cpp in Sources */,
+				20C63847196FCBD3002378FC /* WineActivityRequest.cpp in Sources */,
+				20C63825196FCBD3002378FC /* OtherPlayerDataRequest.cpp in Sources */,
+				20C6381F196FCBD3002378FC /* HireHeroRequest.cpp in Sources */,
+				20C637DB196FCBD3002378FC /* MissionCheckOutRequest.cpp in Sources */,
+				20C637FF196FCBD3002378FC /* ChangeRuneRequest.cpp in Sources */,
+				20C637DD196FCBD3002378FC /* MissionResetRequest.cpp in Sources */,
+				20C63845196FCBD3002378FC /* UseItemRequest.cpp in Sources */,
+				20C637E5196FCBD3002378FC /* GameMessageFactory.cpp in Sources */,
+				20C63813196FCBD3002378FC /* GetChapterAwardRequest.cpp in Sources */,
+				20C63815196FCBD3002378FC /* GetMailGiftRequest.cpp in Sources */,
+				20C63823196FCBD3002378FC /* OrderStatusRequest.cpp in Sources */,
+				20C637D5196FCBD3002378FC /* AuthLoginRequest.cpp in Sources */,
+				20C637E9196FCBD3002378FC /* AccumlateChargeAwardRequest.cpp in Sources */,
+				20C63849196FCBD3002378FC /* Player.cpp in Sources */,
+				20C63835196FCBD3002378FC /* SignActivityRequest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D87CC2DC154FC66100AAFE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c89;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		D87CC2DD154FC66100AAFE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c89;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+		D87CC2EE154FC6C500AAFE11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/SPII.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../MedusaCore\"",
+					"\"$(SRCROOT)/../../MedusaCore/CoreLib/ios/curl\"",
+					"\"$(SRCROOT)/../../MedusaCore/CoreLib/Common\"",
+					"\"$(SRCROOT)/../\"",
+					"\"$(SRCROOT)/../../PaperCore\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Client\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Logic\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Log\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Config\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Common\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Auth\"",
+					"\"$(SRCROOT)/../../MedusaCore/Core/Proto/Client\"",
+					"\"$(SRCROOT)/../../MedusaExtension\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Client/proj.ios/DerivedData/Paper/Build/Products/Debug-iphoneos\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = PaperMessage;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv6 armv7s arm64";
+			};
+			name = Debug;
+		};
+		D87CC2EF154FC6C500AAFE11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = /tmp/SPII.dst;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../MedusaCore\"",
+					"\"$(SRCROOT)/../../MedusaCore/CoreLib/ios/curl\"",
+					"\"$(SRCROOT)/../../MedusaCore/CoreLib/Common\"",
+					"\"$(SRCROOT)/../\"",
+					"\"$(SRCROOT)/../../PaperCore\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Client\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Logic\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Log\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Config\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Common\"",
+					"\"$(SRCROOT)/../../PaperCore/Proto/Server/Auth\"",
+					"\"$(SRCROOT)/../../MedusaCore/Core/Proto/Client\"",
+					"\"$(SRCROOT)/../../MedusaExtension\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Client/proj.ios/DerivedData/Paper/Build/Products/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
+				PRODUCT_NAME = PaperMessage;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv6 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D87CC2C0154FC66100AAFE11 /* Build configuration list for PBXProject "PaperMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87CC2DC154FC66100AAFE11 /* Debug */,
+				D87CC2DD154FC66100AAFE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87CC2ED154FC6C500AAFE11 /* Build configuration list for PBXNativeTarget "PaperMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87CC2EE154FC6C500AAFE11 /* Debug */,
+				D87CC2EF154FC6C500AAFE11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D87CC2BD154FC66100AAFE11 /* Project object */;
+}

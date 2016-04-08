@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Message">
+      <UniqueIdentifier>{aba0719b-9d23-4d4e-b7f6-f725d29ab3e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Auth">
+      <UniqueIdentifier>{fa9d295f-321d-4181-b7f4-82377002c479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Battle">
+      <UniqueIdentifier>{dcd115f3-f8a4-468a-b3b2-61589ae32f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Custom">
+      <UniqueIdentifier>{3ef852bd-612f-427f-8f4f-fdc067f24dd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message\Logic">
+      <UniqueIdentifier>{ca2b1324-9ce2-4ad6-821b-f462c012ac27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Message\Auth\AuthLoginRequest.h">
+      <Filter>Message\Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Battle\MissionCheckOutRequest.h">
+      <Filter>Message\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Battle\ChallengeMissionRequest.h">
+      <Filter>Message\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Custom\BaseCustomGameMessage.h">
+      <Filter>Message\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ChangeForceIndexRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\CreatePlayerRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\DumpPlayerDataRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ExchangeSoulToHeroRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\HeroInheritRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\HireHeroRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\SellEquipRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\UpgradeEquipRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\UseItemRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\BuyItemRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ChangeAuraRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ChangeEquipRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\GameMessageFactory.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\BaseRequestGameMessage.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\BaseRequestLoginGameMessage.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\IMessageCenter.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Player.h">
+      <Filter>Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\UpgradeSkillRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\TrainHeroAcceptRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\TrainHeroRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\DrawRuneRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\HeroBreakRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\UpgradeRuneRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ChangeRuneRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\FragmentRobMatchRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\RankListRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\GetPVPAwardRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\PVPRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\RefreshPVPScoreRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ExchangePVPScoreRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\PVPForcedHerosRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\RefreshPlayerDataRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\ExchangeAuraRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\UpgradePetRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\UpgradeActivityRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\SevenDayGiftRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\WineActivityRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\SignActivityRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\AddBloodyBuffRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\BeginBloodyRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\BloodyRankListRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\BloodySettlementRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\GetBloodyChallengeGroupRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\GetChapterAwardRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\GuideFinishRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Battle\MissionSweepRequest.h">
+      <Filter>Message\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\BuyPowerRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Battle\PVPCheckAndPlayerDataRequest.h">
+      <Filter>Message\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Battle\MissionResetRequest.h">
+      <Filter>Message\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\OtherPlayerDataRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\CardActivityRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\GetMailGiftRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\GetCDKPackageRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\OrderRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\OrderStatusRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message\Logic\AccumlateChargeAwardRequest.h">
+      <Filter>Message\Logic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Message\Auth\AuthLoginRequest.cpp">
+      <Filter>Message\Auth</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Battle\ChallengeMissionRequest.cpp">
+      <Filter>Message\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Battle\MissionCheckOutRequest.cpp">
+      <Filter>Message\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Custom\BaseCustomGameMessage.cpp">
+      <Filter>Message\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\CreatePlayerRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\DumpPlayerDataRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ExchangeSoulToHeroRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\HeroInheritRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\HireHeroRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\SellEquipRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\UpgradeEquipRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\UseItemRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\BuyItemRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ChangeAuraRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ChangeEquipRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ChangeForceIndexRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\GameMessageFactory.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\IMessageCenter.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Player.cpp">
+      <Filter>Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\UpgradeSkillRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\TrainHeroAcceptRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\TrainHeroRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\DrawRuneRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\HeroBreakRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\UpgradeRuneRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ChangeRuneRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\FragmentRobMatchRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\RankListRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\GetPVPAwardRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\PVPRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\RefreshPVPScoreRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ExchangePVPScoreRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\PVPForcedHerosRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\RefreshPlayerDataRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\ExchangeAuraRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\UpgradePetRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\UpgradeActivityRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\SevenDayGiftRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\WineActivityRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\SignActivityRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\AddBloodyBuffRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\BeginBloodyRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\BloodyRankListRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\BloodySettlementRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\GetBloodyChallengeGroupRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\GetChapterAwardRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\GuideFinishRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Battle\MissionSweepRequest.cpp">
+      <Filter>Message\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\BuyPowerRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Battle\PVPCheckAndPlayerDataRequest.cpp">
+      <Filter>Message\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Battle\MissionResetRequest.cpp">
+      <Filter>Message\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\OtherPlayerDataRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\CardActivityRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\GetMailGiftRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\GetCDKPackageRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\OrderRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\OrderStatusRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Message\Logic\AccumlateChargeAwardRequest.cpp">
+      <Filter>Message\Logic</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

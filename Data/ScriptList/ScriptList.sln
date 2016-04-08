@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Battle", "Battle", "{5A27706A-6AB4-4C36-A804-8A4AC9360A05}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\BattleConfig.cs = ..\Art\Script\Battle\BattleConfig.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Buffer", "Buffer", "{C02F0458-01C8-4989-8AA8-B9C01BC40AE0}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\Buffer\Buffer.cs = ..\Art\Script\Battle\Buffer\Buffer.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mission", "Mission", "{57AE631F-C6B3-473E-AE54-1CAD254863BC}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\Mission\Mission.cs = ..\Art\Script\Battle\Mission\Mission.cs
+		..\Art\Script\Battle\Mission\Mission1.cs = ..\Art\Script\Battle\Mission\Mission1.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Role", "Role", "{F34D9907-AC8C-4CCE-B7AE-1BB8AAD450DB}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\Role\Role.cs = ..\Art\Script\Battle\Role\Role.cs
+		..\Art\Script\Battle\Role\RoleSkill.cs = ..\Art\Script\Battle\Role\RoleSkill.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skill", "Skill", "{8C728C1D-CB47-45EB-9CDD-6F8A96CD60B1}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\Skill\Skill.cs = ..\Art\Script\Battle\Skill\Skill.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{53E09298-1E2B-4948-8345-873AB042E049}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\Common\Common.cs = ..\Art\Script\Battle\Common\Common.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Roles", "Roles", "{1D457FAD-BE2F-4301-B2A1-8F6F0C1FFA43}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Script\Battle\Role\Roles\Role1.cs = ..\Art\Script\Battle\Role\Roles\Role1.cs
+		..\Art\Script\Battle\Role\Roles\Role2.cs = ..\Art\Script\Battle\Role\Roles\Role2.cs
+		..\Art\Script\Battle\Role\Roles\Role20001.cs = ..\Art\Script\Battle\Role\Roles\Role20001.cs
+		..\Art\Script\Battle\Role\Roles\Role3.cs = ..\Art\Script\Battle\Role\Roles\Role3.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaperConfig", "PaperConfig", "{BD5291AB-CB09-46CC-8EAF-54715EA3D385}"
+	ProjectSection(SolutionItems) = preProject
+		..\Art\Config\PaperConfig.cs = ..\Art\Config\PaperConfig.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C02F0458-01C8-4989-8AA8-B9C01BC40AE0} = {5A27706A-6AB4-4C36-A804-8A4AC9360A05}
+		{57AE631F-C6B3-473E-AE54-1CAD254863BC} = {5A27706A-6AB4-4C36-A804-8A4AC9360A05}
+		{F34D9907-AC8C-4CCE-B7AE-1BB8AAD450DB} = {5A27706A-6AB4-4C36-A804-8A4AC9360A05}
+		{8C728C1D-CB47-45EB-9CDD-6F8A96CD60B1} = {5A27706A-6AB4-4C36-A804-8A4AC9360A05}
+		{53E09298-1E2B-4948-8345-873AB042E049} = {5A27706A-6AB4-4C36-A804-8A4AC9360A05}
+		{1D457FAD-BE2F-4301-B2A1-8F6F0C1FFA43} = {F34D9907-AC8C-4CCE-B7AE-1BB8AAD450DB}
+	EndGlobalSection
+EndGlobal

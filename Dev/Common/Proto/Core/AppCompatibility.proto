@@ -1,0 +1,15 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+message AppCompatibility
+{
+  enum InitializeOperation
+  {
+    None=0;
+    RemoveAllCache=1;
+  }
+  
+  
+  required uint32 version=2;
+  required InitializeOperation operation=1;
+}

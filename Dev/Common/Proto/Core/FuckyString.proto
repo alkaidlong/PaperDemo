@@ -1,0 +1,12 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+message FuckyStringNode {
+  required int32 charVal = 1;
+  required bool isFucky=2;
+  repeated FuckyStringNode childs=3;
+}
+
+message FuckyString {
+	repeated FuckyStringNode rootNodes=1;
+}

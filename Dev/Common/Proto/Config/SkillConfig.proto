@@ -1,0 +1,21 @@
+//option optimize_for = LITE_RUNTIME;
+
+import "BaseProperty.proto";
+package ServerProto.Config;
+
+message SkillConfigItem
+{
+	required uint32 Id=1;
+	required ServerProto.Logic.CommonProperty PhysicalProperty = 2; //物理伤害
+	required ServerProto.Logic.CommonProperty DeltaPhysicalProperty = 3;//物理伤害加成（先和人物属性相乘，然后和基础伤害相加）
+	required ServerProto.Logic.CommonProperty MagicalProperty = 4; //魔法伤害
+	required ServerProto.Logic.CommonProperty DeltaMagicalProperty = 5;//魔法伤害加成（先和人物属性相乘，然后和基础伤害相加）
+	required ServerProto.Logic.CommonProperty HolyDamage = 6; //神圣伤害
+	required ServerProto.Logic.CommonProperty DeltaHolyPhysicalDamage = 7; //神圣伤害物理加成（先和人物属性相乘，然后和固定神圣伤害相加）
+	required ServerProto.Logic.CommonProperty DeltaHolyMagicalDamage = 8; //神圣伤害魔法加成（先和人物属性相乘，然后和固定神圣伤害相加）
+}
+
+message SkillConfig
+{
+	repeated SkillConfigItem SkillConfigItems=1;
+}

@@ -1,0 +1,458 @@
+//option optimize_for = LITE_RUNTIME;
+import "Geometry.proto";
+import "FileSystem.proto";
+package Medusa.CoreProto.Editor;
+
+
+message ImageFile
+{
+	required FileId File = 1;//图片名
+	optional BorderU Border = 2;	//九宫格边界
+}
+
+enum TextAlignmentType
+{
+	LeftTop = 1;
+	MiddleTop = 2;
+	RightTop = 3;
+	LeftCenter = 4;
+	MiddleCenter = 5;
+	RightCenter = 6;
+	LeftBottom = 7;
+	MiddleBottom = 8;
+	RightBottom = 9;
+}
+
+
+message Image
+{
+	//Misc
+	required string ID = 1;//id  
+	repeated ImageFile OptionalImages = 2; 
+	
+	// Appearence
+	required SizeU Size = 3; 
+	required PointF Position = 4;//坐标
+	required bool IsProportionPoint = 5;//是否是按比例坐标
+	required PointF Anchor = 6;//锚点x,y 
+	required int32 ZOrder = 7; 
+	optional float Rotation = 8; 
+	optional ScaleF Scale = 9; 
+	optional bool IsFilpX = 10;
+	optional bool IsFilpY = 11;
+	required bool IsVisible=12;
+	required float Parallax = 13; //视差值 移动场景中有用 
+	required ImageFile File = 14;//图片名
+	//Event
+	optional string OnLoad = 15; 
+	optional string OnShow = 16;
+	optional string OnHide = 17;
+	optional string OnClosed = 18;
+	optional string OnUpdate = 19;
+	optional string OnEvent = 20;
+	//Behavior
+	optional bool IsLoop = 21;
+	optional RectF ScissorBox=22;
+	
+	optional int32 RenderFlag=50;
+	optional int32 Tag=51;
+	optional string ClickEffect = 101; 
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message Button
+{
+	//Misc
+	required string ID = 1;//id
+	// Appearence
+	required SizeU Size = 2;	
+	required PointF Position = 3;//坐标
+	required bool IsProportionPoint = 4;//是否是按比例坐标
+	required PointF Anchor = 5;//锚点x,y
+	required int32 ZOrder = 6;
+	optional float Rotation = 7;
+	optional ScaleF Scale = 8;
+	optional bool IsFilpX = 9;
+	optional bool IsFilpY = 10;
+	required bool IsVisible=11;
+	optional ImageFile NormalImage = 12;
+	optional ImageFile SelectedImage = 13;
+	optional ImageFile DisabledImage = 14;
+	optional ImageFile DisabledSelectedImage = 15;
+	//Event
+	optional string OnLoad = 16;
+	optional string OnShow = 17;
+	optional string OnHide = 18;
+	optional string OnClosed = 19;
+	optional string OnUpdate = 20;
+	optional string OnTouchBegan = 21;
+	optional string OnTouchMoved = 22;
+	optional string OnTouchEnd = 23;	
+	optional string OnClick = 24;
+	optional string OnEvent = 25;
+	optional RectF ScissorBox=26;
+	
+	optional int32 RenderFlag=50;
+	optional int32 Tag=51;
+	
+	optional string ClickEffect = 101; 
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message Frame
+{
+	//Misc
+	required string ID = 1;//id
+	// Appearence
+	required SizeU Size = 2;	
+	required PointF Position = 3;//坐标
+	required bool IsProportionPoint = 4;//是否是按比例坐标
+	required PointF Anchor = 5;//锚点x,y
+	required int32 ZOrder = 6;
+	optional float Rotation = 7;
+	optional ScaleF Scale = 8;
+	optional bool IsFilpX = 9;
+	optional bool IsFilpY = 10;
+	optional float Parallax = 11; //视差值 移动场景中有用
+	//Data
+	optional int32 UserValue=20;
+	optional string UserString=21;
+	optional RectF ScissorBox=22;
+	
+	optional int32 RenderFlag=50;
+	optional int32 Tag=51;
+	
+	optional string ClickEffect = 101; 
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message Label
+{
+	//Misc
+	required string ID = 1;//id
+	// Appearence
+	required SizeU Size = 2;	
+	required PointF Position = 3;//坐标
+	required bool IsProportionPoint = 4;//是否是按比例坐标
+	required PointF Anchor = 5;//锚点x,y
+	required int32 ZOrder = 6;
+	optional float Rotation = 7;
+	optional ScaleF Scale = 8;
+	required bool IsVisible=9;
+	required FileId FontName = 11;//字体名称
+	required uint32 FontSize = 12;//字体大小
+	required string Text = 13;//内容
+	optional ColorF Color = 14;//颜色
+	//Layout
+	required TextAlignmentType AlignmentType = 10;
+	//Event
+	optional string OnLoad = 15;
+	optional string OnShow = 16;
+	optional string OnHide = 17;
+	optional string OnClosed = 18;
+	optional string OnUpdate = 19;
+	optional string OnEvent = 20;
+	optional RectF ScissorBox=21;
+	
+	optional int32 Tag=51;
+	optional float StrokeSize=52; //描边的宽度
+	
+	optional PointF ShadowOffset=53;	//阴影的偏移
+	optional ColorF ShadowColor = 54;//阴影的颜色
+	optional float ShadowBlur=55;	//阴影的模糊，0-1
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message EditBox
+{
+	//键盘返回键的类型
+	enum EditBoxKeyboardReturnType
+	{
+		Default = 0; 
+		Done = 1; 
+		Send = 2;	
+		Search = 3;	
+		Go = 4;	
+	}
+
+	// defines the type of text that the user is allowed to enter.
+	enum EditBoxInputMode
+	{
+		Any = 0;	//The user is allowed to enter any text, including line breaks.
+		EmailAddr=1;	//The user is allowed to enter an e-mail address.
+		Numeric=2;	//The user is allowed to enter an integer value.
+		PhoneNumber=3;	//The user is allowed to enter a phone number.
+		Url=4;	//The user is allowed to enter a URL.
+		Decimal=5;	//The user is allowed to enter a real number value.This extends Numeric by allowing a decimal point.
+		SingleLine=6;	//The user is allowed to enter any text, except for line breaks.
+	}
+
+	// defines how the input text is displayed/formatted.
+	enum EditBoxInputFlag
+	{
+		/**
+		 * Indicates that the text entered is confidential data that should be
+		 * obscured whenever possible. This implies EDIT_BOX_INPUT_FLAG_SENSITIVE.
+		 */
+		Password = 0;
+
+		/**
+		 * Indicates that the text entered is sensitive data that the
+		 * implementation must never store into a dictionary or table for use
+		 * in predictive, auto-completing, or other accelerated input schemes.
+		 * A credit card number is an example of sensitive data.
+		 */
+		Sensitive=1;
+
+		/**
+		 * This flag is a hint to the implementation that during text editing,
+		 * the initial letter of each word should be capitalized.
+		 */
+		InitialCapsWord=2;
+
+		/**
+		 * This flag is a hint to the implementation that during text editing,
+		 * the initial letter of each sentence should be capitalized.
+		 */
+		InitialCapsSentence=3;
+
+		/**
+		 * Capitalize all characters automatically.
+		 */
+		InitialCapsAllCharacters=4;
+
+	}
+
+	//Misc
+	required string ID = 1;//id
+	// Appearence
+	required SizeU Size = 2;	
+	required PointF Position = 3;//坐标
+	required bool IsProportionPoint = 4;//是否是按比例坐标
+	required PointF Anchor = 5;//锚点x,y
+	required int32 ZOrder = 6;
+	optional float Rotation = 7;
+	optional ScaleF Scale = 8;
+	required bool IsVisible=9;
+	required FileId FontName = 10;//字体名称
+	required uint32 FontSize = 11;//字体大小
+	optional string Text = 12;//内容
+	optional ColorF Color = 13;//颜色
+
+	required ImageFile BackgroundImage = 14;	
+	
+	//Layout
+	required TextAlignmentType AlignmentType = 18;
+	//Behavior
+	required EditBoxKeyboardReturnType KeyboardReturnType = 19;
+	required EditBoxInputMode InputMode = 20;
+	required EditBoxInputFlag InputFlag = 21;
+	
+	optional uint32 CharacterNum = 25;//字数
+	optional string MinLineNum = 26; //最小行数
+	optional string MaxLineNum = 27;//最大行数
+	//Event
+	optional string OnLoad = 30;
+	optional string OnShow = 31;
+	optional string OnHide = 32;
+	optional string OnClosed = 33;
+	optional string OnUpdate = 34;
+	optional string OnChar = 35;
+	optional string OnEvent = 36;
+	
+	optional RectF ScissorBox=37;
+	optional int32 Tag=51;
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+
+message ProgressBar
+{
+	enum ProgressBarType
+	{
+	    Radial = 0;
+		Bar = 1;
+	}
+
+	//Misc
+	required string ID = 1;//id	
+	// Appearence
+	required PointF Position = 2;//坐标
+	required bool IsProportionPoint = 3;//是否是按比例坐标
+	required PointF Anchor = 4;//锚点x,y
+	required int32 ZOrder = 5;
+	optional float Rotation = 6;
+	optional ScaleF Scale = 7;
+	required bool IsVisible=8;
+	required SizeU Size = 9;
+	optional ImageFile Image = 10;//前景纹理,不支持九宫
+	//Event
+	optional string OnLoad = 12;
+	optional string OnShow = 13;
+	optional string OnHide = 14;
+	optional string OnClosed = 15;
+	optional string OnUpdate = 16;
+	optional string OnEvent = 17;
+	// Appearence
+	required float Duration = 18;
+	optional ProgressBarType Type = 19;
+	optional PointF Midpoint = 20;
+	optional PointF ChangeRate = 21;
+	optional RectF ScissorBox=22;
+	
+	optional int32 RenderFlag=50;
+	optional int32 Tag=51;
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message Trigger
+{
+	//Misc
+	required string ID = 1;
+	//Event
+	optional string OnUpdate = 2;
+	optional string OnEvent = 3;
+	
+	// Appearence
+	optional SizeU Size = 4;	
+	optional PointF Position = 5;//坐标
+	optional bool IsProportionPoint = 6;//是否是按比例坐标
+	optional float Parallax = 7; //视差值 移动场景中有用
+	optional int32 Tag=51;
+
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message TriggerRef
+{
+
+	//Misc
+	required string ID = 1;
+	required FileId ModelName = 2;
+	
+	// Appearence
+	optional SizeU Size = 3;	
+	optional PointF Position = 4;//坐标
+	optional bool IsProportionPoint = 5;//是否是按比例坐标
+	optional float Parallax = 6; //视差值 移动场景中有用
+	optional int32 Tag=51;
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message LayerRef
+{
+	//Misc
+	required string ID = 1;//id	
+	// Appearence
+	required FileId ModelName = 2;
+	required PointF Position = 3;//坐标
+	required bool IsProportionPoint = 4;//是否是按比例坐标
+	required PointF Anchor = 5;//锚点x,y
+	required int32 ZOrder = 6;
+	optional float Rotation = 7;
+	optional ScaleF Scale = 8;
+	optional bool IsFilpX = 9;
+	optional bool IsFilpY = 10;
+	required bool IsVisible=11;
+	required float Parallax = 12; //视差值 移动场景中有用
+	optional int32 Tag=51;
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message ListBox
+{
+	enum ScorllDirection
+	{
+		None = -1; //无方向 不滑动
+		Horizontal = 0;//横向
+		Vertical = 1;//垂直
+		Both = 2;//横向和垂直
+	}
+	enum VerticalOrder
+	{
+		Ascending = 0;//递增
+		Descending = 1;//递减
+	}
+	//Misc
+	required string ID = 1;//id	
+	// Appearence
+	required FileId ItemFileID = 2;//Item
+	required SizeU Size = 3; 
+	required PointF Position = 4;//坐标
+	required bool IsProportionPoint = 5;//是否是按比例坐标
+	required PointF Anchor = 6;//锚点x,y 
+	required int32 ZOrder = 7; 
+	optional float Rotation = 8; 
+	optional ScaleF Scale = 9; 
+	required bool IsVisible=12;
+	required ScorllDirection Direction = 13;
+	optional VerticalOrder OrderType = 14;
+	
+	//Event
+	optional string OnLoad = 15; 
+	optional string OnShow = 16;
+	optional string OnHide = 17;
+	optional string OnClosed = 18;
+	optional string OnUpdate = 19;
+	optional string OnEvent = 20;
+	
+	optional RectF ScissorBox=21;
+	optional int32 Tag=51;
+	
+	optional bool IsLock = 201;
+	optional bool IsHide = 202;
+}
+
+message Layer
+{
+	//Misc
+	required string ID = 1;//id	
+	// Appearence
+	required SizeU Size = 2;
+	
+	//Misc
+	repeated Image Images = 3;
+	repeated Button Buttons = 4;
+	repeated Frame Frames = 5;
+	repeated Label Labels = 6;
+	repeated EditBox EditBoxs = 7;
+	
+	repeated ProgressBar ProgressBars = 9;
+	repeated Trigger Triggers = 10;
+	repeated TriggerRef TriggerRefs = 11;	
+	repeated LayerRef LayerRefs = 12;
+	//Event
+	optional string OnLoad = 13;
+	optional string OnShow = 14;
+	optional string OnHide = 15;
+	optional string OnClosed = 16;
+	optional string OnUpdate = 17;
+
+	optional string OnTouchBegan = 18;
+	optional string OnTouchMoved = 19;
+	optional string OnTouchEnd = 20;	
+	//Misc
+	repeated ListBox Lists = 21;
+	
+	optional RectF ScissorBox=22;
+	optional int32 Tag=51;
+}
+
+

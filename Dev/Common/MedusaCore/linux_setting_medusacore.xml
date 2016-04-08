@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C++ Source File">
+<includepath>${ProjDirPath}/Lib/Common/OGLES</includepath>
+<includepath>${ProjDirPath}/Lib/linux/iconv</includepath>
+<includepath>${ProjDirPath}</includepath>
+<includepath>${ProjDirPath}/Lib/Common/</includepath>
+<includepath>${ProjDirPath}/Common/freetype</includepath>
+<includepath>${ProjDirPath}/Common/zip</includepath>
+<includepath>${ProjDirPath}/Lib/linux</includepath>
+<includepath>${ProjDirPath}/Lib/linux/zlib</includepath>
+<includepath>${ProjDirPath}/Lib/Common/angelscript/include</includepath>
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C++ Source File">
+
+</language>
+<language name="C Source File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>

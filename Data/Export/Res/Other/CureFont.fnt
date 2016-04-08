@@ -1,0 +1,15 @@
+info face="CureFont" padding=0,0,0,0
+common lineheight=38 scaleW=512 scaleH=512 pages=1
+page id=0 file="CureNumbers.png"
+chars count=11
+char id=43 x=2 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34	//'+'
+char id=48 x=38 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34	//'0'
+char id=49 x=74 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34	//'1'
+char id=50 x=110 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'2'
+char id=51 x=146 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'3'
+char id=52 x=182 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'4'
+char id=53 x=218 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'5'
+char id=54 x=254 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'6'
+char id=55 x=290 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'7'
+char id=56 x=326 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'8'
+char id=57 x=362 y=2 width=34 height=55 xoffset=0 yoffset=0 xadvance=34 	//'9'

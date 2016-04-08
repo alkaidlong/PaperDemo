@@ -1,0 +1,270 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := PaperCore
+
+LOCAL_MODULE_FILENAME := libPaperCore
+
+#BEGIN_AUTO_GENERATE_SRC_FILES
+LOCAL_SRC_FILES :=\
+AttackResult.cpp \
+BattleRoleLife.cpp \
+BufferRoleProperty.cpp \
+PaperAnalytics.cpp \
+PaperCoreScript.cpp \
+RealtimeRoleProperty.cpp \
+RoleLife.cpp \
+Config/AuraConfig.cpp \
+Config/BloodLeaderboardConfig.cpp \
+Config/BufferConfig.cpp \
+Config/EquipConfig.cpp \
+Config/EquipLevelConfig.cpp \
+Config/EquipLevelConfigQualityItem.cpp \
+Config/FeatureConfig.cpp \
+Config/HeroConfig.cpp \
+Config/HeroLevelConfig.cpp \
+Config/HeroLevelConfigQualityItem.cpp \
+Config/ItemConfig.cpp \
+Config/MissionConfig.cpp \
+Config/MonsterConfig.cpp \
+Config/NPCConfig.cpp \
+Config/PaperConfig.cpp \
+Config/PetConfig.cpp \
+Config/PetLevelConfig.cpp \
+Config/PlayerLevelConfig.cpp \
+Config/PVEConfig.cpp \
+Config/PVPLeaderboardScoreConfig.cpp \
+Config/RuneConfig.cpp \
+Config/RuneLevelConfig.cpp \
+Config/RuneLevelConfigQualityItem.cpp \
+Config/RuneShopConfig.cpp \
+Config/ServerGameConfig.cpp \
+Config/SkillConfig.cpp \
+Config/SkillLevelConfig.cpp \
+Config/SkillLevelConfigQualityItem.cpp \
+Config/VIPConfig.cpp \
+Proto/Client/ClientPlayer.pb.cc \
+Proto/Client/PaperCache.pb.cc \
+Proto/Server/Auth/AuthLoginRequest.pb.cc \
+Proto/Server/Auth/AuthLoginResponse.pb.cc \
+Proto/Server/Common/LoginToken.pb.cc \
+Proto/Server/Common/MessageErrorCode.pb.cc \
+Proto/Server/Config/AuraConfig.pb.cc \
+Proto/Server/Config/BloodLeaderboardConfig.pb.cc \
+Proto/Server/Config/BufferConfig.pb.cc \
+Proto/Server/Config/EquipConfig.pb.cc \
+Proto/Server/Config/EquipLevelConfig.pb.cc \
+Proto/Server/Config/FeatureConfig.pb.cc \
+Proto/Server/Config/HeroConfig.pb.cc \
+Proto/Server/Config/HeroLevelConfig.pb.cc \
+Proto/Server/Config/ItemConfig.pb.cc \
+Proto/Server/Config/MissionConfig.pb.cc \
+Proto/Server/Config/MonsterConfig.pb.cc \
+Proto/Server/Config/NPCConfig.pb.cc \
+Proto/Server/Config/PetConfig.pb.cc \
+Proto/Server/Config/PetLevelConfig.pb.cc \
+Proto/Server/Config/PlayerLevelConfig.pb.cc \
+Proto/Server/Config/PVEConfig.pb.cc \
+Proto/Server/Config/PVPLeaderboardScoreConfig.pb.cc \
+Proto/Server/Config/RuneConfig.pb.cc \
+Proto/Server/Config/RuneLevelConfig.pb.cc \
+Proto/Server/Config/RuneShopConfig.pb.cc \
+Proto/Server/Config/SkillConfig.pb.cc \
+Proto/Server/Config/SkillLevelConfig.pb.cc \
+Proto/Server/Config/VIPConfig.pb.cc \
+Proto/Server/GM/GMAddCDKKeyRequest.pb.cc \
+Proto/Server/GM/GMAddCDKKeyResponse.pb.cc \
+Proto/Server/GM/GMAddCDKPackageRequest.pb.cc \
+Proto/Server/GM/GMAddCDKPackageResponse.pb.cc \
+Proto/Server/GM/GMAddGMMailRequest.pb.cc \
+Proto/Server/GM/GMAddGMMailResponse.pb.cc \
+Proto/Server/GM/GMAddItemRequest.pb.cc \
+Proto/Server/GM/GMAddItemResponse.pb.cc \
+Proto/Server/GM/GMAddSystemNoticeRequest.pb.cc \
+Proto/Server/GM/GMAddSystemNoticeResponse.pb.cc \
+Proto/Server/GM/GMChangePlayerDataRequest.pb.cc \
+Proto/Server/GM/GMChangePlayerDataResponse.pb.cc \
+Proto/Server/GM/GMCorrectItemRequest.pb.cc \
+Proto/Server/GM/GMCorrectItemResponse.pb.cc \
+Proto/Server/GM/GMDeleteItemRequest.pb.cc \
+Proto/Server/GM/GMDeleteItemResponse.pb.cc \
+Proto/Server/GM/GMLevelCountRequest.pb.cc \
+Proto/Server/GM/GMLevelCountResponse.pb.cc \
+Proto/Server/GM/GMPlayerDataRequest.pb.cc \
+Proto/Server/GM/GMPlayerDataResponse.pb.cc \
+Proto/Server/GM/GMReloadConfigRequest.pb.cc \
+Proto/Server/GM/GMReloadConfigResponse.pb.cc \
+Proto/Server/Log/Log.pb.cc \
+Proto/Server/Logic/AccumlateChargeAwardRequest.pb.cc \
+Proto/Server/Logic/AccumlateChargeAwardResponse.pb.cc \
+Proto/Server/Logic/AddBloodyBuffRequest.pb.cc \
+Proto/Server/Logic/AddBloodyBuffResponse.pb.cc \
+Proto/Server/Logic/Aura.pb.cc \
+Proto/Server/Logic/AuraFragment.pb.cc \
+Proto/Server/Logic/Award.pb.cc \
+Proto/Server/Logic/BeginBloodyRequest.pb.cc \
+Proto/Server/Logic/BeginBloodyResponse.pb.cc \
+Proto/Server/Logic/BloodyChallengeType.pb.cc \
+Proto/Server/Logic/BloodyRankListRequest.pb.cc \
+Proto/Server/Logic/BloodyRankListResponse.pb.cc \
+Proto/Server/Logic/BloodySettlementRequest.pb.cc \
+Proto/Server/Logic/BloodySettlementResponse.pb.cc \
+Proto/Server/Logic/BonusItem.pb.cc \
+Proto/Server/Logic/BuyItemRequest.pb.cc \
+Proto/Server/Logic/BuyItemResponse.pb.cc \
+Proto/Server/Logic/BuyPowerRequest.pb.cc \
+Proto/Server/Logic/BuyPowerResponse.pb.cc \
+Proto/Server/Logic/CardActivityRequest.pb.cc \
+Proto/Server/Logic/CardActivityResponse.pb.cc \
+Proto/Server/Logic/ChallengeMissionRequest.pb.cc \
+Proto/Server/Logic/ChallengeMissionResponse.pb.cc \
+Proto/Server/Logic/ChangeAuraRequest.pb.cc \
+Proto/Server/Logic/ChangeAuraResponse.pb.cc \
+Proto/Server/Logic/ChangeEquipRequest.pb.cc \
+Proto/Server/Logic/ChangeEquipResponse.pb.cc \
+Proto/Server/Logic/ChangeForceIndexRequest.pb.cc \
+Proto/Server/Logic/ChangeForceIndexResponse.pb.cc \
+Proto/Server/Logic/ChangeRuneRequest.pb.cc \
+Proto/Server/Logic/ChangeRuneResponse.pb.cc \
+Proto/Server/Logic/Chapter.pb.cc \
+Proto/Server/Logic/ChapterAwardBoxMask.pb.cc \
+Proto/Server/Logic/CreatePlayerRequest.pb.cc \
+Proto/Server/Logic/CreatePlayerResponse.pb.cc \
+Proto/Server/Logic/DrawRuneRequest.pb.cc \
+Proto/Server/Logic/DrawRuneResponse.pb.cc \
+Proto/Server/Logic/DumpPlayerDataRequest.pb.cc \
+Proto/Server/Logic/DumpPlayerDataResponse.pb.cc \
+Proto/Server/Logic/Equip.pb.cc \
+Proto/Server/Logic/EquipType.pb.cc \
+Proto/Server/Logic/ExchangeAuraRequest.pb.cc \
+Proto/Server/Logic/ExchangeAuraResponse.pb.cc \
+Proto/Server/Logic/ExchangePVPScoreRequest.pb.cc \
+Proto/Server/Logic/ExchangePVPScoreResponse.pb.cc \
+Proto/Server/Logic/ExchangeSoulToHeroRequest.pb.cc \
+Proto/Server/Logic/ExchangeSoulToHeroResponse.pb.cc \
+Proto/Server/Logic/FragmentRobMatchRequest.pb.cc \
+Proto/Server/Logic/FragmentRobMatchResponse.pb.cc \
+Proto/Server/Logic/GainType.pb.cc \
+Proto/Server/Logic/GetBloodyChallengeGroupRequest.pb.cc \
+Proto/Server/Logic/GetBloodyChallengeGroupResponse.pb.cc \
+Proto/Server/Logic/GetCDKPackageRequest.pb.cc \
+Proto/Server/Logic/GetCDKPackageResponse.pb.cc \
+Proto/Server/Logic/GetChapterAwardRequest.pb.cc \
+Proto/Server/Logic/GetChapterAwardResponse.pb.cc \
+Proto/Server/Logic/GetMailGiftRequest.pb.cc \
+Proto/Server/Logic/GetMailGiftResponse.pb.cc \
+Proto/Server/Logic/GetPVPAwardRequest.pb.cc \
+Proto/Server/Logic/GetPVPAwardResponse.pb.cc \
+Proto/Server/Logic/GuideFinishRequest.pb.cc \
+Proto/Server/Logic/GuideFinishResponse.pb.cc \
+Proto/Server/Logic/GuideType.pb.cc \
+Proto/Server/Logic/Hero.pb.cc \
+Proto/Server/Logic/HeroBreakRequest.pb.cc \
+Proto/Server/Logic/HeroBreakResponse.pb.cc \
+Proto/Server/Logic/HeroInheritRequest.pb.cc \
+Proto/Server/Logic/HeroInheritResponse.pb.cc \
+Proto/Server/Logic/HeroTrainType.pb.cc \
+Proto/Server/Logic/HireHeroRequest.pb.cc \
+Proto/Server/Logic/HireHeroResponse.pb.cc \
+Proto/Server/Logic/HireInfo.pb.cc \
+Proto/Server/Logic/HireType.pb.cc \
+Proto/Server/Logic/IdType.pb.cc \
+Proto/Server/Logic/Item.pb.cc \
+Proto/Server/Logic/Mail.pb.cc \
+Proto/Server/Logic/Mission.pb.cc \
+Proto/Server/Logic/MissionCheckOutRequest.pb.cc \
+Proto/Server/Logic/MissionCheckOutResponse.pb.cc \
+Proto/Server/Logic/MissionResetRequest.pb.cc \
+Proto/Server/Logic/MissionResetResponse.pb.cc \
+Proto/Server/Logic/MissionSweepRequest.pb.cc \
+Proto/Server/Logic/MissionSweepResponse.pb.cc \
+Proto/Server/Logic/MissionType.pb.cc \
+Proto/Server/Logic/MonsterType.pb.cc \
+Proto/Server/Logic/Order.pb.cc \
+Proto/Server/Logic/OrderRequest.pb.cc \
+Proto/Server/Logic/OrderResponse.pb.cc \
+Proto/Server/Logic/OrderStatus.pb.cc \
+Proto/Server/Logic/OrderStatusRequest.pb.cc \
+Proto/Server/Logic/OrderStatusResponse.pb.cc \
+Proto/Server/Logic/OtherPlayerDataRequest.pb.cc \
+Proto/Server/Logic/OtherPlayerDataResponse.pb.cc \
+Proto/Server/Logic/Pet.pb.cc \
+Proto/Server/Logic/PlayerNotice.pb.cc \
+Proto/Server/Logic/PVPCheckAndPlayerDataRequest.pb.cc \
+Proto/Server/Logic/PVPCheckAndPlayerDataResponse.pb.cc \
+Proto/Server/Logic/PVPForcedHerosRequest.pb.cc \
+Proto/Server/Logic/PVPForcedHerosResponse.pb.cc \
+Proto/Server/Logic/PVPRequest.pb.cc \
+Proto/Server/Logic/PVPResponse.pb.cc \
+Proto/Server/Logic/PVPRewardTypeMask.pb.cc \
+Proto/Server/Logic/QualityValues.pb.cc \
+Proto/Server/Logic/RankListRequest.pb.cc \
+Proto/Server/Logic/RankListResponse.pb.cc \
+Proto/Server/Logic/RefreshPlayerDataRequest.pb.cc \
+Proto/Server/Logic/RefreshPlayerDataResponse.pb.cc \
+Proto/Server/Logic/RefreshPVPScoreRequest.pb.cc \
+Proto/Server/Logic/RefreshPVPScoreResponse.pb.cc \
+Proto/Server/Logic/ResetMissionRequest.pb.cc \
+Proto/Server/Logic/ResetMissionResponse.pb.cc \
+Proto/Server/Logic/RoleBuffer.pb.cc \
+Proto/Server/Logic/RoleCareer.pb.cc \
+Proto/Server/Logic/RolePosition.pb.cc \
+Proto/Server/Logic/RoleProperty.pb.cc \
+Proto/Server/Logic/Rune.pb.cc \
+Proto/Server/Logic/RuneType.pb.cc \
+Proto/Server/Logic/SellEquipRequest.pb.cc \
+Proto/Server/Logic/SellEquipResponse.pb.cc \
+Proto/Server/Logic/ServerPlayer.pb.cc \
+Proto/Server/Logic/SevenDayGiftRequest.pb.cc \
+Proto/Server/Logic/SevenDayGiftResponse.pb.cc \
+Proto/Server/Logic/SignActivityRequest.pb.cc \
+Proto/Server/Logic/SignActivityResponse.pb.cc \
+Proto/Server/Logic/SignMode.pb.cc \
+Proto/Server/Logic/Soul.pb.cc \
+Proto/Server/Logic/SystemNotice.pb.cc \
+Proto/Server/Logic/TrainHeroAcceptRequest.pb.cc \
+Proto/Server/Logic/TrainHeroAcceptResponse.pb.cc \
+Proto/Server/Logic/TrainHeroRequest.pb.cc \
+Proto/Server/Logic/TrainHeroResponse.pb.cc \
+Proto/Server/Logic/UnfinishedOrderRequest.pb.cc \
+Proto/Server/Logic/UnfinishedOrderResponse.pb.cc \
+Proto/Server/Logic/UpgradeActivityRequest.pb.cc \
+Proto/Server/Logic/UpgradeActivityResponse.pb.cc \
+Proto/Server/Logic/UpgradeEquipRequest.pb.cc \
+Proto/Server/Logic/UpgradeEquipResponse.pb.cc \
+Proto/Server/Logic/UpgradePetRequest.pb.cc \
+Proto/Server/Logic/UpgradePetResponse.pb.cc \
+Proto/Server/Logic/UpgradeRuneRequest.pb.cc \
+Proto/Server/Logic/UpgradeRuneResponse.pb.cc \
+Proto/Server/Logic/UpgradeSkillRequest.pb.cc \
+Proto/Server/Logic/UpgradeSkillResponse.pb.cc \
+Proto/Server/Logic/UseItemRequest.pb.cc \
+Proto/Server/Logic/UseItemResponse.pb.cc \
+Proto/Server/Logic/WineActivityRequest.pb.cc \
+Proto/Server/Logic/WineActivityResponse.pb.cc
+#END_AUTO_GENERATE_SRC_FILES
+
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
+                    $(LOCAL_PATH)/Proto \
+					$(LOCAL_PATH)/Proto/Client \
+					$(LOCAL_PATH)/Proto/Server/Auth \
+					$(LOCAL_PATH)/Proto/Server/Common \
+					$(LOCAL_PATH)/Proto/Server/Config \
+					$(LOCAL_PATH)/Proto/Server/Logic
+					
+LOCAL_C_INCLUDES := $(LOCAL_PATH) \
+                    $(LOCAL_PATH)/Proto \
+					$(LOCAL_PATH)/Proto/Client \
+					$(LOCAL_PATH)/Proto/Server/Auth \
+					$(LOCAL_PATH)/Proto/Server/Common \
+					$(LOCAL_PATH)/Proto/Server/Config \
+					$(LOCAL_PATH)/Proto/Server/Logic
+					
+					
+LOCAL_WHOLE_STATIC_LIBRARIES := MedusaCore MedusaExtension
+
+include $(BUILD_STATIC_LIBRARY)
+
+$(call import-module,Common/MedusaCore)
+$(call import-module,Common/MedusaExtension) 

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Message\Auth\AuthLoginRequest.h" />
+    <ClInclude Include="Message\BaseRequestGameMessage.h" />
+    <ClInclude Include="Message\BaseRequestLoginGameMessage.h" />
+    <ClInclude Include="Message\Battle\ChallengeMissionRequest.h" />
+    <ClInclude Include="Message\Battle\MissionResetRequest.h" />
+    <ClInclude Include="Message\Battle\PVPCheckAndPlayerDataRequest.h" />
+    <ClInclude Include="Message\Battle\MissionCheckOutRequest.h" />
+    <ClInclude Include="Message\Battle\MissionSweepRequest.h" />
+    <ClInclude Include="Message\Custom\BaseCustomGameMessage.h" />
+    <ClInclude Include="Message\GameMessageFactory.h" />
+    <ClInclude Include="Message\IMessageCenter.h" />
+    <ClInclude Include="Message\Logic\AccumlateChargeAwardRequest.h" />
+    <ClInclude Include="Message\Logic\AddBloodyBuffRequest.h" />
+    <ClInclude Include="Message\Logic\BeginBloodyRequest.h" />
+    <ClInclude Include="Message\Logic\BloodyRankListRequest.h" />
+    <ClInclude Include="Message\Logic\BloodySettlementRequest.h" />
+    <ClInclude Include="Message\Logic\BuyItemRequest.h" />
+    <ClInclude Include="Message\Logic\BuyPowerRequest.h" />
+    <ClInclude Include="Message\Logic\CardActivityRequest.h" />
+    <ClInclude Include="Message\Logic\ChangeAuraRequest.h" />
+    <ClInclude Include="Message\Logic\ChangeEquipRequest.h" />
+    <ClInclude Include="Message\Logic\ChangeForceIndexRequest.h" />
+    <ClInclude Include="Message\Logic\ChangeRuneRequest.h" />
+    <ClInclude Include="Message\Logic\CreatePlayerRequest.h" />
+    <ClInclude Include="Message\Logic\DrawRuneRequest.h" />
+    <ClInclude Include="Message\Logic\DumpPlayerDataRequest.h" />
+    <ClInclude Include="Message\Logic\ExchangeAuraRequest.h" />
+    <ClInclude Include="Message\Logic\ExchangePVPScoreRequest.h" />
+    <ClInclude Include="Message\Logic\ExchangeSoulToHeroRequest.h" />
+    <ClInclude Include="Message\Logic\FragmentRobMatchRequest.h" />
+    <ClInclude Include="Message\Logic\GetBloodyChallengeGroupRequest.h" />
+    <ClInclude Include="Message\Logic\GetCDKPackageRequest.h" />
+    <ClInclude Include="Message\Logic\GetChapterAwardRequest.h" />
+    <ClInclude Include="Message\Logic\GetMailGiftRequest.h" />
+    <ClInclude Include="Message\Logic\GetPVPAwardRequest.h" />
+    <ClInclude Include="Message\Logic\GuideFinishRequest.h" />
+    <ClInclude Include="Message\Logic\HeroBreakRequest.h" />
+    <ClInclude Include="Message\Logic\HeroInheritRequest.h" />
+    <ClInclude Include="Message\Logic\HireHeroRequest.h" />
+    <ClInclude Include="Message\Logic\OrderRequest.h" />
+    <ClInclude Include="Message\Logic\OrderStatusRequest.h" />
+    <ClInclude Include="Message\Logic\OtherPlayerDataRequest.h" />
+    <ClInclude Include="Message\Logic\PVPForcedHerosRequest.h" />
+    <ClInclude Include="Message\Logic\PVPRequest.h" />
+    <ClInclude Include="Message\Logic\RankListRequest.h" />
+    <ClInclude Include="Message\Logic\RefreshPlayerDataRequest.h" />
+    <ClInclude Include="Message\Logic\RefreshPVPScoreRequest.h" />
+    <ClInclude Include="Message\Logic\SellEquipRequest.h" />
+    <ClInclude Include="Message\Logic\SevenDayGiftRequest.h" />
+    <ClInclude Include="Message\Logic\SignActivityRequest.h" />
+    <ClInclude Include="Message\Logic\TrainHeroAcceptRequest.h" />
+    <ClInclude Include="Message\Logic\TrainHeroRequest.h" />
+    <ClInclude Include="Message\Logic\UpgradeActivityRequest.h" />
+    <ClInclude Include="Message\Logic\UpgradeEquipRequest.h" />
+    <ClInclude Include="Message\Logic\UpgradePetRequest.h" />
+    <ClInclude Include="Message\Logic\UpgradeRuneRequest.h" />
+    <ClInclude Include="Message\Logic\UpgradeSkillRequest.h" />
+    <ClInclude Include="Message\Logic\UseItemRequest.h" />
+    <ClInclude Include="Message\Logic\WineActivityRequest.h" />
+    <ClInclude Include="Message\Player.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Message\Auth\AuthLoginRequest.cpp" />
+    <ClCompile Include="Message\Battle\ChallengeMissionRequest.cpp" />
+    <ClCompile Include="Message\Battle\MissionResetRequest.cpp" />
+    <ClCompile Include="Message\Battle\PVPCheckAndPlayerDataRequest.cpp" />
+    <ClCompile Include="Message\Battle\MissionCheckOutRequest.cpp" />
+    <ClCompile Include="Message\Battle\MissionSweepRequest.cpp" />
+    <ClCompile Include="Message\Custom\BaseCustomGameMessage.cpp" />
+    <ClCompile Include="Message\GameMessageFactory.cpp" />
+    <ClCompile Include="Message\IMessageCenter.cpp" />
+    <ClCompile Include="Message\Logic\AccumlateChargeAwardRequest.cpp" />
+    <ClCompile Include="Message\Logic\AddBloodyBuffRequest.cpp" />
+    <ClCompile Include="Message\Logic\BeginBloodyRequest.cpp" />
+    <ClCompile Include="Message\Logic\BloodyRankListRequest.cpp" />
+    <ClCompile Include="Message\Logic\BloodySettlementRequest.cpp" />
+    <ClCompile Include="Message\Logic\BuyItemRequest.cpp" />
+    <ClCompile Include="Message\Logic\BuyPowerRequest.cpp" />
+    <ClCompile Include="Message\Logic\CardActivityRequest.cpp" />
+    <ClCompile Include="Message\Logic\ChangeAuraRequest.cpp" />
+    <ClCompile Include="Message\Logic\ChangeEquipRequest.cpp" />
+    <ClCompile Include="Message\Logic\ChangeForceIndexRequest.cpp" />
+    <ClCompile Include="Message\Logic\ChangeRuneRequest.cpp" />
+    <ClCompile Include="Message\Logic\CreatePlayerRequest.cpp" />
+    <ClCompile Include="Message\Logic\DrawRuneRequest.cpp" />
+    <ClCompile Include="Message\Logic\DumpPlayerDataRequest.cpp" />
+    <ClCompile Include="Message\Logic\ExchangeAuraRequest.cpp" />
+    <ClCompile Include="Message\Logic\ExchangePVPScoreRequest.cpp" />
+    <ClCompile Include="Message\Logic\ExchangeSoulToHeroRequest.cpp" />
+    <ClCompile Include="Message\Logic\FragmentRobMatchRequest.cpp" />
+    <ClCompile Include="Message\Logic\GetBloodyChallengeGroupRequest.cpp" />
+    <ClCompile Include="Message\Logic\GetCDKPackageRequest.cpp" />
+    <ClCompile Include="Message\Logic\GetChapterAwardRequest.cpp" />
+    <ClCompile Include="Message\Logic\GetMailGiftRequest.cpp" />
+    <ClCompile Include="Message\Logic\GetPVPAwardRequest.cpp" />
+    <ClCompile Include="Message\Logic\GuideFinishRequest.cpp" />
+    <ClCompile Include="Message\Logic\HeroBreakRequest.cpp" />
+    <ClCompile Include="Message\Logic\HeroInheritRequest.cpp" />
+    <ClCompile Include="Message\Logic\HireHeroRequest.cpp" />
+    <ClCompile Include="Message\Logic\OrderRequest.cpp" />
+    <ClCompile Include="Message\Logic\OrderStatusRequest.cpp" />
+    <ClCompile Include="Message\Logic\OtherPlayerDataRequest.cpp" />
+    <ClCompile Include="Message\Logic\PVPForcedHerosRequest.cpp" />
+    <ClCompile Include="Message\Logic\PVPRequest.cpp" />
+    <ClCompile Include="Message\Logic\RankListRequest.cpp" />
+    <ClCompile Include="Message\Logic\RefreshPlayerDataRequest.cpp" />
+    <ClCompile Include="Message\Logic\RefreshPVPScoreRequest.cpp" />
+    <ClCompile Include="Message\Logic\SellEquipRequest.cpp" />
+    <ClCompile Include="Message\Logic\SevenDayGiftRequest.cpp" />
+    <ClCompile Include="Message\Logic\SignActivityRequest.cpp" />
+    <ClCompile Include="Message\Logic\TrainHeroAcceptRequest.cpp" />
+    <ClCompile Include="Message\Logic\TrainHeroRequest.cpp" />
+    <ClCompile Include="Message\Logic\UpgradeActivityRequest.cpp" />
+    <ClCompile Include="Message\Logic\UpgradeEquipRequest.cpp" />
+    <ClCompile Include="Message\Logic\UpgradePetRequest.cpp" />
+    <ClCompile Include="Message\Logic\UpgradeRuneRequest.cpp" />
+    <ClCompile Include="Message\Logic\UpgradeSkillRequest.cpp" />
+    <ClCompile Include="Message\Logic\UseItemRequest.cpp" />
+    <ClCompile Include="Message\Logic\WineActivityRequest.cpp" />
+    <ClCompile Include="Message\Player.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1CE68E6-B3E4-488F-B035-EAD543DA3613}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PaperMessage</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\PaperCore;..\PaperCore\Proto\Client;..\PaperCore\Proto\Server\Auth;..\PaperCore\Proto\Server\Common;..\PaperCore\Proto\Server\Config;..\PaperCore\Proto\Server\Logic;..\MedusaCore\CoreLib;..\MedusaCore\CoreLib\Common\zip;..\MedusaCore\CoreLib\Common\angelscript\include;..\MedusaCore;..\MedusaCore\CoreLib\Common;..\MedusaCore\CoreLib\Common\zlib;..\MedusaCore\Core\Proto\Client;..\MedusaExtension;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>PaperCore.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

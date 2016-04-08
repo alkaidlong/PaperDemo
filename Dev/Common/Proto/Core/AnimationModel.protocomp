@@ -1,0 +1,47 @@
+
+è	
+9wyx/Work/Paper/Dev/Client/Proto/Core/AnimationModel.protoMedusa.CoreProtoGeometry.protoFileSystem.proto"w
+ComponentInfo(
+FileID (2.Medusa.CoreProto.FileId<
+TriggerCondition (2".Medusa.CoreProto.TriggerCondition"0
+ConditionParameter
+Key (	
+Value (	"_
+TriggerCondition
+	EventName (	8
+
+Parameters (2$.Medusa.CoreProto.ConditionParameter"ü
+	BlockInfo
+ZOrder ((
+Anchor (2.Medusa.CoreProto.PointF%
+Pos (2.Medusa.CoreProto.PointF'
+Scale (2.Medusa.CoreProto.ScaleF&
+Skew (2.Medusa.CoreProto.PointF1
+ColorMultiplier
+ (2.Medusa.CoreProto.ColorF-
+ColorOffset (2.Medusa.CoreProto.ColorF"√
+
+BlockModel/
+
+FrameValue (2.Medusa.CoreProto.FrameType)
+Info (2.Medusa.CoreProto.BlockInfo
+
+ImageIndex (
+BlockId (
+PrevKeyFrameIndex (
+NextKeyFrameIndex (":
+
+FrameModel,
+Blocks (2.Medusa.CoreProto.BlockModel"≤
+AnimationModel
+	FrameRate (3
+
+Components (2.Medusa.CoreProto.ComponentInfo,
+Frames (2.Medusa.CoreProto.FrameModel*
+	ModelSize (2.Medusa.CoreProto.SizeF*9
+	FrameType
+KeyFrame
+
+TweenFrame
+
+EmptyFrame

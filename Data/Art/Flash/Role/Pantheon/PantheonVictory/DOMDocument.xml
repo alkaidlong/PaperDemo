@@ -1,0 +1,881 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#408080" width="1" height="1" currentTimeline="1" xflVersion="2.1" creatorInfo="Adobe Flash Professional CS5.5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.5 build 325" majorVersion="11" minorVersion="5" buildNumber="325" rulerVisible="true" objectsSnapTo="false" viewAngle3D="1" previewMode="fast" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <media>
+          <DOMBitmapItem name="PantheonArmIn.png" itemID="523ff8e9-0000127c" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonArmIn.png" sourceLastImported="1379908418" externalFileSize="405" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonArmIn.png" bitmapDataHRef="M 6 1379924201.dat" frameRight="320" frameBottom="880"/>
+          <DOMBitmapItem name="PantheonArmOu1.png" itemID="523ff8ac-0000126a" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonArmOu1.png" sourceLastImported="1379908167" externalFileSize="639" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonArmOu1.png" bitmapDataHRef="M 4 1379924140.dat" frameRight="340" frameBottom="640"/>
+          <DOMBitmapItem name="PantheonArmOu2.png" itemID="523ff8c6-00001273" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonArmOu2.png" sourceLastImported="1379908189" externalFileSize="873" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonArmOu2.png" bitmapDataHRef="M 5 1379924166.dat" frameRight="380" frameBottom="700"/>
+          <DOMBitmapItem name="PantheonBack.png" itemID="523ffa46-000012a4" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonBack.png" sourceLastImported="1379908128" externalFileSize="1206" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonBack.png" bitmapDataHRef="M 10 1379924550.dat" frameRight="1280" frameBottom="1340"/>
+          <DOMBitmapItem name="PantheonBody.png" itemID="523ff894-00001261" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonBody.png" sourceLastImported="1379907878" externalFileSize="1491" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonBody.png" bitmapDataHRef="M 3 1379924116.dat" frameRight="860" frameBottom="1000"/>
+          <DOMBitmapItem name="PantheonHead.png" itemID="523ff866-0000124e" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonHead.png" sourceLastImported="1379907857" externalFileSize="1883" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonHead.png" bitmapDataHRef="M 1 1379924070.dat" frameRight="920" frameBottom="880"/>
+          <DOMBitmapItem name="PantheonLegIn1.png" itemID="523ff93b-0000128f" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonLegIn1.png" sourceLastImported="1379923040" externalFileSize="597" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonLegIn1.png" bitmapDataHRef="M 8 1379924283.dat" frameRight="280" frameBottom="640"/>
+          <DOMBitmapItem name="PantheonLegIn2.png" itemID="523ff95f-0000129b" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonLegIn2.png" sourceLastImported="1379923063" externalFileSize="309" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonLegIn2.png" bitmapDataHRef="M 9 1379924319.dat" frameRight="200" frameBottom="520"/>
+          <DOMBitmapItem name="PantheonLegOu.png" itemID="523ff902-00001285" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonLegOu.png" sourceLastImported="1379907933" externalFileSize="679" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonLegOu.png" bitmapDataHRef="M 7 1379924226.dat" frameRight="340" frameBottom="920"/>
+          <DOMBitmapItem name="PantheonWeaponIn.png" itemID="523ffa6d-000012ad" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonWeaponIn.png" sourceLastImported="1379908033" externalFileSize="3266" originalCompressionType="lossless" quality="50" href="PantheonWeaponIn.png" bitmapDataHRef="M 11 1379924589.dat" frameRight="940" frameBottom="1460"/>
+          <DOMBitmapItem name="PantheonWeaponOu.png" itemID="523ffa94-000012b6" sourceExternalFilepath="../PantheonRun/LIBRARY/PantheonWeaponOu.png" sourceLastImported="1379908087" externalFileSize="1149" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="PantheonWeaponOu.png" bitmapDataHRef="M 12 1379924628.dat" frameRight="280" frameBottom="3280"/>
+     </media>
+     <symbols>
+          <Include href="PantheonArmIn.xml" itemIcon="1" loadImmediate="false" itemID="523ff8ee-0000127e" lastModified="1379924206"/>
+          <Include href="PantheonArmOu1.xml" itemIcon="1" loadImmediate="false" itemID="523ff8b2-0000126c" lastModified="1379924146"/>
+          <Include href="PantheonArmOu2.xml" itemIcon="1" loadImmediate="false" itemID="523ff8cc-00001275" lastModified="1379924172"/>
+          <Include href="PantheonBack.xml" itemIcon="1" loadImmediate="false" itemID="523ffa4b-000012a6" lastModified="1379924555"/>
+          <Include href="PantheonBody.xml" itemIcon="1" loadImmediate="false" itemID="523ff898-00001263" lastModified="1379924120"/>
+          <Include href="PantheonHead.xml" itemIcon="1" loadImmediate="false" itemID="523ff881-0000125a" lastModified="1379924097"/>
+          <Include href="PantheonLegIn1.xml" itemIcon="1" loadImmediate="false" itemID="523ff947-00001294" lastModified="1379924295"/>
+          <Include href="PantheonLegIn2.xml" itemIcon="1" loadImmediate="false" itemID="523ff966-0000129d" lastModified="1379924326"/>
+          <Include href="PantheonLegOu.xml" itemIcon="1" loadImmediate="false" itemID="523ff909-00001287" lastModified="1379924233"/>
+          <Include href="PantheonWeaponIn.xml" itemIcon="1" loadImmediate="false" itemID="523ffa73-000012af" lastModified="1379924595"/>
+          <Include href="PantheonWeaponOu.xml" itemIcon="1" loadImmediate="false" itemID="523ffa99-000012b8" lastModified="1379924633"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="场景 1" currentFrame="19" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;3&lt;/guideline&gt;&lt;guideline direction="v"&gt;-32&lt;/guideline&gt;&lt;/guidelines&gt;'>
+               <layers>
+                    <DOMLayer name="ArmOu2" color="#4FFFFF" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.974319458007813" b="0.225189208984375" c="-0.225189208984375" d="0.974319458007813" tx="-29.35" ty="-46.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.9" y="-13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu2" symbolType="graphic" centerPoint3DX="18.4" centerPoint3DY="-78.8" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.733551025390625" b="-0.668487548828125" c="0.668487548828125" d="-0.733551025390625" tx="18.4" ty="-78.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.85" y="-13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu2" symbolType="graphic" centerPoint3DX="18.8" centerPoint3DY="-70.75" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.710769653320313" b="-0.689682006835938" c="0.689682006835938" d="-0.710769653320313" tx="18.8" ty="-70.75"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.85" y="-13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu2" symbolType="graphic" centerPoint3DX="18.4" centerPoint3DY="-78.8" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.733551025390625" b="-0.668487548828125" c="0.668487548828125" d="-0.733551025390625" tx="18.4" ty="-78.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.85" y="-13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu2" symbolType="graphic" centerPoint3DX="11.9" centerPoint3DY="-57.45" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.761856079101563" b="-0.63555908203125" c="0.63555908203125" d="-0.761856079101563" tx="11.9" ty="-57.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.85" y="-13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.974319458007813" b="0.225189208984375" c="-0.225189208984375" d="0.974319458007813" tx="-29.35" ty="-46.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.9" y="-13.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="WeaponOu" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.7802734375" b="-0.625411987304688" c="0.625411987304688" d="-0.7802734375" tx="-6.1" ty="-61.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponOu" symbolType="graphic" centerPoint3DX="23.05" centerPoint3DY="-87.7" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.537826538085938" b="0.833221435546875" c="-0.833221435546875" d="-0.537826538085938" tx="23.05" ty="-87.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponOu" symbolType="graphic" centerPoint3DX="19.4" centerPoint3DY="-84.4" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.69915771484375" b="0.702499389648438" c="-0.702499389648438" d="-0.69915771484375" tx="19.4" ty="-84.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponOu" symbolType="graphic" centerPoint3DX="23.05" centerPoint3DY="-87.7" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.537826538085938" b="0.833221435546875" c="-0.833221435546875" d="-0.537826538085938" tx="23.05" ty="-87.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponOu" symbolType="graphic" centerPoint3DX="12.1" centerPoint3DY="-77.8" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.926193237304688" b="0.3568115234375" c="-0.3568115234375" d="-0.926193237304688" tx="12.1" ty="-77.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.7802734375" b="-0.625411987304688" c="0.625411987304688" d="-0.7802734375" tx="-6.1" ty="-61.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Head" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonHead" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="13.85" ty="-82.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3" y="11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonHead" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="13.85" ty="-80.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3" y="11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonHead" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="13.85" ty="-80.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3" y="11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonHead" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="13.85" ty="-80.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3" y="11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonHead" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="13.85" ty="-80.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3" y="11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonHead" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="13.85" ty="-82.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="3" y="11.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="ArmOu1" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.46661376953125" b="0.88446044921875" c="-0.88446044921875" d="0.46661376953125" tx="-19" ty="-67.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.55" y="-15.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu1" symbolType="graphic" centerPoint3DX="-0.7" centerPoint3DY="-64.7" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.0613555908203125" b="-0.991592407226563" c="0.991592407226563" d="-0.0613555908203125" tx="-0.7" ty="-64.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.5" y="-15.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu1" symbolType="graphic" centerPoint3DX="0.75" centerPoint3DY="-61.4" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.270584106445313" b="-0.95587158203125" c="0.95587158203125" d="0.270584106445313" tx="0.75" ty="-61.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.5" y="-15.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu1" symbolType="graphic" centerPoint3DX="-0.7" centerPoint3DY="-64.7" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="-0.0613555908203125" b="-0.991592407226563" c="0.991592407226563" d="-0.0613555908203125" tx="-0.7" ty="-64.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.5" y="-15.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu1" symbolType="graphic" centerPoint3DX="-1.45" centerPoint3DY="-55.9" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.8128662109375" b="-0.571701049804688" c="0.571701049804688" d="0.8128662109375" tx="-1.45" ty="-55.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.5" y="-15.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmOu1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.46661376953125" b="0.88446044921875" c="-0.88446044921875" d="0.46661376953125" tx="-19" ty="-67.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.55" y="-15.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="WeaponIn" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="33" ty="-38.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.998641967773438" b="-0.052093505859375" c="0.052093505859375" d="0.998641967773438" tx="41" ty="-36.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.998886108398438" b="-0.0441131591796875" c="0.0441131591796875" d="0.998886108398438" tx="40" ty="-36.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.998641967773438" b="-0.052093505859375" c="0.052093505859375" d="0.998641967773438" tx="41" ty="-36.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.99932861328125" b="-0.030792236328125" c="0.030792236328125" d="0.99932861328125" tx="38.05" ty="-37.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonWeaponIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="33" ty="-38.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Body" color="#FF800A" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBody" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="7" ty="-49.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-10.5" y="15.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBody" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="7" ty="-47.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-10.5" y="15.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBody" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="7" ty="-47.75"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-10.5" y="15.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBody" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="7" ty="-47.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-10.5" y="15.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBody" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="7" ty="-48.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-10.5" y="15.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBody" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix tx="7" ty="-49.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-10.5" y="15.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="ArmIn" color="#808080" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.995880126953125" b="0.090667724609375" c="-0.090667724609375" d="0.995880126953125" tx="24.05" ty="-40.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1" y="-21.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.995834350585938" b="0.0880279541015625" c="-0.0880279541015625" d="0.995834350585938" tx="24.1" ty="-38.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1" y="-21.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.995635986328125" b="0.0874481201171875" c="-0.0874481201171875" d="0.995635986328125" tx="24.2" ty="-38.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.05" y="-21.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.995834350585938" b="0.0880279541015625" c="-0.0880279541015625" d="0.995834350585938" tx="24.1" ty="-38.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1" y="-21.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.995529174804688" b="0.087432861328125" c="-0.087432861328125" d="0.995529174804688" tx="24.2" ty="-39.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.05" y="-21.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonArmIn" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.995880126953125" b="0.090667724609375" c="-0.090667724609375" d="0.995880126953125" tx="24.05" ty="-40.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1" y="-21.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="LegOu" color="#4F80FF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.942901611328125" b="0.33306884765625" c="-0.33306884765625" d="0.942901611328125" tx="-16.9" ty="-17.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.4" y="-22.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.942718505859375" b="0.31060791015625" c="-0.320770263671875" d="0.859603881835938" tx="-16.6" ty="-15.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.4" y="-22.6"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.942306518554688" b="0.31170654296875" c="-0.32147216796875" d="0.869293212890625" tx="-16.65" ty="-15.55"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.45" y="-22.65"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.942718505859375" b="0.31060791015625" c="-0.320770263671875" d="0.859603881835938" tx="-16.6" ty="-15.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.4" y="-22.6"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.9420166015625" b="0.316162109375" c="-0.324356079101563" d="0.889434814453125" tx="-16.75" ty="-16.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.4" y="-22.7"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegOu" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.942901611328125" b="0.33306884765625" c="-0.33306884765625" d="0.942901611328125" tx="-16.9" ty="-17.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.4" y="-22.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="LegIn2" color="#4FFF4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.922592163085938" b="0.385772705078125" c="-0.385772705078125" d="0.922592163085938" tx="15.35" ty="-10.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.45" y="-12.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.922286987304688" b="0.36029052734375" c="-0.383438110351563" d="0.86663818359375" tx="15.4" ty="-9.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.4" y="-12.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.921188354492188" b="0.363388061523438" c="-0.381332397460938" d="0.873458862304688" tx="15.4" ty="-9.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.35" y="-12.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.922286987304688" b="0.36029052734375" c="-0.383438110351563" d="0.86663818359375" tx="15.4" ty="-9.15"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.4" y="-12.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.920974731445313" b="0.368423461914063" c="-0.381820678710938" d="0.886611938476563" tx="15.45" ty="-9.5"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.35" y="-12.4"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn2" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.922592163085938" b="0.385772705078125" c="-0.385772705078125" d="0.922592163085938" tx="15.35" ty="-10.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="1.45" y="-12.45"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="LegIn1" color="#FF4F4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.577377319335938" b="-0.81646728515625" c="0.81646728515625" d="0.577377319335938" tx="10.5" ty="-27.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point y="-11.85"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.522857666015625" b="-0.803619384765625" c="0.850265502929688" d="0.484710693359375" tx="10.9" ty="-26.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.05" y="-11.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.528762817382813" b="-0.804183959960938" c="0.8458251953125" d="0.494888305664063" tx="10.8" ty="-26.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point y="-11.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.522857666015625" b="-0.803619384765625" c="0.850265502929688" d="0.484710693359375" tx="10.9" ty="-26.35"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.05" y="-11.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.541107177734375" b="-0.80706787109375" c="0.838211059570313" d="0.515914916992188" tx="10.75" ty="-26.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point y="-11.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonLegIn1" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.577377319335938" b="-0.81646728515625" c="0.81646728515625" d="0.577377319335938" tx="10.5" ty="-27.65"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point y="-11.85"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Back" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBack" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.877105712890625" b="0.480300903320313" c="-0.480300903320313" d="0.877105712890625" tx="-16.2" ty="-47.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8" y="-29"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="4" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBack" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.834518432617188" b="0.548416137695313" c="-0.548416137695313" d="0.834518432617188" tx="-17.9" ty="-46.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8.1" y="-29"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="8" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBack" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.840057373046875" b="0.537506103515625" c="-0.537506103515625" d="0.840057373046875" tx="-17.7" ty="-46.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8.15" y="-28.95"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="12" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBack" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.834518432617188" b="0.548416137695313" c="-0.548416137695313" d="0.834518432617188" tx="-17.9" ty="-46.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8.1" y="-29"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="16" duration="3" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBack" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.850997924804688" b="0.518692016601563" c="-0.518692016601563" d="0.850997924804688" tx="-17.2" ty="-46.95"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8.15" y="-29"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="19" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="PantheonBack" symbolType="graphic" loop="loop">
+                                             <matrix>
+                                                  <Matrix a="0.877105712890625" b="0.480300903320313" c="-0.480300903320313" d="0.877105712890625" tx="-16.2" ty="-47.1"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="8" y="-29"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="12590" publishTime="1379926940"/>
+          <PublishItem publishSize="12958" publishTime="1379926661"/>
+          <PublishItem publishSize="12958" publishTime="1379926625"/>
+          <PublishItem publishSize="12964" publishTime="1379926490"/>
+          <PublishItem publishSize="12966" publishTime="1379926467"/>
+          <PublishItem publishSize="12932" publishTime="1379926421"/>
+          <PublishItem publishSize="12713" publishTime="1379926066"/>
+          <PublishItem publishSize="12560" publishTime="1379925965"/>
+     </publishHistory>
+</DOMDocument>

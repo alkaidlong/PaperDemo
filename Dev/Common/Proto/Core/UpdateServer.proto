@@ -1,0 +1,20 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+import "CoreDefines.proto";
+
+//更新服务器信息
+message UpdateServer
+{
+  enum UpdateServerStatus
+  {
+    OK=0;
+    Maintain=1;
+    Error=2;
+    DontUpgrade=3;
+  }
+  required UpdateServerStatus Status=1;
+  
+  required Version MinVersion=2;
+  required Version CurVersion=3;
+  required string Description=4;
+}

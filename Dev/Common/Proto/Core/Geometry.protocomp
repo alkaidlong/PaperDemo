@@ -1,0 +1,48 @@
+
+Ø
+3wyx/Work/Paper/Dev/Client/Proto/Core/Geometry.protoMedusa.CoreProto"&
+SizeU
+Width (
+Height ("&
+SizeF
+Width (
+Height (",
+RangeU
+MinValue (
+MaxValue (",
+RangeF
+MinValue (
+MaxValue ("
+PointU	
+X (	
+Y ("
+PointF	
+X (	
+Y ("
+ScaleU	
+X (	
+Y ("
+ScaleF	
+X (	
+Y ("4
+ColorF	
+R (	
+G (	
+B (	
+A ("4
+ColorU	
+R (	
+G (	
+B (	
+A ("X
+RectU(
+Origin (2.Medusa.CoreProto.PointU%
+Size (2.Medusa.CoreProto.SizeU"X
+RectF(
+Origin (2.Medusa.CoreProto.PointF%
+Size (2.Medusa.CoreProto.SizeF"C
+BorderU
+Left (
+Right (
+Top (
+Bottom (

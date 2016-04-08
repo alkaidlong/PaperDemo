@@ -1,0 +1,507 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#408080" width="10" height="10" currentTimeline="1" xflVersion="2.1" creatorInfo="Adobe Flash Professional CS5.5" platform="Windows" versionInfo="Saved by Adobe Flash Windows 11.5 build 325" majorVersion="11" minorVersion="5" buildNumber="325" rulerVisible="true" objectsSnapTo="false" viewAngle3D="9.97498251304855" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveHasPrompted="true">
+     <media>
+          <DOMBitmapItem name="JarvenIVArmIn.png" itemID="5201f3c7-0000110c" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVArmIn.png" sourceLastImported="1375859643" externalFileSize="653" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVArmIn.png" bitmapDataHRef="M 32 1375864173.dat" frameRight="540" frameBottom="980"/>
+          <DOMBitmapItem name="JarvenIVArmOu.png" itemID="5201f319-000010d7" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVArmOu.png" sourceLastImported="1375858493" externalFileSize="1077" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVArmOu.png" bitmapDataHRef="M 20 1375863559.dat" frameRight="660" frameBottom="1280"/>
+          <DOMBitmapItem name="JarvenIVBody.png" itemID="5201f319-000010dc" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVBody.png" sourceLastImported="1375858349" externalFileSize="2333" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVBody.png" bitmapDataHRef="M 28 1375863862.dat" frameRight="860" frameBottom="1100"/>
+          <DOMBitmapItem name="JarvenIVHead.png" itemID="5201f319-000010e1" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVHead.png" sourceLastImported="1375858305" externalFileSize="1029" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVHead.png" bitmapDataHRef="M 22 1375863559.dat" frameRight="480" frameBottom="700"/>
+          <DOMBitmapItem name="JarvenIVLegIn.png" itemID="53d745c6-000001fa" sourceExternalFilepath="./LIBRARY/JarvenIVLegIn.png" sourceLastImported="1406613469" externalFileCRC32="37439365" externalFileSize="1352" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVLegIn.png" bitmapDataHRef="M 35 1375864215.dat" frameRight="280" frameBottom="700"/>
+          <DOMBitmapItem name="JarvenIVLegOu.png" itemID="5201f319-000010eb" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVLegOu.png" sourceLastImported="1375858583" externalFileSize="303" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVLegOu.png" bitmapDataHRef="M 36 1375864215.dat" frameRight="260" frameBottom="760"/>
+          <DOMBitmapItem name="JarvenIVShoulderIn.png" itemID="5201f319-000010f0" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVShoulderIn.png" sourceLastImported="1375858555" externalFileSize="660" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVShoulderIn.png" bitmapDataHRef="M 33 1375864173.dat" frameRight="260" frameBottom="720"/>
+          <DOMBitmapItem name="JarvenIVShoulderOu.png" itemID="5201f319-000010f5" sourceExternalFilepath="./Data/Art/Flash/Role/JarvenIV/JarvenIVAttack/LIBRARY/JarvenIV1/JarvenIVShoulderOu.png" sourceLastImported="1375858526" externalFileSize="1239" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVShoulderOu.png" bitmapDataHRef="M 34 1375864173.dat" frameRight="580" frameBottom="820"/>
+          <DOMBitmapItem name="JarvenIVWeapon.png" itemID="53d745e2-000001fb" sourceExternalFilepath="./LIBRARY/JarvenIVWeapon.png" sourceLastImported="1406615842" externalFileCRC32="2192802251" externalFileSize="16278" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="JarvenIVWeapon.png" bitmapDataHRef="M 27 1375863559.dat" frameRight="540" frameBottom="3100"/>
+     </media>
+     <symbols>
+          <Include href="JarvenIVArmIn.xml" itemIcon="1" loadImmediate="false" itemID="52020277-000013c3" lastModified="1377853713"/>
+          <Include href="JarvenIVArmOu.xml" itemIcon="1" loadImmediate="false" itemID="52020237-000013bc" lastModified="1377853713"/>
+          <Include href="JarvenIVBody.xml" itemIcon="1" loadImmediate="false" itemID="5202000b-000013a2" lastModified="1377853713"/>
+          <Include href="JarvenIVHead.xml" itemIcon="1" loadImmediate="false" itemID="5202001a-000013a4" lastModified="1377853713"/>
+          <Include href="JarvenIVLegIn.xml" itemIcon="1" loadImmediate="false" itemID="52020211-000013b8" lastModified="1377853713"/>
+          <Include href="JarvenIVLegOu.xml" itemIcon="1" loadImmediate="false" itemID="520201db-000013b4" lastModified="1377853713"/>
+          <Include href="JarvenIVShouldeOu.xml" itemIcon="1" loadImmediate="false" itemID="520204d5-00001412" lastModified="1377853713"/>
+          <Include href="JarvenIVShoulderIn.xml" itemIcon="1" loadImmediate="false" itemID="520dad5c-000008d4" lastModified="1377853713"/>
+          <Include href="JarvenIVWeapon.xml" itemIcon="1" loadImmediate="false" itemID="5202006f-000013ab" lastModified="1377853713"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="场景 1" currentFrame="4" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-1&lt;/guideline&gt;&lt;guideline direction="v"&gt;0&lt;/guideline&gt;&lt;guideline direction="v"&gt;31&lt;/guideline&gt;&lt;/guidelines&gt;'>
+               <layers>
+                    <DOMLayer name="head" color="#4F80FF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVHead" centerPoint3DX="2.4" centerPoint3DY="-91.4">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="2.4" ty="-91.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.35" y="14.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVHead" centerPoint3DX="-5.4" centerPoint3DY="-90.05">
+                                             <matrix>
+                                                  <Matrix a="0.92376708984375" b="0.292434692382813" c="-0.292434692382813" d="0.92376708984375" tx="-5.4" ty="-90.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.35" y="14.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVHead" centerPoint3DX="-10.4" centerPoint3DY="-90.05">
+                                             <matrix>
+                                                  <Matrix a="0.92376708984375" b="0.292434692382813" c="-0.292434692382813" d="0.92376708984375" tx="-10.4" ty="-90.05"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.35" y="14.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVHead" centerPoint3DX="2.4" centerPoint3DY="-91.4">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="2.4" ty="-91.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="2.35" y="14.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="shoulderOu" color="#4FFFFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShouldeOu" centerPoint3DX="-26.8" centerPoint3DY="-89.85">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-26.8" ty="-89.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="6.7" y="9.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShouldeOu" centerPoint3DX="-39.85" centerPoint3DY="-81.95">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="-39.85" ty="-81.95"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="6.75" y="9.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShouldeOu" centerPoint3DX="-44.85" centerPoint3DY="-81.95">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="-44.85" ty="-81.95"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="6.75" y="9.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShouldeOu" centerPoint3DX="-26.8" centerPoint3DY="-89.85">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-26.8" ty="-89.85"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="6.7" y="9.55"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="armOu" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmOu" centerPoint3DX="-34.35" centerPoint3DY="-56.2">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-34.35" ty="-56.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.9" y="-14.9"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmOu" centerPoint3DX="-40.4" centerPoint3DY="-49.45">
+                                             <matrix>
+                                                  <Matrix a="0.952789306640625" b="-0.151123046875" c="0.151123046875" d="0.952789306640625" tx="-40.4" ty="-49.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.95" y="-15"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmOu" centerPoint3DX="-44.25" centerPoint3DY="-49.2">
+                                             <matrix>
+                                                  <Matrix a="0.945098876953125" b="-0.201339721679688" c="0.201339721679688" d="0.945098876953125" tx="-44.25" ty="-49.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.85" y="-14.9"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmOu" centerPoint3DX="-34.35" centerPoint3DY="-56.2">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-34.35" ty="-56.2"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-0.9" y="-14.9"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="body" color="#808080" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVBody" centerPoint3DX="-3.6" centerPoint3DY="-57.8">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-3.6" ty="-57.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="4.15" y="15.1"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVBody" centerPoint3DX="-9.75" centerPoint3DY="-56.45">
+                                             <matrix>
+                                                  <Matrix a="0.96551513671875" b="-0.0720367431640625" c="0.0720367431640625" d="0.96551513671875" tx="-9.75" ty="-56.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="4.2" y="15.1"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVBody" centerPoint3DX="-14.75" centerPoint3DY="-56.45">
+                                             <matrix>
+                                                  <Matrix a="0.96551513671875" b="-0.0720367431640625" c="0.0720367431640625" d="0.96551513671875" tx="-14.75" ty="-56.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="4.2" y="15.1"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVBody" centerPoint3DX="-3.6" centerPoint3DY="-57.8">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-3.6" ty="-57.8"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="4.15" y="15.1"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="shoulderIn" color="#FF4FFF" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShoulderIn" centerPoint3DX="18.95" centerPoint3DY="-83.7">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="18.95" ty="-83.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.35" y="10.05"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShoulderIn" centerPoint3DX="5.45" centerPoint3DY="-85.45">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="5.45" ty="-85.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.45" y="10"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShoulderIn" centerPoint3DX="0.45" centerPoint3DY="-85.45">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="0.45" ty="-85.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.45" y="10"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVShoulderIn" centerPoint3DX="18.95" centerPoint3DY="-83.7">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="18.95" ty="-83.7"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-1.35" y="10.05"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="armIn" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmIn" centerPoint3DX="16.95" centerPoint3DY="-53.9">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="16.95" ty="-53.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-5.8" y="-15.7"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmIn" centerPoint3DX="9.55" centerPoint3DY="-56.4">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="9.55" ty="-56.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-5.75" y="-15.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmIn" centerPoint3DX="4.55" centerPoint3DY="-56.4">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="4.55" ty="-56.4"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-5.75" y="-15.75"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVArmIn" centerPoint3DX="16.95" centerPoint3DY="-53.9">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="16.95" ty="-53.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-5.8" y="-15.7"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="weapon" color="#9933CC" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVWeapon" centerPoint3DX="39.35" centerPoint3DY="-77.55">
+                                             <matrix>
+                                                  <Matrix a="0.932266235351563" b="0.323257446289063" c="-0.323257446289063" d="0.932266235351563" tx="39.35" ty="-77.55"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.15" y="43.9"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVWeapon" centerPoint3DX="24.95" centerPoint3DY="-83.75">
+                                             <matrix>
+                                                  <Matrix a="0.9644775390625" b="0.088592529296875" c="-0.088592529296875" d="0.9644775390625" tx="24.95" ty="-83.75"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.1" y="43.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVWeapon" centerPoint3DX="19.95" centerPoint3DY="-83.75">
+                                             <matrix>
+                                                  <Matrix a="0.9644775390625" b="0.088592529296875" c="-0.088592529296875" d="0.9644775390625" tx="19.95" ty="-83.75"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.1" y="43.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVWeapon" centerPoint3DX="39.35" centerPoint3DY="-77.55">
+                                             <matrix>
+                                                  <Matrix a="0.932266235351563" b="0.323257446289063" c="-0.323257446289063" d="0.932266235351563" tx="39.35" ty="-77.55"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="0.15" y="43.9"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="legIn" color="#FF4F4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegIn" centerPoint3DX="5.85" centerPoint3DY="-22.95">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="5.85" ty="-22.95"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-3" y="-14.35"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegIn" centerPoint3DX="5.25" centerPoint3DY="-24.45">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="5.25" ty="-24.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-3.05" y="-14.35"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegIn" centerPoint3DX="0.25" centerPoint3DY="-24.45">
+                                             <matrix>
+                                                  <Matrix a="0.956451416015625" b="-0.156402587890625" c="0.156402587890625" d="0.956451416015625" tx="0.25" ty="-24.45"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-3.05" y="-14.35"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegIn" centerPoint3DX="5.85" centerPoint3DY="-22.95">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="5.85" ty="-22.95"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-3" y="-14.35"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="legOu" color="#4FFF4F" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegOu" centerPoint3DX="-11" centerPoint3DY="-23.55">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-10.95" ty="-23.55"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.25" y="-16.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="2" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegOu" centerPoint3DX="-14.95" centerPoint3DY="-20.9">
+                                             <matrix>
+                                                  <Matrix a="0.965301513671875" b="0.0801544189453125" c="-0.0801544189453125" d="0.965301513671875" tx="-14.95" ty="-20.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.3" y="-16.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="6" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegOu" centerPoint3DX="-19.95" centerPoint3DY="-20.9">
+                                             <matrix>
+                                                  <Matrix a="0.965301513671875" b="0.0801544189453125" c="-0.0801544189453125" d="0.965301513671875" tx="-19.95" ty="-20.9"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.3" y="-16.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                              <DOMFrame index="15" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="JarvenIVLegOu" centerPoint3DX="-11" centerPoint3DY="-23.55">
+                                             <matrix>
+                                                  <Matrix a="0.985565185546875" b="0.0472564697265625" c="-0.0472564697265625" d="0.985565185546875" tx="-10.95" ty="-23.55"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="-2.25" y="-16.8"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings/>
+     <publishHistory>
+          <PublishItem publishSize="10029" publishTime="1376033645"/>
+          <PublishItem publishSize="11901" publishTime="1375863688"/>
+          <PublishItem publishSize="11899" publishTime="1375863665"/>
+          <PublishItem publishSize="12633" publishTime="1375425769"/>
+          <PublishItem publishSize="12444" publishTime="1375425747"/>
+          <PublishItem publishSize="21163" publishTime="1375425722"/>
+     </publishHistory>
+</DOMDocument>

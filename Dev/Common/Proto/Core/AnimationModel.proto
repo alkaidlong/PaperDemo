@@ -1,0 +1,66 @@
+//option optimize_for = LITE_RUNTIME;
+import "Geometry.proto";
+import "FileSystem.proto";
+package Medusa.CoreProto;
+
+enum FrameType
+{
+	KeyFrame = 1;
+	TweenFrame = 2;
+	EmptyFrame = 3;
+}
+
+message ComponentInfo
+{
+	required FileId FileID = 1;
+	optional TriggerCondition TriggerCondition = 2;
+}
+
+message ConditionParameter
+{
+	required string Key = 1;
+	required string Value = 2;
+}
+
+message TriggerCondition
+{
+	required string EventName = 1;
+	repeated ConditionParameter Parameters = 2;
+}
+
+message BlockInfo
+{
+	required int32 ZOrder = 1;//纵深轴
+	required PointF Anchor = 2;//锚点x
+	required PointF Pos = 4;//x坐标
+	required ScaleF Scale = 6;//横向缩放比例
+	required PointF Skew = 8;//x倾斜
+	
+	optional ColorF ColorMultiplier = 10;//通道通过量
+	optional ColorF ColorOffset = 11;//通道偏移量
+	optional int32 RenderFlag=50;
+
+}
+
+message BlockModel
+{
+	required FrameType FrameValue = 1;//当前帧类型
+	optional BlockInfo Info = 2;//数据
+	optional uint32 ImageIndex = 3;//图片编号
+	optional uint32 BlockId = 4;//块id
+	optional uint32 PrevKeyFrameIndex = 5;//前一个关键帧索引
+	optional uint32 NextKeyFrameIndex = 6;//下一个关键帧索引
+}
+
+message FrameModel
+{
+	repeated BlockModel Blocks = 1;//层
+}
+
+message AnimationModel
+{
+	required uint32 FrameRate = 1;//帧率
+	repeated ComponentInfo Components = 2;//用到画块
+	repeated FrameModel Frames = 3;//帧动画
+	required SizeF ModelSize = 4;//模型
+}

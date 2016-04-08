@@ -1,0 +1,293 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := cocos2dx_static
+
+LOCAL_MODULE_FILENAME := libcocos2d
+
+LOCAL_SRC_FILES := \
+CCConfiguration.cpp \
+CCScheduler.cpp \
+CCCamera.cpp \
+ccFPSImages.c \
+actions/CCAction.cpp \
+actions/CCActionCamera.cpp \
+actions/CCActionCatmullRom.cpp \
+actions/CCActionEase.cpp \
+actions/CCActionGrid.cpp \
+actions/CCActionGrid3D.cpp \
+actions/CCActionInstant.cpp \
+actions/CCActionInterval.cpp \
+actions/CCActionManager.cpp \
+actions/CCActionPageTurn3D.cpp \
+actions/CCActionProgressTimer.cpp \
+actions/CCActionTiledGrid.cpp \
+actions/CCActionTween.cpp \
+base_nodes/CCAtlasNode.cpp \
+base_nodes/CCNode.cpp \
+cocoa/CCAffineTransform.cpp \
+cocoa/CCGeometry.cpp \
+cocoa/CCAutoreleasePool.cpp \
+cocoa/CCDictionary.cpp \
+cocoa/CCNS.cpp \
+cocoa/CCObject.cpp \
+cocoa/CCSet.cpp \
+cocoa/CCString.cpp \
+cocoa/CCZone.cpp \
+cocoa/CCArray.cpp \
+cocoa/CCDataVisitor.cpp \
+cocos2d.cpp \
+CCDirector.cpp \
+draw_nodes/CCDrawingPrimitives.cpp \
+draw_nodes/CCDrawNode.cpp \
+effects/CCGrabber.cpp \
+effects/CCGrid.cpp \
+kazmath/src/aabb.c \
+kazmath/src/mat3.c \
+kazmath/src/mat4.c \
+kazmath/src/neon_matrix_impl.c \
+kazmath/src/plane.c \
+kazmath/src/quaternion.c \
+kazmath/src/ray2.c \
+kazmath/src/utility.c \
+kazmath/src/vec2.c \
+kazmath/src/vec3.c \
+kazmath/src/vec4.c \
+kazmath/src/GL/mat4stack.c \
+kazmath/src/GL/matrix.c \
+keypad_dispatcher/CCKeypadDelegate.cpp \
+keypad_dispatcher/CCKeypadDispatcher.cpp \
+label_nodes/CCLabelAtlas.cpp \
+label_nodes/CCLabelBMFont.cpp \
+label_nodes/CCLabelTTF.cpp \
+layers_scenes_transitions_nodes/CCLayer.cpp \
+layers_scenes_transitions_nodes/CCScene.cpp \
+layers_scenes_transitions_nodes/CCTransitionPageTurn.cpp \
+layers_scenes_transitions_nodes/CCTransition.cpp \
+layers_scenes_transitions_nodes/CCTransitionProgress.cpp \
+menu_nodes/CCMenu.cpp \
+menu_nodes/CCMenuItem.cpp \
+misc_nodes/CCClippingNode.cpp \
+misc_nodes/CCMotionStreak.cpp \
+misc_nodes/CCProgressTimer.cpp \
+misc_nodes/CCRenderTexture.cpp \
+particle_nodes/CCParticleExamples.cpp \
+particle_nodes/CCParticleSystem.cpp \
+particle_nodes/CCParticleBatchNode.cpp \
+particle_nodes/CCParticleSystemQuad.cpp \
+CCplatform/CCImageCommonWebp.cpp \
+CCplatform/CCSAXParser.cpp \
+CCplatform/CCThread.cpp \
+CCplatform/CCFileUtils.cpp \
+CCplatform/CCPlatform.cpp \
+CCplatform/CCEGLViewProtocol.cpp \
+CCplatform/android/CCDevice.cpp \
+CCplatform/android/CCEGLView.cpp \
+CCplatform/android/CCAccelerometer.cpp \
+CCplatform/android/CCApplication.cpp \
+CCplatform/android/CCCommon.cpp \
+CCplatform/android/CCFileUtilsAndroid.cpp \
+CCplatform/android/CCImage.cpp \
+CCplatform/android/jni/Java_org_cocos2dx_lib_Cocos2dxBitmap.cpp \
+CCplatform/android/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.cpp \
+CCplatform/android/jni/Java_org_cocos2dx_lib_Cocos2dxRenderer.cpp \
+CCplatform/android/jni/Java_org_cocos2dx_lib_Cocos2dxAccelerometer.cpp \
+CCplatform/android/jni/JniHelper.cpp \
+CCplatform/android/jni/IMEJni.cpp \
+CCplatform/android/jni/TouchesJni.cpp \
+CCplatform/android/jni/DPIJni.cpp \
+script_support/CCScriptSupport.cpp \
+shaders/ccShaders.cpp \
+shaders/CCGLProgram.cpp \
+shaders/ccGLStateCache.cpp \
+shaders/CCShaderCache.cpp \
+sprite_nodes/CCAnimation.cpp \
+sprite_nodes/CCAnimationCache.cpp \
+sprite_nodes/CCSprite.cpp \
+sprite_nodes/CCSpriteBatchNode.cpp \
+sprite_nodes/CCSpriteFrame.cpp \
+sprite_nodes/CCSpriteFrameCache.cpp \
+support/ccUTF8.cpp \
+support/CCNotificationCenter.cpp \
+support/CCProfiling.cpp \
+support/CCPointExtension.cpp \
+support/TransformUtils.cpp \
+support/user_default/CCUserDefaultAndroid.cpp \
+support/base64.cpp \
+support/ccUtils.cpp \
+support/CCVertex.cpp \
+support/data_support/ccCArray.cpp \
+support/image_support/TGAlib.cpp \
+support/tinyxml2/tinyxml2.cpp \
+support/zip_support/ZipUtils.cpp \
+support/component/CCComponent.cpp \
+support/component/CCComponentContainer.cpp \
+text_input_node/CCIMEDispatcher.cpp \
+text_input_node/CCTextFieldTTF.cpp \
+textures/CCTexture2D.cpp \
+textures/CCTextureAtlas.cpp \
+textures/CCTextureCache.cpp \
+textures/CCTextureETC.cpp \
+textures/CCTexturePVR.cpp \
+tilemap_parallax_nodes/CCParallaxNode.cpp \
+tilemap_parallax_nodes/CCTMXLayer.cpp \
+tilemap_parallax_nodes/CCTMXObjectGroup.cpp \
+tilemap_parallax_nodes/CCTMXTiledMap.cpp \
+tilemap_parallax_nodes/CCTMXXMLParser.cpp \
+tilemap_parallax_nodes/CCTileMapAtlas.cpp \
+touch_dispatcher/CCTouchDispatcher.cpp \
+touch_dispatcher/CCTouchHandler.cpp \
+touch_dispatcher/CCTouch.cpp \
+Lib/Common/libjpeg/cdjpeg.c \
+Lib/Common/libjpeg/jaricom.c \
+Lib/Common/libjpeg/jcapimin.c \
+Lib/Common/libjpeg/jcapistd.c \
+Lib/Common/libjpeg/jcarith.c \
+Lib/Common/libjpeg/jccoefct.c \
+Lib/Common/libjpeg/jccolor.c \
+Lib/Common/libjpeg/jcdctmgr.c \
+Lib/Common/libjpeg/jchuff.c \
+Lib/Common/libjpeg/jcinit.c \
+Lib/Common/libjpeg/jcmainct.c \
+Lib/Common/libjpeg/jcmarker.c \
+Lib/Common/libjpeg/jcmaster.c \
+Lib/Common/libjpeg/jcomapi.c \
+Lib/Common/libjpeg/jcparam.c \
+Lib/Common/libjpeg/jcprepct.c \
+Lib/Common/libjpeg/jcsample.c \
+Lib/Common/libjpeg/jctrans.c \
+Lib/Common/libjpeg/jdapimin.c \
+Lib/Common/libjpeg/jdapistd.c \
+Lib/Common/libjpeg/jdarith.c \
+Lib/Common/libjpeg/jdatadst.c \
+Lib/Common/libjpeg/jdatasrc.c \
+Lib/Common/libjpeg/jdcoefct.c \
+Lib/Common/libjpeg/jdcolor.c \
+Lib/Common/libjpeg/jddctmgr.c \
+Lib/Common/libjpeg/jdhuff.c \
+Lib/Common/libjpeg/jdinput.c \
+Lib/Common/libjpeg/jdmainct.c \
+Lib/Common/libjpeg/jdmarker.c \
+Lib/Common/libjpeg/jdmaster.c \
+Lib/Common/libjpeg/jdmerge.c \
+Lib/Common/libjpeg/jdpostct.c \
+Lib/Common/libjpeg/jdsample.c \
+Lib/Common/libjpeg/jdtrans.c \
+Lib/Common/libjpeg/jerror.c \
+Lib/Common/libjpeg/jfdctflt.c \
+Lib/Common/libjpeg/jfdctfst.c \
+Lib/Common/libjpeg/jfdctint.c \
+Lib/Common/libjpeg/jidctflt.c \
+Lib/Common/libjpeg/jidctfst.c \
+Lib/Common/libjpeg/jidctint.c \
+Lib/Common/libjpeg/jmemmgr.c \
+Lib/Common/libjpeg/jmemnobs.c \
+Lib/Common/libjpeg/jquant1.c \
+Lib/Common/libjpeg/jquant2.c \
+Lib/Common/libjpeg/jutils.c \
+Lib/Common/libjpeg/rdbmp.c \
+Lib/Common/libjpeg/rdcolmap.c \
+Lib/Common/libjpeg/rdgif.c \
+Lib/Common/libjpeg/rdppm.c \
+Lib/Common/libjpeg/rdrle.c \
+Lib/Common/libjpeg/rdswitch.c \
+Lib/Common/libjpeg/rdtarga.c \
+Lib/Common/libjpeg/transupp.c \
+Lib/Common/libjpeg/wrbmp.c \
+Lib/Common/libjpeg/wrgif.c \
+Lib/Common/libjpeg/wrppm.c \
+Lib/Common/libjpeg/wrrle.c \
+Lib/Common/libjpeg/wrtarga.c \
+Lib/Common/libpng/png.c \
+Lib/Common/libpng/pngerror.c \
+Lib/Common/libpng/pngget.c \
+Lib/Common/libpng/pngmem.c \
+Lib/Common/libpng/pngpread.c \
+Lib/Common/libpng/pngread.c \
+Lib/Common/libpng/pngrio.c \
+Lib/Common/libpng/pngrtran.c \
+Lib/Common/libpng/pngrutil.c \
+Lib/Common/libpng/pngset.c \
+Lib/Common/libpng/pngtrans.c \
+Lib/Common/libpng/pngwio.c \
+Lib/Common/libpng/pngwrite.c \
+Lib/Common/libpng/pngwtran.c \
+Lib/Common/libpng/pngwutil.c \
+Lib/Common/libtiff/tif_aux.c \
+Lib/Common/libtiff/tif_close.c \
+Lib/Common/libtiff/tif_codec.c \
+Lib/Common/libtiff/tif_color.c \
+Lib/Common/libtiff/tif_compress.c \
+Lib/Common/libtiff/tif_dir.c \
+Lib/Common/libtiff/tif_dirinfo.c \
+Lib/Common/libtiff/tif_dirread.c \
+Lib/Common/libtiff/tif_dirwrite.c \
+Lib/Common/libtiff/tif_dumpmode.c \
+Lib/Common/libtiff/tif_error.c \
+Lib/Common/libtiff/tif_extension.c \
+Lib/Common/libtiff/tif_fax3.c \
+Lib/Common/libtiff/tif_fax3sm.c \
+Lib/Common/libtiff/tif_flush.c \
+Lib/Common/libtiff/tif_getimage.c \
+Lib/Common/libtiff/tif_jbig.c \
+Lib/Common/libtiff/tif_jpeg.c \
+Lib/Common/libtiff/tif_jpeg_12.c \
+Lib/Common/libtiff/tif_luv.c \
+Lib/Common/libtiff/tif_lzma.c \
+Lib/Common/libtiff/tif_lzw.c \
+Lib/Common/libtiff/tif_next.c \
+Lib/Common/libtiff/tif_ojpeg.c \
+Lib/Common/libtiff/tif_open.c \
+Lib/Common/libtiff/tif_packbits.c \
+Lib/Common/libtiff/tif_pixarlog.c \
+Lib/Common/libtiff/tif_predict.c \
+Lib/Common/libtiff/tif_print.c \
+Lib/Common/libtiff/tif_read.c \
+Lib/Common/libtiff/tif_strip.c \
+Lib/Common/libtiff/tif_swab.c \
+Lib/Common/libtiff/tif_thunder.c \
+Lib/Common/libtiff/tif_tile.c \
+Lib/Common/libtiff/tif_unix.c \
+Lib/Common/libtiff/tif_version.c \
+Lib/Common/libtiff/tif_warning.c \
+Lib/Common/libtiff/tif_win32.c \
+Lib/Common/libtiff/tif_write.c \
+Lib/Common/libtiff/tif_zip.c 
+
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
+                    $(LOCAL_PATH)/include \
+                    $(LOCAL_PATH)/kazmath/include \
+					$(LOCAL_PATH)/CCplatform \
+					$(LOCAL_PATH)/Lib/Common/OGLES \
+					$(LOCAL_PATH)/Lib/Common/libjpeg \
+					$(LOCAL_PATH)/Lib/Common/libpng \
+					$(LOCAL_PATH)/Lib/Common/libtiff \
+                    $(LOCAL_PATH)/CCplatform/android
+
+LOCAL_C_INCLUDES := $(LOCAL_PATH) \
+                    $(LOCAL_PATH)/include \
+                    $(LOCAL_PATH)/kazmath/include \
+					$(LOCAL_PATH)/CCplatform \
+					$(LOCAL_PATH)/Lib/Common/OGLES \
+					$(LOCAL_PATH)/Lib/Common/libjpeg \
+					$(LOCAL_PATH)/Lib/Common/libpng \
+					$(LOCAL_PATH)/Lib/Common/libtiff \
+                    $(LOCAL_PATH)/CCplatform/android
+
+LOCAL_LDLIBS := -lGLESv2 \
+                -llog \
+                -lz
+
+LOCAL_EXPORT_LDLIBS := -lGLESv2 \
+                       -llog \
+                       -lz
+
+
+LOCAL_WHOLE_STATIC_LIBRARIES := MedusaCore
+LOCAL_WHOLE_STATIC_LIBRARIES += webp
+
+include $(BUILD_STATIC_LIBRARY)
+
+$(call import-module,Common/MedusaCore)
+$(call import-module,Client/cocos2dx/cocos2dx/Lib/android/libwebp)

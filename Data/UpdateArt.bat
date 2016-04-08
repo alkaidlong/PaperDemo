@@ -1,0 +1,1 @@
+TortoiseProc.exe /command:update /path:Art /closeonend:2

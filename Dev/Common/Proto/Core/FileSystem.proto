@@ -1,0 +1,40 @@
+//option optimize_for = LITE_RUNTIME;
+import "Geometry.proto";
+package Medusa.CoreProto;
+
+message FileId
+{
+	required string Name=1;
+	optional uint32 Order=2;
+	optional int32 Tag=3;
+}
+
+message FileSystemOrderItem
+{
+	required uint32 Order=1;
+	optional uint32 FileId=2;	//file id in file list
+	optional RectU TextureRect=3;
+	optional PointU Offset=4;
+	optional SizeU OriginalSize=5;
+	optional bytes Data=6;	//cache file data if it's very small
+}
+
+//资源名称映射项
+message FileSystemNameItem
+{
+	required string Name=1;
+	repeated FileSystemOrderItem OrderItems=2;
+}
+
+//资源标签映射项
+message FileSystemTagItem
+{
+	required int32 Tag=1;
+	repeated FileSystemNameItem NameItems=2;	//名称映射表
+}
+
+//资源映射总表
+message FileSystem 
+{
+	repeated FileSystemTagItem TagItems=1;	//标签映射表
+}

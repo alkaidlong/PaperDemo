@@ -1,0 +1,25 @@
+//option optimize_for = LITE_RUNTIME;
+
+package ServerProto.Logic;
+
+message CommonProperty //基础属性的组成模块,方便写计算
+{
+	required float MaxValue=1;//主导数值（物理中为生命，魔法中为法术量，显示为整数）
+	required float ValueRegeneration=2;//数值回复/秒(显示为5秒为单位)
+	required float Attack=3;//攻击
+	required float Defense=4;//防御
+	required float DefensePenetration=5;//穿透
+	required float LifeSteal=6;//生命偷取
+	required float Critical=7;//暴击
+	required float CriticalDamage=8;//暴击伤害
+	required float Toughness=9;//韧性
+}
+
+message BaseProperty //基础属性 包括
+{
+	optional CommonProperty PhysicalProperty=1;//物理属性，包括生命
+	optional CommonProperty MagicalProperty=2;//魔法属性，包括魔法值
+	required float CoolingReduction=3;//冷却减缩
+	required float AttackSpeed=4;//攻击速度
+	required float MoveSpeed=5;//移动速度
+}

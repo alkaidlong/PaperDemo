@@ -1,0 +1,24 @@
+
+Ø
+5wyx/Work/Paper/Dev/Client/Proto/Core/FileSystem.protoMedusa.CoreProtoGeometry.proto"2
+FileId
+Name (	
+Order (
+Tag ("É
+FileSystemOrderItem
+Order (
+FileId (,
+TextureRect (2.Medusa.CoreProto.RectU(
+Offset (2.Medusa.CoreProto.PointU-
+OriginalSize (2.Medusa.CoreProto.SizeU
+Data ("]
+FileSystemNameItem
+Name (	9
+
+OrderItems (2%.Medusa.CoreProto.FileSystemOrderItem"Y
+FileSystemTagItem
+Tag (7
+	NameItems (2$.Medusa.CoreProto.FileSystemNameItem"C
+
+FileSystem5
+TagItems (2#.Medusa.CoreProto.FileSystemTagItem

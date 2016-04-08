@@ -1,0 +1,2492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CoreLib">
+      <UniqueIdentifier>{960a7935-e00e-4888-b641-692fd14063d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f1f99e2a-edd7-4d5c-9fc6-6c2611cd2e77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Dynamic">
+      <UniqueIdentifier>{87eb11f6-4d3d-4643-b600-03ff05b3bcfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math">
+      <UniqueIdentifier>{1cbfa7bb-2f5b-4f2f-828d-0ff7f35d6305}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math\Expression">
+      <UniqueIdentifier>{78bb9b17-b37b-4f4c-a28b-e08d58c9cd26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math\Expression\Operator">
+      <UniqueIdentifier>{d6d180b8-3195-48c1-8b5d-863f98d0a03e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math\Expression\Variant">
+      <UniqueIdentifier>{7f1f5241-a50d-4f81-a693-dc51a197379c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Memory">
+      <UniqueIdentifier>{d3c8fe39-9e37-4af5-ab03-a908b6582ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Parser">
+      <UniqueIdentifier>{971d8da5-2e3f-4956-b449-52096d24a76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\String">
+      <UniqueIdentifier>{f4bece54-f591-4716-8b60-f5996b2f0f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Utility">
+      <UniqueIdentifier>{0f976ead-f4e3-46cd-9569-cff4d2affa0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern">
+      <UniqueIdentifier>{f11126ee-3f6a-484b-b2fc-d2501e0506ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Compile">
+      <UniqueIdentifier>{ef1ab156-80aa-4d67-ba49-a404c92459e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Log">
+      <UniqueIdentifier>{0e09cd18-a913-45be-bc7d-b5aa841b14bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Compress">
+      <UniqueIdentifier>{29e01916-c86a-4cc6-85b3-1341f98b247c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Collection">
+      <UniqueIdentifier>{0f9b0f2a-be75-4426-989c-181b59ff05cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Assertion">
+      <UniqueIdentifier>{619a1f7a-2218-445c-9b2d-e739a8bd1f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Algorithm">
+      <UniqueIdentifier>{ad03461c-39fb-4d30-8119-cb93e4c98b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Geometry">
+      <UniqueIdentifier>{71357761-4e75-425c-bc9d-d155b6c7cff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Threading">
+      <UniqueIdentifier>{775571b5-d5e0-438a-a1a2-aaf0005fc3e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Profile">
+      <UniqueIdentifier>{577eb0e1-ae60-4e6e-8ef3-bbeb4b8109b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Ptr">
+      <UniqueIdentifier>{753bf227-b634-4ab2-9da7-e8f8afdee819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Component">
+      <UniqueIdentifier>{369e066b-108a-4a08-9bdd-915f4d6f48c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\RTTI">
+      <UniqueIdentifier>{f1102aed-9e69-4473-bf81-c7b3a1b305b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Net">
+      <UniqueIdentifier>{27a42025-5863-4400-9290-374f70e51bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Net\Socket">
+      <UniqueIdentifier>{46e6fbae-068a-466d-89fc-092f5775566d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Log\ios">
+      <UniqueIdentifier>{cbb711f1-17d9-44b8-93ac-674282b3fe03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Geometry\Transform">
+      <UniqueIdentifier>{409f70c6-2e29-403e-8c4a-97967a6fb65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event">
+      <UniqueIdentifier>{f0fa1ae3-f2b8-4abf-b53b-928ffb4c8630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Action">
+      <UniqueIdentifier>{e614373e-7259-4ca2-9929-a232de0bc7e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Log\win">
+      <UniqueIdentifier>{3d76da73-078d-4a7b-ab73-71cddef301cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Net\HTTP">
+      <UniqueIdentifier>{d586d38d-a1e5-43f9-b678-94dbe9a888bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Message">
+      <UniqueIdentifier>{d0db336a-2638-43d6-8212-cd3223bfa83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Proto">
+      <UniqueIdentifier>{ae7076b3-9c12-4387-b434-823f66d96748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO">
+      <UniqueIdentifier>{d3bbb39c-9ffd-4cf7-8dc3-0778064a9c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\FileList">
+      <UniqueIdentifier>{c38ab5eb-8527-4081-a270-bfafc26a957d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\FileSystem">
+      <UniqueIdentifier>{3fe9f99a-41ef-4274-a104-5407f9caff15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\System">
+      <UniqueIdentifier>{084bbf6d-1b93-4719-8f4b-cfca9dd7e543}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\System\ios">
+      <UniqueIdentifier>{512aff15-02ab-40d3-91d4-e2982df7fe71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\String\StringTable">
+      <UniqueIdentifier>{b7c55639-0aa5-4389-b0b5-aa0910c3b62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\String\FuckyString">
+      <UniqueIdentifier>{9b092b25-0716-424b-ba46-584bb4701a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\Updater">
+      <UniqueIdentifier>{40459162-7ac8-44af-84c1-966ab5bae451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\System\win">
+      <UniqueIdentifier>{dec4cb08-7780-4124-9298-ed2be1a9c4d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event\EventArg">
+      <UniqueIdentifier>{0010b0d4-af19-4bbf-943a-5e33e32731e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Event\Trigger">
+      <UniqueIdentifier>{9384d8f6-4f8f-4bcf-be83-de196b61116e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Property">
+      <UniqueIdentifier>{a95e857f-b299-480e-8ec9-d2bd63dc10bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Proto\Client">
+      <UniqueIdentifier>{c6100f4c-8e48-4bce-a528-6c21687e9128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Script">
+      <UniqueIdentifier>{c4eed3bd-fb24-44cf-a5d2-ce37cea5bf35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Config">
+      <UniqueIdentifier>{d2d18c33-5b96-4edd-8572-611abfb2ce44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\System\android">
+      <UniqueIdentifier>{634e71c1-9f0c-488e-9dc4-4fb20c769ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\FileSystem\Accessor">
+      <UniqueIdentifier>{3e665864-2868-4324-9c67-946fea2f8b22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\FileSystem\Accessor\android">
+      <UniqueIdentifier>{425f7436-bd01-4760-b9e2-80ac0779ec10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\FileSystem\Accessor\posix">
+      <UniqueIdentifier>{c7d7478e-e51c-44e1-9fce-eadaed476791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common">
+      <UniqueIdentifier>{e0287180-fe51-44fb-ad4a-389b43cd7d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\win">
+      <UniqueIdentifier>{8f97125c-3973-4cac-865a-4b9c7e339441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript">
+      <UniqueIdentifier>{96e1834f-25ca-4cab-bc6e-ee1733baa5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\include">
+      <UniqueIdentifier>{f0d3d186-e450-4929-a0d8-0ce4cfa96ff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\source">
+      <UniqueIdentifier>{3b95912e-d1f5-46a7-9f8c-6dbb66361a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on">
+      <UniqueIdentifier>{bdf0d06a-b238-45c9-82ca-cd563f4c2891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\autowrapper">
+      <UniqueIdentifier>{9eaeca71-9094-406c-972a-ff5dee9c182f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\contextmgr">
+      <UniqueIdentifier>{7377fd0f-2947-4f5c-b724-5c608a3ede52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\debugger">
+      <UniqueIdentifier>{471fa61c-685f-4427-82f4-73691fdf55ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptany">
+      <UniqueIdentifier>{7281fd0c-b881-4798-b2c8-4d5ca87fb16d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptarray">
+      <UniqueIdentifier>{d669545f-6368-4414-a1df-b3ac986cc419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptbuilder">
+      <UniqueIdentifier>{1c4e764b-fce8-4aef-ba5a-d360e1095dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptdictionary">
+      <UniqueIdentifier>{cc4c4594-c6f4-4bd1-a5ac-b2520e4b5617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptfile">
+      <UniqueIdentifier>{e33aafd1-fb07-438a-97c9-8a906b80d12a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scripthandle">
+      <UniqueIdentifier>{072f7364-9658-4e2a-a96c-e3caac57812d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scripthelper">
+      <UniqueIdentifier>{b6ec6a6c-b26d-4952-9bee-9a73548473fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptmath">
+      <UniqueIdentifier>{1dbc26a5-ca97-45b8-a877-e1266d6e37dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptstdstring">
+      <UniqueIdentifier>{054573ba-8824-42e5-9a2f-29a099eac209}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\serializer">
+      <UniqueIdentifier>{3609ee85-0bb0-42a4-94ce-7c8d788c3178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\weakref">
+      <UniqueIdentifier>{52dac0c6-73a5-4d3f-821e-23256b7de89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\google">
+      <UniqueIdentifier>{08582f16-d486-415d-a6a0-ff6f642e34de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\google\protobuf">
+      <UniqueIdentifier>{d15039bf-d6fd-4f1e-b683-0965a930cf04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\google\protobuf\io">
+      <UniqueIdentifier>{e4809449-3ac6-4df7-aff4-96f91ea7fcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\google\protobuf\stubs">
+      <UniqueIdentifier>{03fe8f1d-8352-431d-9047-e1145520d7f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\google\protobuf\testing">
+      <UniqueIdentifier>{b5e650fd-f212-405c-8f94-9671abc3a7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\Unicode">
+      <UniqueIdentifier>{216ce785-2a93-44ff-9c67-16ba934be6e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\zip">
+      <UniqueIdentifier>{78718894-663a-4266-ab2f-14000277bc71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\win\curl">
+      <UniqueIdentifier>{cc575e3a-cd6c-40e9-9b35-9024b92934bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\win\pthread">
+      <UniqueIdentifier>{0f841ce4-b84d-42fd-805b-4d0cc040ae7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\win\vld">
+      <UniqueIdentifier>{f0371ef0-f887-4b65-a84e-6afd0ece9aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Log\android">
+      <UniqueIdentifier>{63f24978-1b81-4ec8-b0eb-e782230e3b42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\System\linux">
+      <UniqueIdentifier>{8b2a87df-ac95-4b6f-b13f-d09187174e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\7z">
+      <UniqueIdentifier>{adbd312c-6b0c-4786-bad7-8eb03b55a0af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Coder">
+      <UniqueIdentifier>{9c18f9d5-4dd3-49a3-b2d8-4a212158c952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Coder\XOR">
+      <UniqueIdentifier>{73711762-9e0f-4f2d-a83d-f948a2d751a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Coder\LZMA">
+      <UniqueIdentifier>{f455cea9-25e4-4236-a8c6-3a540de57137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Coder\XXTEA">
+      <UniqueIdentifier>{50195072-3eea-414c-b6b3-aa81376445fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\Stream">
+      <UniqueIdentifier>{8099fe6e-88d6-49d1-940d-57ec89c63cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Message\Handler">
+      <UniqueIdentifier>{e02f6e7e-b1f1-4c73-ab04-e4bf65194cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\String\RandomName">
+      <UniqueIdentifier>{7a8c0dca-58b5-4cef-9dbb-cc6d090a5cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\win\iconv">
+      <UniqueIdentifier>{fe6434f1-4187-4a83-9d2d-f090596f4889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\zlib">
+      <UniqueIdentifier>{574ca078-fe4c-4d07-992b-f744b0072643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Security">
+      <UniqueIdentifier>{eba73492-f20d-4902-9d32-6b67743c89a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Geometry\Moveable">
+      <UniqueIdentifier>{d7bebff5-a03d-4380-9809-13688fb6a048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Algorithm\Pack">
+      <UniqueIdentifier>{8e373a40-9bd7-4599-81e3-31645f6f9176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CorePlatform">
+      <UniqueIdentifier>{82a25eef-4ee5-4d28-bf30-f31fede34537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CorePlatform\Threading">
+      <UniqueIdentifier>{42e7a519-861c-417e-9bd8-93e0d3765e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CorePlatform\Common">
+      <UniqueIdentifier>{348d8637-43f8-4abc-962c-fbedfb5f9ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\angelscript\add_on\scriptgrid">
+      <UniqueIdentifier>{71e1d8ce-d42b-4562-b735-df9a8243ce92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoreLib\Common\pugixml">
+      <UniqueIdentifier>{354fa87c-2cf6-4895-8d88-5f832d8e445a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Dependency">
+      <UniqueIdentifier>{7773622a-ff9d-4c5f-b565-5d84b5f4225d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\IO\Pack">
+      <UniqueIdentifier>{ac30d708-d84f-4fce-8085-a37b7b9072be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Action\Composite">
+      <UniqueIdentifier>{c1fbb0a8-4e76-41da-985a-a58ebbad87f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Pattern\Action\Composite\Tween">
+      <UniqueIdentifier>{d224d96c-2b58-434f-8656-391fe0f912fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Math\Model">
+      <UniqueIdentifier>{24637ff5-60cc-4b78-a8d7-d7c18b224e35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Utility\Utility.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Singleton.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Compile\Type.h">
+      <Filter>Core\Compile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Compile\TypeInfo.h">
+      <Filter>Core\Compile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Compile\TypeList.h">
+      <Filter>Core\Compile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Dynamic\Dynamic.h">
+      <Filter>Core\Dynamic</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\ILogger.h">
+      <Filter>Core\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\Log.h">
+      <Filter>Core\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\CoreLib.h">
+      <Filter>CoreLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Assertion\CommonAssert.h">
+      <Filter>Core\Assertion</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Delegate.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Event.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\List.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\IList.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\ICollection.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Compile\TypeTraits.h">
+      <Filter>Core\Compile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\IEnumerable.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\pthread\pthread.h">
+      <Filter>CoreLib\win\pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\pthread\sched.h">
+      <Filter>CoreLib\win\pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\pthread\semaphore.h">
+      <Filter>CoreLib\win\pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\Mutex.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\ThreadingLockPolicy.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StringRef.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StackString.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\HeapString.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\BaseString.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\ISortedList.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\SortedList.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Profile\StopWatch.h">
+      <Filter>Core\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StringParser.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\MathStrategy.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Ptr\NotNullPtr.h">
+      <Filter>Core\Pattern\Ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Component\IComponent.h">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Component\ComponentFactory.h">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Component\ComponentCache.h">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\RTTI\RTTIObject.h">
+      <Filter>Core\Pattern\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\RTTI\RTTIClass.h">
+      <Filter>Core\Pattern\RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\ILinkedList.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\LinkedList.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\StaticConstructor.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\DeprecationManager.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\SocketDefines.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\ServiceInfo.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\AddressInfo.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\HostInfo.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\ProtocolInfo.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\ISocket.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\ClientSocket.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\Socket\ServerSocket.h">
+      <Filter>Core\Net\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Profile\ProfileNode.h">
+      <Filter>Core\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Profile\ProfileManager.h">
+      <Filter>Core\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Profile\ProfileSample.h">
+      <Filter>Core\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\ReadWriteLock.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\Thread.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\ThreadEvent.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\STLPort.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ArrayObjectFactory.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\MapObjectFactory.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\KeyValuePair.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\IEnumerator.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\Array.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\IDictionary.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\Enumerator.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\Dictionary.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\HashHelper.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\FileLogger.h">
+      <Filter>Core\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\ios\IOSConsoleLogger.h">
+      <Filter>Core\Log\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Transform\TransformFactory.h">
+      <Filter>Core\Geometry\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\Stack.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\Queue.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\BitArray.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Memory\Memory.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Memory\MemoryData.h">
+      <Filter>Core\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\EnumPattern.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\FlagsPattern.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Component\ComponentList.h">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\SortedDictionary.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\DateTime.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\MD5.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\TimeSpan.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\Guid.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\IRunnable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Compile\TypeListPrivate.h">
+      <Filter>Core\Compile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\BaseFiniteAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\BaseInfiniteAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\BaseInstantAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\IAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\IActionRunnable.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Ptr\LazyStrongPtr.h">
+      <Filter>Core\Pattern\Ptr</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\IClone.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\BaseAnimationAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\DefaultRunnable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\win\WindowsConsoleLogger.h">
+      <Filter>Core\Log\win</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\LazyValue.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\NullableValue.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\VaryValue.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\AABBBox.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Color3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Color4.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Cube.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\EulerAngle.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\GeometryDefines.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\GeometryFactory.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Matrix2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Matrix3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Matrix4.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Matrix43.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Point2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Point3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Point4.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Quad.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Quaternion.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Rect2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Rotation2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Rotation3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Scale2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Scale3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Size2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Size3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Triangle.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Line2.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Line3.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\vld\vld.h">
+      <Filter>CoreLib\win\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\vld\vld_def.h">
+      <Filter>CoreLib\win\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\stdcheaders.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\typecheck-gcc.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\curl.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\curlbuild.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\curlrules.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\curlver.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\easy.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\mprintf.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\curl\multi.h">
+      <Filter>CoreLib\win\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\HTTP\IHTTPDownloader.h">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\HTTP\SingleDownloadingProgressEventArg.h">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\HTTP\GlobalDownloadingProgressEventArg.h">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\HTTP\HTTPClient.h">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\HTTP\HTTPFileDownloader.h">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Net\HTTP\HTTPMemoryDownloader.h">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\BaseCustomMessage.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\BaseMessage.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\BaseRequestMessage.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\IMessage.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\MessageEventArg.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\MessageFactory.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Proto.h">
+      <Filter>Core\Proto</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Directory.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\File.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileDefines.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileInfo.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\MemoryFileAutoRegister.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileList\FileList.h">
+      <Filter>Core\IO\FileList</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileList\FileListFileItem.h">
+      <Filter>Core\IO\FileList</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\FileSystemTagItem.h">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\FileSystemNameItem.h">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\FileSystemOrderItem.h">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System\ios\UIDevice+Reachability.h">
+      <Filter>Core\System\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System\ios\wwanconnect.h">
+      <Filter>Core\System\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StringTable\StringOrderItem.h">
+      <Filter>Core\String\StringTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StringTable\StringTable.h">
+      <Filter>Core\String\StringTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StringTable\StringNameItem.h">
+      <Filter>Core\String\StringTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\FuckyString\FuckyString.h">
+      <Filter>Core\String\FuckyString</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System\System.h">
+      <Filter>Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\FuckyString\FuckyStringNode.h">
+      <Filter>Core\String\FuckyString</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\FileSystem.h">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\StdString.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\TStringRef.h">
+      <Filter>Core\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Updater\FileUpdater.h">
+      <Filter>Core\IO\Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Updater\FileDownloadingProgressEventArg.h">
+      <Filter>Core\IO\Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Updater\ServerStatusEventArg.h">
+      <Filter>Core\IO\Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Updater\UpdaterDefines.h">
+      <Filter>Core\IO\Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System\Environment.h">
+      <Filter>Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileId.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileIdStorage.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\System\EnvironmentTag.h">
+      <Filter>Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\Semaphore2.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event\EventArg\IEventArg.h">
+      <Filter>Core\Event\EventArg</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event\EventArg\UserDataEventArg.h">
+      <Filter>Core\Event\EventArg</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event\Trigger\ITrigger.h">
+      <Filter>Core\Event\Trigger</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\CallbackLogger.h">
+      <Filter>Core\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Path.h">
+      <Filter>Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\win\WindowsTraceLogger.h">
+      <Filter>Core\Log\win</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Range.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Padding4.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\text_format.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\service.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\repeated_field.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\reflection_ops.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\package_info.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\message_lite.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\message.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\generated_message_util.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\generated_message_reflection.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\generated_enum_reflection.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\extension_set.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\dynamic_message.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\descriptor_database.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\descriptor.pb.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\descriptor.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\wire_format_lite_inl.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\wire_format_lite.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\wire_format.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\unknown_field_set.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\testing\file.h">
+      <Filter>CoreLib\Common\google\protobuf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\testing\googletest.h">
+      <Filter>CoreLib\Common\google\protobuf\testing</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\strutil.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\substitute.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\template_util.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\type_traits.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_arm_gcc.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_arm_qnx.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_atomicword_compat.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_macosx.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_mips_gcc.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_pnacl.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_gcc.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_msvc.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\common.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\hash.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\map-util.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\once.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\platform_macros.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\stl_util.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\stringprintf.h">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl_lite.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\coded_stream.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\coded_stream_inl.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\gzip_stream.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\package_info.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\printer.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\tokenizer.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\zero_copy_stream.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl.h">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\google\protobuf\config.h">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ISharable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ILoadable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\IExecutable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event\WorkItem.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Property\IProperty.h">
+      <Filter>Core\Pattern\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Property\IPropertyPtr.h">
+      <Filter>Core\Pattern\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Property\INotifyPropertyChanged.h">
+      <Filter>Core\Pattern\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Property\PropertyChangedEventArg.h">
+      <Filter>Core\Pattern\Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\IUpdatable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\include\angelscript.h">
+      <Filter>CoreLib\Common\angelscript\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_callfunc.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_compiler.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_config.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_configgroup.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_context.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_criticalsection.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_datatype.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_debug.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_gc.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_generic.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_map.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_memory.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_module.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_objecttype.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_outputbuffer.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_parser.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_property.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_restore.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptcode.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptengine.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptfunction.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptnode.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptobject.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_string.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_string_util.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_symboltable.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_texts.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_thread.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_tokendef.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_tokenizer.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_typeinfo.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_variablescope.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_array.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_atomic.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_builder.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_bytecode.h">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\autowrapper\aswrappedcall.h">
+      <Filter>CoreLib\Common\angelscript\add_on\autowrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\contextmgr\contextmgr.h">
+      <Filter>CoreLib\Common\angelscript\add_on\contextmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\debugger\debugger.h">
+      <Filter>CoreLib\Common\angelscript\add_on\debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptany\scriptany.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptany</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptarray\scriptarray.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptarray</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptbuilder\scriptbuilder.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptbuilder</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptdictionary\scriptdictionary.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptdictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptfile\scriptfile.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptfile</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scripthandle\scripthandle.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scripthandle</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scripthelper\scripthelper.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scripthelper</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmath.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptmath</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmathcomplex.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptmath</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptstdstring\scriptstdstring.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptstdstring</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\serializer\serializer.h">
+      <Filter>CoreLib\Common\angelscript\add_on\serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\weakref\weakref.h">
+      <Filter>CoreLib\Common\angelscript\add_on\weakref</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ObjectCache.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\AnimationModel.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\AppCompatibility.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\EnvironmentTag.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\FileList.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\FileSystem.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\FileUpdateList.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\FuckyString.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\Geometry.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\LayerEditor.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\StringTable.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Script\ScriptManager.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Script\ScriptModule.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Script\ScriptObject.h">
+      <Filter>Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Config\ServerConfig.h">
+      <Filter>Core\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\Accessor\android\AndroidFileSystemAccessor.h">
+      <Filter>Core\IO\FileSystem\Accessor\android</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\Accessor\posix\PosixFileSystemAccessor.h">
+      <Filter>Core\IO\FileSystem\Accessor\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zip\ioapi.h">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zip\mztools.h">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zip\unzip.h">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zip\zip.h">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zip\crypt.h">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileSystem\Accessor\IFileSystemAccessor.h">
+      <Filter>Core\IO\FileSystem\Accessor</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event\ThreadEventDispatcher.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Event\UIEventDispatcher.h">
+      <Filter>Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\MessageDispatcher.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\Unicode\ConvertUTF.h">
+      <Filter>CoreLib\Common\Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\ServerConfig.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\UpdateServer.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\MathHeader.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\CoreLib_win.h">
+      <Filter>CoreLib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Log\android\AndroidTraceLogger.h">
+      <Filter>Core\Log\android</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ISerializable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Compress\ZipReader.h">
+      <Filter>Core\Compress</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\ICoder.h">
+      <Filter>Core\Coder</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\XOR\XORDecoder.h">
+      <Filter>Core\Coder\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\XOR\XOREncoder.h">
+      <Filter>Core\Coder\XOR</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\XXTEA\XXTEAEncryptor.h">
+      <Filter>Core\Coder\XXTEA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\CoderFactory.h">
+      <Filter>Core\Coder</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\CoderPool.h">
+      <Filter>Core\Coder</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\FileList\FileCoderList.h">
+      <Filter>Core\IO\FileList</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\LZMA\LZMADecoder.h">
+      <Filter>Core\Coder\LZMA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Coder\LZMA\LZMAEncoder.h">
+      <Filter>Core\Coder\LZMA</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Stream\FileStream.h">
+      <Filter>Core\IO\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Stream\IStream.h">
+      <Filter>Core\IO\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Stream\MemoryStream.h">
+      <Filter>Core\IO\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\Handler\TcpMessageHandler.h">
+      <Filter>Core\Message\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\Handler\IMessageHandler.h">
+      <Filter>Core\Message\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\Handler\MockMessageHandler.h">
+      <Filter>Core\Message\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\Handler\MessageHandlerFactory.h">
+      <Filter>Core\Message\Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\RandomName.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\String\RandomName\RandomName.h">
+      <Filter>Core\String\RandomName</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Random.h">
+      <Filter>Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\IdObjectPool.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ObjectPool.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\TuplePattern.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\win\iconv\iconv.h">
+      <Filter>CoreLib\win\iconv</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\zutil.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\crc32.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\deflate.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\gzguts.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\inffast.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\inffixed.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\inflate.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\inftrees.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\trees.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\zconf.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\zlib\zlib.h">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Config\ServerList.h">
+      <Filter>Core\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\ServerList.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\OverrideValue.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\ISet.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\HashSet.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\LzFind.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\LzHash.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\Lzma2Dec.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\Lzma2Enc.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\LzmaDec.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\LzmaEnc.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\Types.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\7z\7zConfig.h">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Security\SecurityValue.h">
+      <Filter>Core\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Security\SecurityInt.h">
+      <Filter>Core\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Moveable\TransformMoveable.h">
+      <Filter>Core\Geometry\Moveable</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Moveable\DefaultMoveable.h">
+      <Filter>Core\Geometry\Moveable</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ICopyFrom.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="MedusaCore.h" />
+    <ClInclude Include="MedusaCorePreCompiled.h" />
+    <ClInclude Include="MedusaCorePreDeclares.h" />
+    <ClInclude Include="Core\Pattern\SwapValue.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Collection\Linq.h">
+      <Filter>Core\Collection</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\IInitializable.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Algorithm.h">
+      <Filter>Core\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Pack\GuillotineBinPack.h">
+      <Filter>Core\Algorithm\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Algorithm\Pack\SkylineBinPack.h">
+      <Filter>Core\Algorithm\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePlatform\CorePlatform.h">
+      <Filter>CorePlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePlatform\CorePlatformDefines.h">
+      <Filter>CorePlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePlatform\Threading\ThreadingDefines.h">
+      <Filter>CorePlatform\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePlatform\Common\CommonMarcos.h">
+      <Filter>CorePlatform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePlatform\Common\MacroUtility.h">
+      <Filter>CorePlatform\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Threading\Lock.h">
+      <Filter>Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptgrid\scriptgrid.h">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptgrid</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\pugixml\pugiconfig.hpp">
+      <Filter>CoreLib\Common\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreLib\Common\pugixml\pugixml.hpp">
+      <Filter>CoreLib\Common\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Dependency\DependencyProperty.h">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Dependency\DependencyObject.h">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Dependency\DependencyPropertyMetaData.h">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Dependency\DependencyEffectiveValue.h">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\HashUtility.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Stream\ProxyStream.h">
+      <Filter>Core\IO\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Pack\PackageHeader.h">
+      <Filter>Core\IO\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Pack\Package.h">
+      <Filter>Core\IO\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IO\Pack\PackageFile.h">
+      <Filter>Core\IO\Pack</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Profile\AutoStopWatch.h">
+      <Filter>Core\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\ISharableWithName.h">
+      <Filter>Core\Pattern</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\BaseActionRunner.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\Thickness.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="MedusaCoreVersion.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\RepeatedAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\RepeatedForeverAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\SpeedAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\BaseSingleCompositeAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\SequenceAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\SpawnAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\BaseMultipleCompositeAction.h">
+      <Filter>Core\Pattern\Action\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BaseTweenAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\RateEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\RateEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\RateEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuadraticEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuadraticEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuadraticEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CubicEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CubicEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CubicEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuarticEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuarticEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuarticEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuinticEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuinticEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuinticEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\SinusoidalEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\SinusoidalEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\SinusoidalEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ExponentialEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ExponentialEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ExponentialEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CircularEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CircularEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CircularEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BackEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BackEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BackEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BounceEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BounceEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BounceEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ElasticEaseInAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ElasticEaseInOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ElasticEaseOutAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BezierAction.h">
+      <Filter>Core\Pattern\Action\Composite\Tween</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\DelegateAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\ArgDelegateAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Pattern\Action\DelayAction.h">
+      <Filter>Core\Pattern\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\TextureVertex.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Geometry\ShapeVertex.h">
+      <Filter>Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Model\IScrollMathModel.h">
+      <Filter>Core\Math\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Model\SpringScrollMathModel.h">
+      <Filter>Core\Math\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utility\Version.h">
+      <Filter>Core\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Proto\Client\CoreDefines.pb.h">
+      <Filter>Core\Proto\Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Log\ILogger.cpp">
+      <Filter>Core\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Profile\StopWatch.cpp">
+      <Filter>Core\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\StringParser.cpp">
+      <Filter>Core\String</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\MathStrategy.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Component\IComponent.cpp">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Component\ComponentCache.cpp">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\RTTI\RTTIObject.cpp">
+      <Filter>Core\Pattern\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\RTTI\RTTIClass.cpp">
+      <Filter>Core\Pattern\RTTI</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Net\Socket\ISocket.cpp">
+      <Filter>Core\Net\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Profile\ProfileNode.cpp">
+      <Filter>Core\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Profile\ProfileManager.cpp">
+      <Filter>Core\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\FileLogger.cpp">
+      <Filter>Core\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\Log.cpp">
+      <Filter>Core\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Transform\TransformFactory.cpp">
+      <Filter>Core\Geometry\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\Utility.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Component\ComponentList.cpp">
+      <Filter>Core\Pattern\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\DateTime.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\MD5.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\TimeSpan.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\Guid.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\DeprecationManager.cpp">
+      <Filter>Core\Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\DefaultRunnable.cpp">
+      <Filter>Core\Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\win\WindowsConsoleLogger.cpp">
+      <Filter>Core\Log\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Color3.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Color4.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\EulerAngle.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\GeometryFactory.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Matrix2.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Matrix3.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Matrix4.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Matrix43.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Quaternion.cpp">
+      <Filter>Core\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Net\HTTP\IHTTPDownloader.cpp">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Net\HTTP\HTTPClient.cpp">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Net\HTTP\HTTPFileDownloader.cpp">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Net\HTTP\HTTPMemoryDownloader.cpp">
+      <Filter>Core\Net\HTTP</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\BaseCustomMessage.cpp">
+      <Filter>Core\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\IMessage.cpp">
+      <Filter>Core\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\MessageEventArg.cpp">
+      <Filter>Core\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Directory.cpp">
+      <Filter>Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\File.cpp">
+      <Filter>Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileInfo.cpp">
+      <Filter>Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileList\FileList.cpp">
+      <Filter>Core\IO\FileList</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\FileSystemNameItem.cpp">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\FileSystemOrderItem.cpp">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\FileSystemTagItem.cpp">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\ios\wwanconnect.cc">
+      <Filter>Core\System\ios</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\StringTable\StringOrderItem.cpp">
+      <Filter>Core\String\StringTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\StringTable\StringTable.cpp">
+      <Filter>Core\String\StringTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\StringTable\StringNameItem.cpp">
+      <Filter>Core\String\StringTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\FuckyString\FuckyString.cpp">
+      <Filter>Core\String\FuckyString</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\FuckyString\FuckyStringNode.cpp">
+      <Filter>Core\String\FuckyString</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\FileSystem.cpp">
+      <Filter>Core\IO\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Updater\FileUpdater.cpp">
+      <Filter>Core\IO\Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\EnvironmentTag.cpp">
+      <Filter>Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\win\Environment.cpp">
+      <Filter>Core\System\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\win\System.cpp">
+      <Filter>Core\System\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Event\EventArg\IEventArg.cpp">
+      <Filter>Core\Event\EventArg</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Event\Trigger\ITrigger.cpp">
+      <Filter>Core\Event\Trigger</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\CallbackLogger.cpp">
+      <Filter>Core\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Path.cpp">
+      <Filter>Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\win\WindowsTraceLogger.cpp">
+      <Filter>Core\Log\win</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\unknown_field_set.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\text_format.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\service.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\repeated_field.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\reflection_ops.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\message_lite.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\message.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\generated_message_util.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\generated_message_reflection.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\extension_set_heavy.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\extension_set.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\dynamic_message.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\descriptor_database.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\descriptor.pb.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\descriptor.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\wire_format_lite.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\wire_format.cc">
+      <Filter>CoreLib\Common\google\protobuf</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\testing\googletest.cc">
+      <Filter>CoreLib\Common\google\protobuf\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\structurally_valid.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\strutil.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\substitute.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_gcc.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_msvc.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\common.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\once.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\stringprintf.cc">
+      <Filter>CoreLib\Common\google\protobuf\stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\coded_stream.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\gzip_stream.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\printer.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\tokenizer.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\zero_copy_stream.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl.cc">
+      <Filter>CoreLib\Common\google\protobuf\io</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\ILoadable.cpp">
+      <Filter>Core\Pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Property\PropertyChangedEventArg.cpp">
+      <Filter>Core\Pattern\Property</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_arm.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_mips.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_ppc.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_ppc_64.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_sh4.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x64_gcc.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x64_mingw.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x64_msvc.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x86.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_xenon.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_compiler.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_configgroup.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_context.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_datatype.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_gc.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_generic.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_globalproperty.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_memory.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_module.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_objecttype.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_outputbuffer.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_parser.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_restore.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptcode.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptengine.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptfunction.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptnode.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptobject.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_string.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_string_util.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_thread.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_tokenizer.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_typeinfo.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_variablescope.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_atomic.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_builder.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_bytecode.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc.cpp">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\autowrapper\generateheader.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\autowrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\contextmgr\contextmgr.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\contextmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\debugger\debugger.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptany\scriptany.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptany</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptarray\scriptarray.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptarray</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptbuilder\scriptbuilder.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptbuilder</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptdictionary\scriptdictionary.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptdictionary</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptfile\scriptfile.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptfile</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scripthandle\scripthandle.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scripthandle</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scripthelper\scripthelper.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scripthelper</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmath.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptmath</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmathcomplex.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptmath</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptstdstring\scriptstdstring.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptstdstring</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptstdstring\scriptstdstring_utils.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptstdstring</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\serializer\serializer.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\weakref\weakref.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\weakref</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\AnimationModel.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\AppCompatibility.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\EnvironmentTag.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FileList.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FileSystem.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FileUpdateList.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FuckyString.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\Geometry.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\LayerEditor.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\StringTable.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Script\ScriptManager.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Script\ScriptModule.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Script\ScriptObject.cpp">
+      <Filter>Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Config\ServerConfig.cpp">
+      <Filter>Core\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\android\Environment.cpp">
+      <Filter>Core\System\android</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\android\System.cpp">
+      <Filter>Core\System\android</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\Accessor\android\AndroidFileSystemAccessor.cpp">
+      <Filter>Core\IO\FileSystem\Accessor\android</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\Accessor\posix\PosixFileSystemAccessor.cpp">
+      <Filter>Core\IO\FileSystem\Accessor\posix</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\ioapi.cpp">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\mztools.cpp">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\unzip.cpp">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\zip.cpp">
+      <Filter>CoreLib\Common\zip</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Event\ThreadEventDispatcher.cpp">
+      <Filter>Core\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Event\UIEventDispatcher.cpp">
+      <Filter>Core\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\MessageDispatcher.cpp">
+      <Filter>Core\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\Unicode\ConvertUTF.cpp">
+      <Filter>CoreLib\Common\Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\ServerConfig.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\UpdateServer.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\MathHeader.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Log\android\AndroidTraceLogger.cpp">
+      <Filter>Core\Log\android</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\linux\Environment.cpp">
+      <Filter>Core\System\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\System\linux\System.cpp">
+      <Filter>Core\System\linux</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Compress\ZipReader.cpp">
+      <Filter>Core\Compress</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Coder\XOR\XORDecoder.cpp">
+      <Filter>Core\Coder\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Coder\XOR\XOREncoder.cpp">
+      <Filter>Core\Coder\XOR</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Coder\XXTEA\XXTEAEncryptor.cpp">
+      <Filter>Core\Coder\XXTEA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileList\FileCoderList.cpp">
+      <Filter>Core\IO\FileList</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileSystem\Accessor\IFileSystemAccessor.cpp">
+      <Filter>Core\IO\FileSystem\Accessor</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Coder\LZMA\LZMADecoder.cpp">
+      <Filter>Core\Coder\LZMA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Coder\LZMA\LZMAEncoder.cpp">
+      <Filter>Core\Coder\LZMA</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Stream\FileStream.cpp">
+      <Filter>Core\IO\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Stream\IStream.cpp">
+      <Filter>Core\IO\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Stream\MemoryStream.cpp">
+      <Filter>Core\IO\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\Handler\IMessageHandler.cpp">
+      <Filter>Core\Message\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\Handler\TcpMessageHandler.cpp">
+      <Filter>Core\Message\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\Handler\MockMessageHandler.cpp">
+      <Filter>Core\Message\Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\RandomName.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\String\RandomName\RandomName.cpp">
+      <Filter>Core\String\RandomName</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Random.cpp">
+      <Filter>Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\adler32.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\compress.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\crc32.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\deflate.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzclose.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzlib.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzread.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzwrite.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\infback.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\inffast.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\inflate.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\inftrees.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\trees.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\uncompr.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\zutil.c">
+      <Filter>CoreLib\Common\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\testing\file.cc">
+      <Filter>CoreLib\Common\google\protobuf\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Config\ServerList.cpp">
+      <Filter>Core\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\ServerList.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\LzFind.c">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\Lzma2Dec.c">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\Lzma2Enc.c">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\LzmaDec.c">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\LzmaEnc.c">
+      <Filter>CoreLib\Common\7z</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Moveable\TransformMoveable.cpp">
+      <Filter>Core\Geometry\Moveable</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Geometry\Moveable\DefaultMoveable.cpp">
+      <Filter>Core\Geometry\Moveable</Filter>
+    </ClCompile>
+    <ClCompile Include="MedusaCorePreCompiled.cpp" />
+    <ClCompile Include="Core\Algorithm\Pack\GuillotineBinPack.cpp">
+      <Filter>Core\Algorithm\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Algorithm\Pack\SkylineBinPack.cpp">
+      <Filter>Core\Algorithm\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\FileId.cpp">
+      <Filter>Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptgrid\scriptgrid.cpp">
+      <Filter>CoreLib\Common\angelscript\add_on\scriptgrid</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\pugixml\pugixml.cpp">
+      <Filter>CoreLib\Common\pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Dependency\DependencyProperty.cpp">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Dependency\DependencyObject.cpp">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Dependency\DependencyPropertyMetaData.cpp">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Pattern\Dependency\DependencyEffectiveValue.cpp">
+      <Filter>Core\Pattern\Dependency</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\HashUtility.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Stream\ProxyStream.cpp">
+      <Filter>Core\IO\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Pack\PackageHeader.cpp">
+      <Filter>Core\IO\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Pack\Package.cpp">
+      <Filter>Core\IO\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IO\Pack\PackageFile.cpp">
+      <Filter>Core\IO\Pack</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Profile\AutoStopWatch.cpp">
+      <Filter>Core\Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Coder\CoderFactory.cpp">
+      <Filter>Core\Coder</Filter>
+    </ClCompile>
+    <ClCompile Include="MedusaCoreVersion.cpp" />
+    <ClCompile Include="Core\IO\FileIdStorage.cpp">
+      <Filter>Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Model\IScrollMathModel.cpp">
+      <Filter>Core\Math\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Model\SpringScrollMathModel.cpp">
+      <Filter>Core\Math\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Utility\Version.cpp">
+      <Filter>Core\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\CoreDefines.pb.cc">
+      <Filter>Core\Proto\Client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Log\ios\IOSConsoleLogger.mm">
+      <Filter>Core\Log\ios</Filter>
+    </None>
+    <None Include="Core\Pattern\Ptr\LazyStrongPtr.inl">
+      <Filter>Core\Pattern\Ptr</Filter>
+    </None>
+    <None Include="Core\System\ios\UIDevice+Reachability.mm">
+      <Filter>Core\System\ios</Filter>
+    </None>
+    <None Include="Core\System\ios\System.mm">
+      <Filter>Core\System\ios</Filter>
+    </None>
+    <None Include="Core\String\TStringRef.inl">
+      <Filter>Core\String</Filter>
+    </None>
+    <None Include="Core\System\ios\Environment.mm">
+      <Filter>Core\System\ios</Filter>
+    </None>
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_arm_gcc.S">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </None>
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_arm_msvc.asm">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </None>
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_arm_xcode.S">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </None>
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_x64_msvc_asm.asm">
+      <Filter>CoreLib\Common\angelscript\source</Filter>
+    </None>
+  </ItemGroup>
+</Project>

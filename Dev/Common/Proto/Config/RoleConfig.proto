@@ -1,0 +1,16 @@
+//option optimize_for = LITE_RUNTIME;
+
+import "BaseProperty.proto";
+package ServerProto.Config;
+
+message RoleConfigItem //角色属性
+{
+	required uint32 Id=1;
+	required ServerProto.Logic.BaseProperty Property = 2; //角色基础属性
+	required ServerProto.Logic.BaseProperty DeltaProperty = 3;//增长属性
+}
+
+message RoleConfig  
+{
+	repeated RoleConfigItem RoleConfigItems=1;
+}

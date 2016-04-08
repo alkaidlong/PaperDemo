@@ -1,0 +1,1219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3EEDD4F-019E-4A8A-9AAB-2B28E858AD04}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MedusaCore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\MedusaCore;..\MedusaCore\CoreLib\Common\;..\MedusaCore\CoreLib\win\;..\MedusaCore\CoreLib\Common\zlib;..\MedusaCore\CoreLib\Common\zip;..\MedusaCore\CoreLib\Common\angelscript\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4099;4221;4006;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PrecompiledHeaderFile>MedusaCorePreCompiled.h</PrecompiledHeaderFile>
+      <BrowseInformation>false</BrowseInformation>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\*.*" "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\x86\*.*" "$(OutDir)"
+</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>pthreadVC2.lib;vld.lib;libiconv_d.lib;libcurl_imp.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)CoreLib\Bin\win;$(ProjectDir)CoreLib\Bin\win\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221  /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\MedusaCore;..\MedusaCore\CoreLib\Common\OGLES;..\MedusaCore\CoreLib\Common\;..\MedusaCore\CoreLib\Common\freetype;..\MedusaCore\CoreLib\win\;..\MedusaCore\CoreLib\Common\zlib;..\MedusaCore\CoreLib\Common\zip;..\MedusaCore\CoreLib\Common\angelscript\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4099;4221;4006;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ProgramDataBaseFileName>$(TargetDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeaderFile>Platform/Platform.h</PrecompiledHeaderFile>
+      <BrowseInformation>false</BrowseInformation>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\*.*" "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\x64\*.*" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>pthreadVC2.lib;freetype250MT.lib;vld.lib;libiconv_d.lib;libcurl_imp.lib;glew32.lib;libtiff_d.lib;libwebp.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)CoreLib\Bin\win;$(ProjectDir)CoreLib\Bin\win\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221  /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\MedusaCore;..\MedusaCore\CoreLib\Common\;..\MedusaCore\CoreLib\win\;..\MedusaCore\CoreLib\Common\zlib;..\MedusaCore\CoreLib\Common\zip;..\MedusaCore\CoreLib\Common\angelscript\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4099;4221;4006;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>MedusaCorePreCompiled.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>pthreadVC2.lib;libiconv.lib;libcurl_imp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)CoreLib\Bin\win;$(ProjectDir)CoreLib\Bin\win\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\*.*" "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\x86\*.*" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\MedusaCore;..\MedusaCore\CoreLib\Common\OGLES;..\MedusaCore\CoreLib\Common\;..\MedusaCore\CoreLib\Common\freetype;..\MedusaCore\CoreLib\win\;..\MedusaCore\CoreLib\Common\zlib;..\MedusaCore\CoreLib\Common\zip;..\MedusaCore\CoreLib\Common\angelscript\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4099;4221;4006;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <PrecompiledHeaderFile>Platform/Platform.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>pthreadVC2.lib;freetype250MT.lib;libiconv.lib;libcurl_imp.lib;glew32s.lib;libtiff.lib;libwebp.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)CoreLib\Bin\win;$(ProjectDir)CoreLib\Bin\win\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\*.*" "$(OutDir)"
+xcopy /Y /Q "$(ProjectDir)CoreLib\Bin\win\x64\*.*" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Geometry\ShapeVertex.h" />
+    <ClInclude Include="Core\Math\Model\IScrollMathModel.h">
+      <SubType>Code</SubType>
+    </ClInclude>
+    <ClInclude Include="Core\Math\Model\SpringScrollMathModel.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\BaseMultipleCompositeAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\BaseSingleCompositeAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\RepeatedAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\RepeatedForeverAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\SequenceAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\SpawnAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\SpeedAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BackEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BackEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BackEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BaseTweenAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BezierAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BounceEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BounceEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\BounceEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CircularEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CircularEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CircularEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CubicEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CubicEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\CubicEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ElasticEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ElasticEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ElasticEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ExponentialEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ExponentialEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\ExponentialEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuadraticEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuadraticEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuadraticEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuarticEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuarticEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuarticEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuinticEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuinticEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\QuinticEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\RateEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\RateEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\RateEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\SinusoidalEaseInAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\SinusoidalEaseInOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\Composite\Tween\SinusoidalEaseOutAction.h" />
+    <ClInclude Include="Core\Pattern\Action\DelayAction.h" />
+    <ClInclude Include="Core\Pattern\Action\DelegateAction.h" />
+    <ClInclude Include="Core\Pattern\Action\ArgDelegateAction.h" />
+    <ClInclude Include="Core\Proto\Client\CoreDefines.pb.h" />
+    <ClInclude Include="Core\Utility\Version.h" />
+    <ClInclude Include="MedusaCoreVersion.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptgrid\scriptgrid.h" />
+    <ClInclude Include="CoreLib\Common\pugixml\pugiconfig.hpp" />
+    <ClInclude Include="CoreLib\Common\pugixml\pugixml.hpp" />
+    <ClInclude Include="CorePlatform\Common\CommonMarcos.h" />
+    <ClInclude Include="CorePlatform\Common\MacroUtility.h" />
+    <ClInclude Include="CorePlatform\CorePlatform.h" />
+    <ClInclude Include="CorePlatform\CorePlatformDefines.h" />
+    <ClInclude Include="CorePlatform\Threading\ThreadingDefines.h" />
+    <ClInclude Include="Core\Algorithm\Algorithm.h" />
+    <ClInclude Include="Core\Algorithm\Pack\GuillotineBinPack.h" />
+    <ClInclude Include="Core\Algorithm\Pack\SkylineBinPack.h" />
+    <ClInclude Include="Core\Assertion\CommonAssert.h" />
+    <ClInclude Include="Core\Coder\CoderFactory.h" />
+    <ClInclude Include="Core\Coder\CoderPool.h" />
+    <ClInclude Include="Core\Coder\ICoder.h" />
+    <ClInclude Include="Core\Coder\LZMA\LZMADecoder.h" />
+    <ClInclude Include="Core\Coder\LZMA\LZMAEncoder.h" />
+    <ClInclude Include="Core\Coder\XOR\XORDecoder.h" />
+    <ClInclude Include="Core\Coder\XOR\XOREncoder.h" />
+    <ClInclude Include="Core\Coder\XXTEA\XXTEAEncryptor.h" />
+    <ClInclude Include="Core\Collection\BitArray.h" />
+    <ClInclude Include="Core\Collection\Dictionary.h" />
+    <ClInclude Include="Core\Collection\Enumerator.h" />
+    <ClInclude Include="Core\Collection\HashHelper.h" />
+    <ClInclude Include="Core\Collection\HashSet.h" />
+    <ClInclude Include="Core\Collection\ICollection.h" />
+    <ClInclude Include="Core\Collection\IEnumerable.h" />
+    <ClInclude Include="Core\Collection\IEnumerator.h" />
+    <ClInclude Include="Core\Collection\ILinkedList.h" />
+    <ClInclude Include="Core\Collection\IList.h" />
+    <ClInclude Include="Core\Collection\IDictionary.h" />
+    <ClInclude Include="Core\Collection\ISet.h" />
+    <ClInclude Include="Core\Collection\ISortedList.h" />
+    <ClInclude Include="Core\Collection\KeyValuePair.h" />
+    <ClInclude Include="Core\Collection\LinkedList.h" />
+    <ClInclude Include="Core\Collection\Linq.h" />
+    <ClInclude Include="Core\Collection\Queue.h" />
+    <ClInclude Include="Core\Collection\SortedDictionary.h" />
+    <ClInclude Include="Core\Collection\SortedList.h" />
+    <ClInclude Include="Core\Collection\Stack.h" />
+    <ClInclude Include="Core\Collection\STLPort.h" />
+    <ClInclude Include="Core\Compile\Type.h" />
+    <ClInclude Include="Core\Compile\TypeInfo.h" />
+    <ClInclude Include="Core\Compile\TypeList.h" />
+    <ClInclude Include="Core\Collection\Array.h" />
+    <ClInclude Include="Core\Collection\List.h" />
+    <ClInclude Include="Core\Compile\TypeListPrivate.h" />
+    <ClInclude Include="Core\Compile\TypeTraits.h" />
+    <ClInclude Include="Core\Compress\ZipReader.h" />
+    <ClInclude Include="Core\Config\ServerConfig.h" />
+    <ClInclude Include="Core\Config\ServerList.h" />
+    <ClInclude Include="Core\Dynamic\Dynamic.h" />
+    <ClInclude Include="Core\Event\EventArg\IEventArg.h" />
+    <ClInclude Include="Core\Event\EventArg\UserDataEventArg.h" />
+    <ClInclude Include="Core\Event\ThreadEventDispatcher.h" />
+    <ClInclude Include="Core\Event\UIEventDispatcher.h" />
+    <ClInclude Include="Core\Event\WorkItem.h" />
+    <ClInclude Include="Core\Event\Trigger\ITrigger.h" />
+    <ClInclude Include="Core\Geometry\AABBBox.h" />
+    <ClInclude Include="Core\Geometry\Color3.h" />
+    <ClInclude Include="Core\Geometry\Color4.h" />
+    <ClInclude Include="Core\Geometry\Cube.h" />
+    <ClInclude Include="Core\Geometry\EulerAngle.h" />
+    <ClInclude Include="Core\Geometry\GeometryDefines.h" />
+    <ClInclude Include="Core\Geometry\GeometryFactory.h" />
+    <ClInclude Include="Core\Geometry\Line2.h" />
+    <ClInclude Include="Core\Geometry\Line3.h" />
+    <ClInclude Include="Core\Geometry\Matrix2.h" />
+    <ClInclude Include="Core\Geometry\Matrix3.h" />
+    <ClInclude Include="Core\Geometry\Matrix4.h" />
+    <ClInclude Include="Core\Geometry\Matrix43.h" />
+    <ClInclude Include="Core\Geometry\Moveable\DefaultMoveable.h" />
+    <ClInclude Include="Core\Geometry\Moveable\TransformMoveable.h" />
+    <ClInclude Include="Core\Geometry\Padding4.h" />
+    <ClInclude Include="Core\Geometry\Point2.h" />
+    <ClInclude Include="Core\Geometry\Point3.h" />
+    <ClInclude Include="Core\Geometry\Point4.h" />
+    <ClInclude Include="Core\Geometry\Quad.h" />
+    <ClInclude Include="Core\Geometry\Quaternion.h" />
+    <ClInclude Include="Core\Geometry\Range.h" />
+    <ClInclude Include="Core\Geometry\Rect2.h" />
+    <ClInclude Include="Core\Geometry\Rotation2.h" />
+    <ClInclude Include="Core\Geometry\Rotation3.h" />
+    <ClInclude Include="Core\Geometry\Scale2.h" />
+    <ClInclude Include="Core\Geometry\Scale3.h" />
+    <ClInclude Include="Core\Geometry\Size2.h" />
+    <ClInclude Include="Core\Geometry\Size3.h" />
+    <ClInclude Include="Core\Geometry\Thickness.h" />
+    <ClInclude Include="Core\Geometry\Transform\TransformFactory.h" />
+    <ClInclude Include="Core\Geometry\Triangle.h" />
+    <ClInclude Include="Core\Geometry\TextureVertex.h" />
+    <ClInclude Include="Core\IO\Directory.h" />
+    <ClInclude Include="Core\IO\File.h" />
+    <ClInclude Include="Core\IO\FileDefines.h" />
+    <ClInclude Include="Core\IO\FileId.h" />
+    <ClInclude Include="Core\IO\FileIdStorage.h" />
+    <ClInclude Include="Core\IO\FileInfo.h" />
+    <ClInclude Include="Core\IO\FileList\FileCoderList.h" />
+    <ClInclude Include="Core\IO\FileList\FileList.h" />
+    <ClInclude Include="Core\IO\FileList\FileListFileItem.h" />
+    <ClInclude Include="Core\IO\FileSystem\Accessor\android\AndroidFileSystemAccessor.h" />
+    <ClInclude Include="Core\IO\FileSystem\Accessor\IFileSystemAccessor.h" />
+    <ClInclude Include="Core\IO\FileSystem\Accessor\posix\PosixFileSystemAccessor.h" />
+    <ClInclude Include="Core\IO\FileSystem\FileSystem.h" />
+    <ClInclude Include="Core\IO\FileSystem\FileSystemNameItem.h" />
+    <ClInclude Include="Core\IO\FileSystem\FileSystemOrderItem.h" />
+    <ClInclude Include="Core\IO\FileSystem\FileSystemTagItem.h" />
+    <ClInclude Include="Core\IO\MemoryFileAutoRegister.h" />
+    <ClInclude Include="Core\IO\Pack\Package.h" />
+    <ClInclude Include="Core\IO\Pack\PackageFile.h" />
+    <ClInclude Include="Core\IO\Pack\PackageHeader.h" />
+    <ClInclude Include="Core\IO\Path.h" />
+    <ClInclude Include="Core\IO\Stream\FileStream.h" />
+    <ClInclude Include="Core\IO\Stream\MemoryStream.h" />
+    <ClInclude Include="Core\IO\Stream\IStream.h" />
+    <ClInclude Include="Core\IO\Stream\ProxyStream.h" />
+    <ClInclude Include="Core\IO\Updater\FileDownloadingProgressEventArg.h" />
+    <ClInclude Include="Core\IO\Updater\FileUpdater.h" />
+    <ClInclude Include="Core\IO\Updater\ServerStatusEventArg.h" />
+    <ClInclude Include="Core\IO\Updater\UpdaterDefines.h" />
+    <ClInclude Include="Core\Log\android\AndroidTraceLogger.h" />
+    <ClInclude Include="Core\Log\CallbackLogger.h" />
+    <ClInclude Include="Core\Log\FileLogger.h" />
+    <ClInclude Include="Core\Log\ios\IOSConsoleLogger.h" />
+    <ClInclude Include="Core\Log\win\WindowsConsoleLogger.h" />
+    <ClInclude Include="Core\Log\win\WindowsTraceLogger.h" />
+    <ClInclude Include="Core\Math\MathHeader.h" />
+    <ClInclude Include="Core\Math\MathStrategy.h" />
+    <ClInclude Include="Core\Math\Random.h" />
+    <ClInclude Include="Core\Memory\Memory.h" />
+    <ClInclude Include="Core\Memory\MemoryData.h" />
+    <ClInclude Include="Core\Message\BaseCustomMessage.h" />
+    <ClInclude Include="Core\Message\BaseMessage.h" />
+    <ClInclude Include="Core\Message\BaseRequestMessage.h" />
+    <ClInclude Include="Core\Message\Handler\IMessageHandler.h" />
+    <ClInclude Include="Core\Message\Handler\MessageHandlerFactory.h" />
+    <ClInclude Include="Core\Message\Handler\MockMessageHandler.h" />
+    <ClInclude Include="Core\Message\Handler\TcpMessageHandler.h" />
+    <ClInclude Include="Core\Message\IMessage.h" />
+    <ClInclude Include="Core\Message\MessageDispatcher.h" />
+    <ClInclude Include="Core\Message\MessageEventArg.h" />
+    <ClInclude Include="Core\Message\MessageFactory.h" />
+    <ClInclude Include="Core\Net\HTTP\GlobalDownloadingProgressEventArg.h" />
+    <ClInclude Include="Core\Net\HTTP\HTTPClient.h" />
+    <ClInclude Include="Core\Net\HTTP\HTTPFileDownloader.h" />
+    <ClInclude Include="Core\Net\HTTP\HTTPMemoryDownloader.h" />
+    <ClInclude Include="Core\Net\HTTP\IHTTPDownloader.h" />
+    <ClInclude Include="Core\Net\HTTP\SingleDownloadingProgressEventArg.h" />
+    <ClInclude Include="Core\Net\Socket\AddressInfo.h" />
+    <ClInclude Include="Core\Net\Socket\ClientSocket.h" />
+    <ClInclude Include="Core\Net\Socket\ISocket.h" />
+    <ClInclude Include="Core\Net\Socket\HostInfo.h" />
+    <ClInclude Include="Core\Net\Socket\ProtocolInfo.h" />
+    <ClInclude Include="Core\Net\Socket\ServerSocket.h" />
+    <ClInclude Include="Core\Net\Socket\ServiceInfo.h" />
+    <ClInclude Include="Core\Net\Socket\SocketDefines.h" />
+    <ClInclude Include="Core\Pattern\Action\BaseActionRunner.h" />
+    <ClInclude Include="Core\Pattern\Action\BaseAnimationAction.h" />
+    <ClInclude Include="Core\Pattern\Action\BaseFiniteAction.h" />
+    <ClInclude Include="Core\Pattern\Action\BaseInfiniteAction.h" />
+    <ClInclude Include="Core\Pattern\Action\BaseInstantAction.h" />
+    <ClInclude Include="Core\Pattern\Action\IAction.h" />
+    <ClInclude Include="Core\Pattern\Action\IActionRunnable.h" />
+    <ClInclude Include="Core\Pattern\ArrayObjectFactory.h" />
+    <ClInclude Include="Core\Pattern\DefaultRunnable.h" />
+    <ClInclude Include="Core\Pattern\Component\ComponentCache.h" />
+    <ClInclude Include="Core\Pattern\Component\ComponentFactory.h" />
+    <ClInclude Include="Core\Pattern\Component\ComponentList.h" />
+    <ClInclude Include="Core\Pattern\Component\IComponent.h" />
+    <ClInclude Include="Core\Pattern\Delegate.h" />
+    <ClInclude Include="Core\Pattern\Dependency\DependencyEffectiveValue.h" />
+    <ClInclude Include="Core\Pattern\Dependency\DependencyObject.h" />
+    <ClInclude Include="Core\Pattern\Dependency\DependencyProperty.h" />
+    <ClInclude Include="Core\Pattern\Dependency\DependencyPropertyMetaData.h" />
+    <ClInclude Include="Core\Pattern\DeprecationManager.h" />
+    <ClInclude Include="Core\Pattern\EnumPattern.h" />
+    <ClInclude Include="Core\Pattern\Event.h" />
+    <ClInclude Include="Core\Pattern\FlagsPattern.h" />
+    <ClInclude Include="Core\Pattern\IClone.h" />
+    <ClInclude Include="Core\Pattern\ICopyFrom.h" />
+    <ClInclude Include="Core\Pattern\IExecutable.h" />
+    <ClInclude Include="Core\Pattern\IInitializable.h" />
+    <ClInclude Include="Core\Pattern\ILoadable.h" />
+    <ClInclude Include="Core\Pattern\IRunnable.h" />
+    <ClInclude Include="Core\Pattern\ISerializable.h" />
+    <ClInclude Include="Core\Pattern\ISharable.h" />
+    <ClInclude Include="Core\Pattern\ISharableWithName.h" />
+    <ClInclude Include="Core\Pattern\IUpdatable.h" />
+    <ClInclude Include="Core\Pattern\LazyValue.h" />
+    <ClInclude Include="Core\Pattern\MapObjectFactory.h" />
+    <ClInclude Include="Core\Pattern\NullableValue.h" />
+    <ClInclude Include="Core\Pattern\ObjectCache.h" />
+    <ClInclude Include="Core\Pattern\IdObjectPool.h" />
+    <ClInclude Include="Core\Pattern\ObjectPool.h" />
+    <ClInclude Include="Core\Pattern\OverrideValue.h" />
+    <ClInclude Include="Core\Pattern\Property\INotifyPropertyChanged.h" />
+    <ClInclude Include="Core\Pattern\Property\IProperty.h" />
+    <ClInclude Include="Core\Pattern\Property\IPropertyPtr.h" />
+    <ClInclude Include="Core\Pattern\Property\PropertyChangedEventArg.h" />
+    <ClInclude Include="Core\Pattern\Ptr\LazyStrongPtr.h" />
+    <ClInclude Include="Core\Pattern\Ptr\NotNullPtr.h" />
+    <ClInclude Include="Core\Pattern\RTTI\RTTIClass.h" />
+    <ClInclude Include="Core\Pattern\RTTI\RTTIObject.h" />
+    <ClInclude Include="Core\Pattern\Singleton.h" />
+    <ClInclude Include="Core\Pattern\StaticConstructor.h" />
+    <ClInclude Include="Core\Pattern\SwapValue.h" />
+    <ClInclude Include="Core\Pattern\TuplePattern.h" />
+    <ClInclude Include="Core\Pattern\VaryValue.h" />
+    <ClInclude Include="Core\Profile\AutoStopWatch.h" />
+    <ClInclude Include="Core\Profile\ProfileManager.h" />
+    <ClInclude Include="Core\Profile\ProfileNode.h" />
+    <ClInclude Include="Core\Profile\ProfileSample.h" />
+    <ClInclude Include="Core\Profile\StopWatch.h" />
+    <ClInclude Include="Core\Proto\Client\AnimationModel.pb.h" />
+    <ClInclude Include="Core\Proto\Client\AppCompatibility.pb.h" />
+    <ClInclude Include="Core\Proto\Client\EnvironmentTag.pb.h" />
+    <ClInclude Include="Core\Proto\Client\FileList.pb.h" />
+    <ClInclude Include="Core\Proto\Client\FileSystem.pb.h" />
+    <ClInclude Include="Core\Proto\Client\FileUpdateList.pb.h" />
+    <ClInclude Include="Core\Proto\Client\FuckyString.pb.h" />
+    <ClInclude Include="Core\Proto\Client\Geometry.pb.h" />
+    <ClInclude Include="Core\Proto\Client\LayerEditor.pb.h" />
+    <ClInclude Include="Core\Proto\Client\RandomName.pb.h" />
+    <ClInclude Include="Core\Proto\Client\ServerConfig.pb.h" />
+    <ClInclude Include="Core\Proto\Client\ServerList.pb.h" />
+    <ClInclude Include="Core\Proto\Client\StringTable.pb.h" />
+    <ClInclude Include="Core\Proto\Client\UpdateServer.pb.h" />
+    <ClInclude Include="Core\Proto\Proto.h" />
+    <ClInclude Include="Core\Script\ScriptManager.h" />
+    <ClInclude Include="Core\Script\ScriptModule.h" />
+    <ClInclude Include="Core\Script\ScriptObject.h" />
+    <ClInclude Include="Core\Security\SecurityInt.h" />
+    <ClInclude Include="Core\Security\SecurityValue.h" />
+    <ClInclude Include="Core\String\FuckyString\FuckyString.h" />
+    <ClInclude Include="Core\String\FuckyString\FuckyStringNode.h" />
+    <ClInclude Include="Core\String\HeapString.h" />
+    <ClInclude Include="Core\String\RandomName\RandomName.h" />
+    <ClInclude Include="Core\String\StdString.h" />
+    <ClInclude Include="Core\String\StringParser.h" />
+    <ClInclude Include="Core\String\StringRef.h" />
+    <ClInclude Include="Core\String\StackString.h" />
+    <ClInclude Include="Core\String\BaseString.h" />
+    <ClInclude Include="Core\String\StringTable\StringNameItem.h" />
+    <ClInclude Include="Core\String\StringTable\StringOrderItem.h" />
+    <ClInclude Include="Core\String\StringTable\StringTable.h" />
+    <ClInclude Include="Core\String\TStringRef.h" />
+    <ClInclude Include="Core\System\Environment.h" />
+    <ClInclude Include="Core\System\EnvironmentTag.h" />
+    <ClInclude Include="Core\System\ios\UIDevice+Reachability.h" />
+    <ClInclude Include="Core\System\ios\wwanconnect.h" />
+    <ClInclude Include="Core\System\System.h" />
+    <ClInclude Include="Core\Threading\Mutex.h" />
+    <ClInclude Include="Core\Threading\ReadWriteLock.h" />
+    <ClInclude Include="Core\Threading\Semaphore2.h" />
+    <ClInclude Include="Core\Threading\Lock.h" />
+    <ClInclude Include="Core\Threading\Thread.h" />
+    <ClInclude Include="Core\Threading\ThreadEvent.h" />
+    <ClInclude Include="Core\Threading\ThreadingLockPolicy.h" />
+    <ClInclude Include="Core\Utility\DateTime.h" />
+    <ClInclude Include="Core\Utility\Guid.h" />
+    <ClInclude Include="Core\Utility\HashUtility.h" />
+    <ClInclude Include="Core\Utility\MD5.h" />
+    <ClInclude Include="Core\Utility\TimeSpan.h" />
+    <ClInclude Include="Core\Utility\Utility.h" />
+    <ClInclude Include="CoreLib\Common\7z\7zConfig.h" />
+    <ClInclude Include="CoreLib\Common\7z\LzFind.h" />
+    <ClInclude Include="CoreLib\Common\7z\LzHash.h" />
+    <ClInclude Include="CoreLib\Common\7z\Lzma2Dec.h" />
+    <ClInclude Include="CoreLib\Common\7z\Lzma2Enc.h" />
+    <ClInclude Include="CoreLib\Common\7z\LzmaDec.h" />
+    <ClInclude Include="CoreLib\Common\7z\LzmaEnc.h" />
+    <ClInclude Include="CoreLib\Common\7z\Types.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\autowrapper\aswrappedcall.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\contextmgr\contextmgr.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\debugger\debugger.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptany\scriptany.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptarray\scriptarray.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptbuilder\scriptbuilder.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptdictionary\scriptdictionary.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptfile\scriptfile.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scripthandle\scripthandle.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scripthelper\scripthelper.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmath.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmathcomplex.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\scriptstdstring\scriptstdstring.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\serializer\serializer.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\add_on\weakref\weakref.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\include\angelscript.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_array.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_atomic.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_builder.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_bytecode.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_callfunc.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_compiler.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_config.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_configgroup.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_context.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_criticalsection.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_datatype.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_debug.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_gc.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_generic.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_map.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_memory.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_module.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_objecttype.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_outputbuffer.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_parser.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_property.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_restore.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptcode.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptengine.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptfunction.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptnode.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_scriptobject.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_string.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_string_util.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_symboltable.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_texts.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_thread.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_tokendef.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_tokenizer.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_typeinfo.h" />
+    <ClInclude Include="CoreLib\Common\angelscript\source\as_variablescope.h" />
+    <ClInclude Include="CoreLib\Common\zlib\crc32.h" />
+    <ClInclude Include="CoreLib\Common\zlib\deflate.h" />
+    <ClInclude Include="CoreLib\Common\zlib\gzguts.h" />
+    <ClInclude Include="CoreLib\Common\zlib\inffast.h" />
+    <ClInclude Include="CoreLib\Common\zlib\inffixed.h" />
+    <ClInclude Include="CoreLib\Common\zlib\inflate.h" />
+    <ClInclude Include="CoreLib\Common\zlib\inftrees.h" />
+    <ClInclude Include="CoreLib\Common\zlib\trees.h" />
+    <ClInclude Include="CoreLib\Common\zlib\zconf.h" />
+    <ClInclude Include="CoreLib\Common\zlib\zlib.h" />
+    <ClInclude Include="CoreLib\Common\zlib\zutil.h" />
+    <ClInclude Include="CoreLib\win\curl\curl.h" />
+    <ClInclude Include="CoreLib\win\curl\curlbuild.h" />
+    <ClInclude Include="CoreLib\win\curl\curlrules.h" />
+    <ClInclude Include="CoreLib\win\curl\curlver.h" />
+    <ClInclude Include="CoreLib\win\curl\easy.h" />
+    <ClInclude Include="CoreLib\win\curl\mprintf.h" />
+    <ClInclude Include="CoreLib\win\curl\multi.h" />
+    <ClInclude Include="CoreLib\win\curl\stdcheaders.h" />
+    <ClInclude Include="CoreLib\win\curl\typecheck-gcc.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\config.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\descriptor.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\descriptor.pb.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\descriptor_database.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\dynamic_message.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\extension_set.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\generated_enum_reflection.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\generated_message_reflection.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\generated_message_util.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\coded_stream.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\coded_stream_inl.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\gzip_stream.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\package_info.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\printer.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\tokenizer.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\zero_copy_stream.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl_lite.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\message.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\message_lite.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\package_info.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\reflection_ops.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\repeated_field.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\service.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_arm_gcc.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_arm_qnx.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_atomicword_compat.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_macosx.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_mips_gcc.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_pnacl.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_gcc.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_msvc.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\common.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\hash.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\map-util.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\once.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\platform_macros.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\stl_util.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\stringprintf.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\strutil.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\substitute.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\template_util.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\stubs\type_traits.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\testing\file.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\testing\googletest.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\text_format.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\unknown_field_set.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\wire_format.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\wire_format_lite.h" />
+    <ClInclude Include="CoreLib\Common\google\protobuf\wire_format_lite_inl.h" />
+    <ClInclude Include="CoreLib\CoreLib.h" />
+    <ClInclude Include="CoreLib\win\iconv\iconv.h" />
+    <ClInclude Include="CoreLib\win\CoreLib_win.h" />
+    <ClInclude Include="CoreLib\win\pthread\pthread.h" />
+    <ClInclude Include="CoreLib\win\pthread\sched.h" />
+    <ClInclude Include="CoreLib\win\pthread\semaphore.h" />
+    <ClInclude Include="CoreLib\Common\Unicode\ConvertUTF.h" />
+    <ClInclude Include="CoreLib\win\vld\vld.h" />
+    <ClInclude Include="CoreLib\win\vld\vld_def.h" />
+    <ClInclude Include="CoreLib\Common\zip\crypt.h" />
+    <ClInclude Include="CoreLib\Common\zip\ioapi.h" />
+    <ClInclude Include="CoreLib\Common\zip\mztools.h" />
+    <ClInclude Include="CoreLib\Common\zip\unzip.h" />
+    <ClInclude Include="CoreLib\Common\zip\zip.h" />
+    <ClInclude Include="MedusaCore.h" />
+    <ClInclude Include="MedusaCorePreCompiled.h" />
+    <ClInclude Include="MedusaCorePreDeclares.h" />
+    <ClInclude Include="Core\Log\Log.h" />
+    <ClInclude Include="Core\Log\ILogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\IO\FileIdStorage.cpp" />
+    <ClCompile Include="Core\Math\Model\IScrollMathModel.cpp">
+      <SubType>Code</SubType>
+    </ClCompile>
+    <ClCompile Include="Core\Math\Model\SpringScrollMathModel.cpp" />
+    <ClCompile Include="Core\Utility\Version.cpp" />
+    <ClCompile Include="MedusaCoreVersion.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptgrid\scriptgrid.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\pugixml\pugixml.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Algorithm\Pack\GuillotineBinPack.cpp" />
+    <ClCompile Include="Core\Algorithm\Pack\SkylineBinPack.cpp" />
+    <ClCompile Include="Core\Coder\CoderFactory.cpp" />
+    <ClCompile Include="Core\Coder\LZMA\LZMADecoder.cpp" />
+    <ClCompile Include="Core\Coder\LZMA\LZMAEncoder.cpp" />
+    <ClCompile Include="Core\Coder\XOR\XORDecoder.cpp" />
+    <ClCompile Include="Core\Coder\XOR\XOREncoder.cpp" />
+    <ClCompile Include="Core\Coder\XXTEA\XXTEAEncryptor.cpp" />
+    <ClCompile Include="Core\Compress\ZipReader.cpp" />
+    <ClCompile Include="Core\Config\ServerConfig.cpp" />
+    <ClCompile Include="Core\Config\ServerList.cpp" />
+    <ClCompile Include="Core\Event\EventArg\IEventArg.cpp" />
+    <ClCompile Include="Core\Event\ThreadEventDispatcher.cpp" />
+    <ClCompile Include="Core\Event\Trigger\ITrigger.cpp" />
+    <ClCompile Include="Core\Event\UIEventDispatcher.cpp" />
+    <ClCompile Include="Core\Geometry\Color3.cpp" />
+    <ClCompile Include="Core\Geometry\Color4.cpp" />
+    <ClCompile Include="Core\Geometry\EulerAngle.cpp" />
+    <ClCompile Include="Core\Geometry\GeometryFactory.cpp" />
+    <ClCompile Include="Core\Geometry\Matrix2.cpp" />
+    <ClCompile Include="Core\Geometry\Matrix3.cpp" />
+    <ClCompile Include="Core\Geometry\Matrix4.cpp" />
+    <ClCompile Include="Core\Geometry\Matrix43.cpp" />
+    <ClCompile Include="Core\Geometry\Moveable\DefaultMoveable.cpp" />
+    <ClCompile Include="Core\Geometry\Moveable\TransformMoveable.cpp" />
+    <ClCompile Include="Core\Geometry\Quaternion.cpp" />
+    <ClCompile Include="Core\Geometry\Transform\TransformFactory.cpp" />
+    <ClCompile Include="Core\IO\Directory.cpp" />
+    <ClCompile Include="Core\IO\File.cpp" />
+    <ClCompile Include="Core\IO\FileId.cpp" />
+    <ClCompile Include="Core\IO\FileInfo.cpp" />
+    <ClCompile Include="Core\IO\FileList\FileCoderList.cpp" />
+    <ClCompile Include="Core\IO\FileList\FileList.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\Accessor\android\AndroidFileSystemAccessor.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\Accessor\IFileSystemAccessor.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\Accessor\posix\PosixFileSystemAccessor.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\FileSystem.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\FileSystemNameItem.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\FileSystemOrderItem.cpp" />
+    <ClCompile Include="Core\IO\FileSystem\FileSystemTagItem.cpp" />
+    <ClCompile Include="Core\IO\Pack\Package.cpp" />
+    <ClCompile Include="Core\IO\Pack\PackageFile.cpp" />
+    <ClCompile Include="Core\IO\Pack\PackageHeader.cpp" />
+    <ClCompile Include="Core\IO\Path.cpp" />
+    <ClCompile Include="Core\IO\Stream\FileStream.cpp" />
+    <ClCompile Include="Core\IO\Stream\MemoryStream.cpp" />
+    <ClCompile Include="Core\IO\Stream\IStream.cpp" />
+    <ClCompile Include="Core\IO\Stream\ProxyStream.cpp" />
+    <ClCompile Include="Core\IO\Updater\FileUpdater.cpp" />
+    <ClCompile Include="Core\Log\android\AndroidTraceLogger.cpp" />
+    <ClCompile Include="Core\Log\CallbackLogger.cpp" />
+    <ClCompile Include="Core\Log\FileLogger.cpp" />
+    <ClCompile Include="Core\Log\Log.cpp" />
+    <ClCompile Include="Core\Log\win\WindowsConsoleLogger.cpp" />
+    <ClCompile Include="Core\Log\win\WindowsTraceLogger.cpp" />
+    <ClCompile Include="Core\Math\MathHeader.cpp" />
+    <ClCompile Include="Core\Math\MathStrategy.cpp" />
+    <ClCompile Include="Core\Math\Random.cpp" />
+    <ClCompile Include="Core\Message\BaseCustomMessage.cpp" />
+    <ClCompile Include="Core\Message\Handler\IMessageHandler.cpp" />
+    <ClCompile Include="Core\Message\Handler\MockMessageHandler.cpp" />
+    <ClCompile Include="Core\Message\Handler\TcpMessageHandler.cpp" />
+    <ClCompile Include="Core\Message\IMessage.cpp" />
+    <ClCompile Include="Core\Message\MessageDispatcher.cpp" />
+    <ClCompile Include="Core\Message\MessageEventArg.cpp" />
+    <ClCompile Include="Core\Net\HTTP\HTTPClient.cpp" />
+    <ClCompile Include="Core\Net\HTTP\HTTPFileDownloader.cpp" />
+    <ClCompile Include="Core\Net\HTTP\HTTPMemoryDownloader.cpp" />
+    <ClCompile Include="Core\Net\HTTP\IHTTPDownloader.cpp" />
+    <ClCompile Include="Core\Net\Socket\ISocket.cpp" />
+    <ClCompile Include="Core\Pattern\DefaultRunnable.cpp" />
+    <ClCompile Include="Core\Pattern\Component\ComponentCache.cpp" />
+    <ClCompile Include="Core\Pattern\Component\ComponentList.cpp" />
+    <ClCompile Include="Core\Pattern\Component\IComponent.cpp" />
+    <ClCompile Include="Core\Pattern\Dependency\DependencyEffectiveValue.cpp" />
+    <ClCompile Include="Core\Pattern\Dependency\DependencyObject.cpp" />
+    <ClCompile Include="Core\Pattern\Dependency\DependencyProperty.cpp" />
+    <ClCompile Include="Core\Pattern\Dependency\DependencyPropertyMetaData.cpp" />
+    <ClCompile Include="Core\Pattern\DeprecationManager.cpp" />
+    <ClCompile Include="Core\Pattern\ILoadable.cpp" />
+    <ClCompile Include="Core\Pattern\Property\PropertyChangedEventArg.cpp" />
+    <ClCompile Include="Core\Pattern\RTTI\RTTIClass.cpp" />
+    <ClCompile Include="Core\Pattern\RTTI\RTTIObject.cpp" />
+    <ClCompile Include="Core\Profile\AutoStopWatch.cpp" />
+    <ClCompile Include="Core\Profile\ProfileManager.cpp" />
+    <ClCompile Include="Core\Profile\ProfileNode.cpp" />
+    <ClCompile Include="Core\Profile\StopWatch.cpp" />
+	 <ClCompile Include="Core\Proto\Client\CoreDefines.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\AnimationModel.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\AppCompatibility.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\EnvironmentTag.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FileList.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FileSystem.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FileUpdateList.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\FuckyString.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\Geometry.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\LayerEditor.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\RandomName.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\ServerConfig.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\ServerList.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\StringTable.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Proto\Client\UpdateServer.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Core\Script\ScriptManager.cpp" />
+    <ClCompile Include="Core\Script\ScriptModule.cpp" />
+    <ClCompile Include="Core\Script\ScriptObject.cpp" />
+    <ClCompile Include="Core\String\FuckyString\FuckyString.cpp" />
+    <ClCompile Include="Core\String\FuckyString\FuckyStringNode.cpp" />
+    <ClCompile Include="Core\String\RandomName\RandomName.cpp" />
+    <ClCompile Include="Core\String\StringParser.cpp" />
+    <ClCompile Include="Core\String\StringTable\StringNameItem.cpp" />
+    <ClCompile Include="Core\String\StringTable\StringOrderItem.cpp" />
+    <ClCompile Include="Core\String\StringTable\StringTable.cpp" />
+    <ClCompile Include="Core\System\android\Environment.cpp" />
+    <ClCompile Include="Core\System\android\System.cpp" />
+    <ClCompile Include="Core\System\EnvironmentTag.cpp" />
+    <ClCompile Include="Core\System\ios\wwanconnect.cc" />
+    <ClCompile Include="Core\System\linux\Environment.cpp" />
+    <ClCompile Include="Core\System\linux\System.cpp" />
+    <ClCompile Include="Core\System\win\Environment.cpp" />
+    <ClCompile Include="Core\System\win\System.cpp" />
+    <ClCompile Include="Core\Utility\DateTime.cpp" />
+    <ClCompile Include="Core\Utility\Guid.cpp" />
+    <ClCompile Include="Core\Utility\HashUtility.cpp" />
+    <ClCompile Include="Core\Utility\MD5.cpp" />
+    <ClCompile Include="Core\Utility\TimeSpan.cpp" />
+    <ClCompile Include="Core\Utility\Utility.cpp" />
+    <ClCompile Include="Core\Log\ILogger.cpp" />
+    <ClCompile Include="CoreLib\Common\7z\LzFind.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\Lzma2Dec.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\Lzma2Enc.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\LzmaDec.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\7z\LzmaEnc.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\autowrapper\generateheader.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\contextmgr\contextmgr.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\debugger\debugger.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptany\scriptany.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptarray\scriptarray.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptbuilder\scriptbuilder.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptdictionary\scriptdictionary.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptfile\scriptfile.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scripthandle\scripthandle.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scripthelper\scripthelper.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmath.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptmath\scriptmathcomplex.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptstdstring\scriptstdstring.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\scriptstdstring\scriptstdstring_utils.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\serializer\serializer.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\add_on\weakref\weakref.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_atomic.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_builder.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_bytecode.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_arm.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_mips.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_ppc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_ppc_64.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_sh4.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x64_gcc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x64_mingw.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x64_msvc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_x86.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_callfunc_xenon.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_compiler.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_configgroup.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_context.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_datatype.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_gc.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_generic.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_globalproperty.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_memory.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_module.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_objecttype.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_outputbuffer.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_parser.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_restore.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptcode.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptengine.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptfunction.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptnode.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_scriptobject.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_string.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_string_util.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_thread.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_tokenizer.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_typeinfo.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\angelscript\source\as_variablescope.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\adler32.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\compress.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\crc32.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\deflate.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzclose.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzlib.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzread.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\gzwrite.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\infback.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\inffast.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\inflate.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\inftrees.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\trees.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\uncompr.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zlib\zutil.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\descriptor.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\descriptor.pb.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\descriptor_database.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\dynamic_message.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\extension_set.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\extension_set_heavy.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\generated_message_reflection.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\generated_message_util.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\coded_stream.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\gzip_stream.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\printer.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\tokenizer.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\zero_copy_stream.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\io\zero_copy_stream_impl_lite.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\message.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\message_lite.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\reflection_ops.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\repeated_field.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\service.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_gcc.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\atomicops_internals_x86_msvc.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\common.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\once.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\stringprintf.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\structurally_valid.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\strutil.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\stubs\substitute.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\testing\file.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\testing\googletest.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\text_format.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\unknown_field_set.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\wire_format.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\google\protobuf\wire_format_lite.cc">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\Unicode\ConvertUTF.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\ioapi.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\mztools.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\unzip.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CoreLib\Common\zip\zip.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MedusaCorePreCompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Log\ios\IOSConsoleLogger.mm" />
+    <None Include="Core\Pattern\Ptr\LazyStrongPtr.inl" />
+    <None Include="Core\String\TStringRef.inl" />
+    <None Include="Core\System\ios\Environment.mm" />
+    <None Include="Core\System\ios\System.mm" />
+    <None Include="Core\System\ios\UIDevice+Reachability.mm" />
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_arm_gcc.S" />
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_arm_msvc.asm" />
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_arm_xcode.S" />
+    <None Include="CoreLib\Common\angelscript\source\as_callfunc_x64_msvc_asm.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

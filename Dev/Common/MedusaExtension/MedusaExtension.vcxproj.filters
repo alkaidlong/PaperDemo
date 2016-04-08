@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ExtensionPlatform">
+      <UniqueIdentifier>{c4e114fe-679a-426f-8342-5b8071231fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionLib">
+      <UniqueIdentifier>{12ff7f27-c1c0-4c73-9bfc-d37cc1c95b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionLib\Common">
+      <UniqueIdentifier>{c7527f17-feda-4955-8b25-fd1bc22941f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionLib\win">
+      <UniqueIdentifier>{13ed9b28-8878-4ecf-a89e-5f7b3f3177a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analytics">
+      <UniqueIdentifier>{af0819d6-05ab-4f95-8361-d9a52e8d8436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analytics\win">
+      <UniqueIdentifier>{43ea5671-9476-4574-9651-47e56e426700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analytics\ios">
+      <UniqueIdentifier>{28b2f414-8f0c-4ede-9d40-e1e2072cafb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionLib\ios">
+      <UniqueIdentifier>{f86f2301-0818-4737-81ee-1f701fafc107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionLib\ios\Umeng">
+      <UniqueIdentifier>{99857dd3-9fc5-468b-ad0b-abd66243601a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionLib\ios\TalkingData">
+      <UniqueIdentifier>{67169165-7aff-42d8-904a-d5009cc88d88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessPlatform">
+      <UniqueIdentifier>{2bb166e9-9002-4cff-a0a3-abd797c89c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessPlatform\win">
+      <UniqueIdentifier>{27c971ab-c24b-4978-ad06-328ac5296728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessPlatform\ios">
+      <UniqueIdentifier>{6e8b3de4-3e16-4cae-9a21-1f2852a2268d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessPlatform\android">
+      <UniqueIdentifier>{8df10ea6-4679-418d-a9a8-c7ed6b7175ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Analytics\android">
+      <UniqueIdentifier>{502e4e5e-b6a8-4270-86a3-3547a34ebf7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExtensionPlatform\ExtensionPlatform.h">
+      <Filter>ExtensionPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionPlatform\ExtensionPlatformDefines.h">
+      <Filter>ExtensionPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionLib\ExtensionLib.h">
+      <Filter>ExtensionLib</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionLib\win\ExtensionLib_win.h">
+      <Filter>ExtensionLib\win</Filter>
+    </ClInclude>
+    <ClInclude Include="MedusaExtension.h" />
+    <ClInclude Include="MedusaExtensionPreCompiled.h" />
+    <ClInclude Include="MedusaExtensionPreDeclares.h" />
+    <ClInclude Include="Analytics\IAnalyzer.h">
+      <Filter>Analytics</Filter>
+    </ClInclude>
+    <ClInclude Include="Analytics\Analytics.h">
+      <Filter>Analytics</Filter>
+    </ClInclude>
+    <ClInclude Include="Analytics\TalkingDataAnalyzer.h">
+      <Filter>Analytics</Filter>
+    </ClInclude>
+    <ClInclude Include="Analytics\UmengAnalyzer.h">
+      <Filter>Analytics</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionLib\ios\ExtensionLib_ios.h">
+      <Filter>ExtensionLib\ios</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionLib\ios\Umeng\MobClick.h">
+      <Filter>ExtensionLib\ios\Umeng</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionLib\ios\Umeng\MobClickGameAnalytics.h">
+      <Filter>ExtensionLib\ios\Umeng</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtensionLib\ios\TalkingData\TalkingDataGA.h">
+      <Filter>ExtensionLib\ios\TalkingData</Filter>
+    </ClInclude>
+    <ClInclude Include="Analytics\AnalyticsTypes.h">
+      <Filter>Analytics</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\BusinessPlatformTypes.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\IBusinessPlatform.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\NdBusinessPlatform.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\BusinessPlatformFactory.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\DevBusinessPlatform.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\BusinessPlatformLoginEventArg.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="BusinessPlatform\BusinessPlatformPayEventArg.h">
+      <Filter>BusinessPlatform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MedusaExtensionPreCompiled.cpp" />
+    <ClCompile Include="Analytics\Analytics.cpp">
+      <Filter>Analytics</Filter>
+    </ClCompile>
+    <ClCompile Include="Analytics\win\TalkingDataAnalyzer.cpp">
+      <Filter>Analytics\win</Filter>
+    </ClCompile>
+    <ClCompile Include="Analytics\win\UmengAnalyzer.cpp">
+      <Filter>Analytics\win</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessPlatform\win\NdBusinessPlatform.cpp">
+      <Filter>BusinessPlatform\win</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessPlatform\BusinessPlatformFactory.cpp">
+      <Filter>BusinessPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessPlatform\BusinessPlatformLoginEventArg.cpp">
+      <Filter>BusinessPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessPlatform\DevBusinessPlatform.cpp">
+      <Filter>BusinessPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessPlatform\BusinessPlatformPayEventArg.cpp">
+      <Filter>BusinessPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="BusinessPlatform\android\NdBusinessPlatform.cpp">
+      <Filter>BusinessPlatform\android</Filter>
+    </ClCompile>
+    <ClCompile Include="Analytics\android\TalkingDataAnalyzer.cpp">
+      <Filter>Analytics\android</Filter>
+    </ClCompile>
+    <ClCompile Include="Analytics\android\UmengAnalyzer.cpp">
+      <Filter>Analytics\android</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Analytics\ios\TalkingDataAnalyzer.mm">
+      <Filter>Analytics\ios</Filter>
+    </None>
+    <None Include="Analytics\ios\UmengAnalyzer.mm">
+      <Filter>Analytics\ios</Filter>
+    </None>
+    <None Include="BusinessPlatform\ios\NdBusinessPlatform.mm">
+      <Filter>BusinessPlatform\ios</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+message StringOrderItem {
+  required uint32 order = 1;
+  required string value = 2;
+}
+
+message StringNameItem {
+  required string name = 1;
+  repeated StringOrderItem orderItems=2;
+}
+
+
+message StringTable {
+	repeated StringNameItem nameItems=1;
+}

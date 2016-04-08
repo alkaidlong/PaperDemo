@@ -1,0 +1,13 @@
+//option optimize_for = LITE_RUNTIME;
+package Medusa.CoreProto;
+
+message RandomNameConfigItem 
+{
+  required uint32 Position = 1;
+  required string Value = 2;
+}
+
+message RandomNameConfig 
+{
+	repeated RandomNameConfigItem Items=1;
+}

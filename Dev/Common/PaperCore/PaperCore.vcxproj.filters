@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{08dacb2b-e7e9-4ad1-9384-805e56d6e42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proto">
+      <UniqueIdentifier>{89752367-7956-43a2-892b-ba616ae7f652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proto\Server">
+      <UniqueIdentifier>{d0f3d9ea-dc15-4f88-8f80-5006faed38a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proto\Server\Config">
+      <UniqueIdentifier>{e1e22d07-92ad-47bf-995b-e8858c42a033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Proto\Server\Logic">
+      <UniqueIdentifier>{82c7c82b-3089-4b82-a007-9487aebbaa0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Config\SkillConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Proto\Server\Config\RoleConfig.pb.cc">
+      <Filter>Proto\Server\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Proto\Server\Config\SkillConfig.pb.cc">
+      <Filter>Proto\Server\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Proto\Server\Logic\BaseProperty.pb.cc">
+      <Filter>Proto\Server\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\RoleConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\PaperConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="PaperCoreScript.cpp" />
+    <ClCompile Include="Proto\Server\Config\BufferConfig.pb.cc">
+      <Filter>Proto\Server\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\BufferConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Config\SkillConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Proto\Server\Config\RoleConfig.pb.h">
+      <Filter>Proto\Server\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Proto\Server\Config\SkillConfig.pb.h">
+      <Filter>Proto\Server\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Proto\Server\Logic\BaseProperty.pb.h">
+      <Filter>Proto\Server\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\RoleConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\PaperConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="PaperCoreScript.h" />
+    <ClInclude Include="Proto\Server\Config\BufferConfig.pb.h">
+      <Filter>Proto\Server\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\BufferConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

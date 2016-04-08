@@ -1,0 +1,32 @@
+//option optimize_for = LITE_RUNTIME;
+import "Geometry.proto";
+package Medusa.CoreProto;
+
+
+message EnvironmentTag 
+{
+	enum Versions
+	{
+		main=1;
+		free=2;
+	}
+
+	enum Devices
+	{
+		sd=1; //480*320
+		hd=2; //960*640
+		hd5=4;	//1136*640
+		ipad=8; //1024*768
+		ipad3=16;  //2048*1536
+	}
+
+	enum Languages
+	{
+		enus=1;
+		zhcn=2;
+	}
+
+	required Versions Version=1;
+	required Devices Device=2;
+	required Languages Language=3;
+}
